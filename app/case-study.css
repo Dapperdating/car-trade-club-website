@@ -1,0 +1,161 @@
+.case-study {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 7vw;
+  align-items: center;
+  background: #ebe8df;
+}
+
+.case-study-alt {
+  background: #f5f3ec;
+}
+
+.case-study-alt .case-copy {
+  order: 2;
+}
+
+.case-study-alt .case-visual {
+  order: 1;
+}
+
+.case-study-alt .case-visual figcaption {
+  right: -24px;
+  left: auto;
+}
+
+.case-copy h2 {
+  max-width: 760px;
+  margin: 0;
+  font: 800 clamp(42px, 5.5vw, 76px)/.98 "Manrope";
+  letter-spacing: -.055em;
+}
+
+.case-copy h2 em {
+  color: #6e7780;
+  font-style: normal;
+}
+
+.case-copy .sectionlead {
+  margin: 30px 0 42px;
+}
+
+.case-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #c7c7c0;
+}
+
+.case-metrics div {
+  padding: 22px 22px 22px 0;
+  border-bottom: 1px solid #c7c7c0;
+}
+
+.case-metrics div:nth-child(odd) {
+  border-right: 1px solid #c7c7c0;
+}
+
+.case-metrics div:nth-child(even) {
+  padding-left: 22px;
+}
+
+.case-metrics span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font: 700 10px "Manrope";
+  letter-spacing: .11em;
+}
+
+.case-metrics strong {
+  font: 800 clamp(28px, 3vw, 44px) "Manrope";
+}
+
+.case-note {
+  max-width: 680px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.case-visual {
+  position: relative;
+  margin: 0;
+}
+
+.case-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  filter: saturate(.82) contrast(1.04);
+}
+
+.case-visual figcaption {
+  position: absolute;
+  bottom: 28px;
+  left: -24px;
+  display: grid;
+  min-width: 210px;
+  padding: 20px 24px;
+  background: var(--lime);
+  color: var(--ink);
+  box-shadow: 0 18px 45px #11151b26;
+}
+
+.case-visual figcaption b {
+  font: 800 34px "Manrope";
+}
+
+.case-visual figcaption span {
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .case-study {
+    grid-template-columns: 1fr;
+  }
+
+  .case-visual {
+    max-width: 720px;
+  }
+
+  .case-study-alt .case-copy,
+  .case-study-alt .case-visual {
+    order: initial;
+  }
+
+  .case-visual figcaption {
+    left: 18px;
+  }
+
+  .case-study-alt .case-visual figcaption {
+    right: auto;
+    left: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .case-metrics div:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .case-metrics div:nth-child(even) {
+    padding-left: 0;
+  }
+
+  .case-visual figcaption {
+    bottom: 12px;
+    left: 12px;
+    padding: 14px 18px;
+  }
+
+  .case-visual figcaption b {
+    font-size: 28px;
+  }
+}

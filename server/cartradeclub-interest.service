@@ -1,0 +1,15 @@
+[Unit]
+Description=Car Trade Club interest form
+After=network-online.target
+[Service]
+Type=simple
+User=dapper
+Group=dapper
+ExecStart=/usr/bin/python3 /opt/dapper-automation/apps/cartradeclub/ctc_interest.py
+Restart=on-failure
+ProtectSystem=strict
+ReadWritePaths=/var/lib/cartradeclub /var/log
+PrivateTmp=true
+NoNewPrivileges=true
+[Install]
+WantedBy=multi-user.target
