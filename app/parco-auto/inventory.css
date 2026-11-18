@@ -1,0 +1,76 @@
+/* Parco auto: inventory styles. Every selector is `.pa .pa-…` (see docs/PARCO-AUTOPLAN.md §10.4). */
+/* Port of the artifact's inventory CSS (docs/reference/parco-auto-artifact.html 219–293). */
+.pa .pa-inv { padding-block: 72px 80px; }
+.pa .pa-inv__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 28px; }
+.pa .pa-inv__head h2 { font: 800 clamp(32px, 4.4vw, 52px)/1.02 var(--ctc-display); letter-spacing: -0.05em; margin: 12px 0 10px; max-width: none; }
+.pa .pa-inv__head p { margin: 0; color: var(--ctc-muted); max-width: 40em; }
+.pa .pa-inv__head .pa-eyebrow { color: var(--ctc-muted); }
+.pa .pa-inv__head .pa-note { font-size: 12px; color: var(--ctc-muted); }
+
+.pa .pa-toolbar {
+  position: static; z-index: 10;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+  padding-block: 12px; margin-bottom: 22px;
+  background: var(--ctc-cream); border-bottom: 1px solid var(--ctc-line);
+}
+.pa .pa-seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--ctc-surface); border-radius: var(--ctc-radius-md); }
+.pa .pa-seg button {
+  min-height: 38px; padding: 0 14px; border: 0; border-radius: var(--ctc-radius-sm);
+  background: transparent; font-size: 14px; font-weight: 500; cursor: pointer;
+  transition: background-color 180ms, color 180ms;
+}
+.pa .pa-seg button:hover { background: var(--ctc-paper); }
+.pa .pa-seg button[aria-pressed="true"] { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.pa .pa-seg .pa-seg__c { font-variant-numeric: tabular-nums; opacity: 0.7; margin-left: 4px; font-size: 12px; }
+.pa .pa-selects { display: flex; flex-wrap: wrap; gap: 8px; margin-left: 0; width: 100%; }
+.pa .pa-select {
+  flex: 1 1 140px;
+  min-height: 46px; padding: 0 34px 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm);
+  background: var(--ctc-paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2311151b' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 12px center;
+  appearance: none; -webkit-appearance: none; font-size: 16px; cursor: pointer;
+}
+.pa .pa-count { margin: 0; font-size: 13px; color: var(--ctc-muted); width: 100%; }
+@media (min-width: 768px) {
+  .pa .pa-toolbar { position: sticky; top: var(--pa-top); }
+  .pa .pa-selects { margin-left: auto; width: auto; }
+  .pa .pa-select { flex: 0 1 auto; font-size: 14px; }
+}
+
+.pa .pa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 22px; }
+.pa .pa-card {
+  display: flex; flex-direction: column; text-align: left; padding: 0; cursor: pointer;
+  background: var(--ctc-paper); border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-lg);
+  overflow: hidden; color: inherit; text-decoration: none;
+  transition: border-color 180ms;
+}
+.pa .pa-card:hover { border-color: var(--ctc-ink); }
+.pa .pa-card__ph { position: relative; aspect-ratio: 4 / 3; background: var(--ctc-surface); overflow: hidden; }
+.pa .pa-card__ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 300ms; }
+.pa .pa-card:hover .pa-card__ph img { transform: scale(1.025); }
+.pa .pa-badge {
+  position: absolute; top: 10px; left: 10px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font: 700 11px/1 var(--ctc-body); letter-spacing: 0.04em;
+  padding: 7px 9px; border-radius: var(--ctc-radius-xs);
+}
+.pa .pa-badge--venduta { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.pa .pa-badge--disponibile { background: var(--ctc-good-bg); color: var(--ctc-good); }
+.pa .pa-badge--disponibile::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.pa .pa-badge--trattativa { background: var(--ctc-warn-bg); color: var(--ctc-warn); }
+.pa .pa-ph-count {
+  position: absolute; right: 10px; bottom: 10px; font-size: 11px; padding: 4px 7px;
+  border-radius: var(--ctc-radius-xs); background: var(--ctc-scrim); color: var(--ctc-on-ink);
+}
+.pa .pa-card__body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.pa .pa-card__where { font-size: 12px; color: var(--ctc-muted); display: flex; justify-content: space-between; gap: 8px; }
+.pa .pa-card__code { font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+.pa .pa-card__title { font: 800 19px/1.2 var(--ctc-display); letter-spacing: -0.02em; margin: 4px 0 0; }
+.pa .pa-card__ver { font-size: 13px; color: var(--ctc-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pa .pa-card__facts { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+.pa .pa-chip { font-size: 12px; padding: 4px 8px; border-radius: var(--ctc-radius-sm); background: var(--ctc-surface); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pa .pa-card__price { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 10px; padding-top: 14px; border-top: 1px solid var(--ctc-line-soft); }
+.pa .pa-card__price small { display: block; font-size: 11px; color: var(--ctc-muted); margin-bottom: 3px; }
+.pa .pa-card__price strong { font: 800 22px/1 var(--ctc-display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.pa .pa-gain-pill { font: 700 12px/1 var(--ctc-body); padding: 6px 8px; border-radius: var(--ctc-radius-sm); background: var(--ctc-good-bg); color: var(--ctc-good); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pa .pa-empty { padding: 48px 20px; text-align: center; color: var(--ctc-muted); border: 1px dashed var(--ctc-line); border-radius: var(--ctc-radius-lg); }
+.pa .pa-more { display: flex; justify-content: center; margin-top: 30px; }

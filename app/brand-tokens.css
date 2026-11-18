@@ -1,0 +1,144 @@
+/*
+ * Car Trade Club: brand tokens and the logo. The one source of colour, type,
+ * radius and spacing for every surface: staff admin, dealer pages, seller pages.
+ * Spec and usage rules: docs/design/DESIGN.md.
+ *
+ * Sources it unifies:
+ *   - docs/mockups/ctc-car-deals/style.css   (staff Car Deals mockup, 2026-10-07)
+ *   - frontend/src/app/pay-offer.css         (Trusted pay link, `po-*`)
+ *
+ * Light only. There is no dark theme.
+ * Fonts are loaded by next/font in frontend/src/app/layout.tsx:
+ *   --font-display-pay → Manrope, --font-sans → DM Sans.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* —— Core palette —— */
+  --ctc-ink: #11151b;          /* text, dark panels, menu rail, logo square */
+  --ctc-ink-2: #2a313b;        /* ink hover on light ground */
+  --ctc-charcoal: #282e37;     /* hover/current item on the ink rail */
+  --ctc-cream: #f5f2e9;        /* staff page ground; customer blocks */
+  --ctc-paper: #fcfaf4;        /* staff cards on cream */
+  --ctc-white: #ffffff;        /* customer page ground */
+  --ctc-surface: #ebe8df;      /* hover, chips, inbound bubbles, image wells */
+  --ctc-lime: #c8ff45;         /* the only accent: primary CTA, logo bar, live dot */
+  --ctc-lime-hover: #b7ed36;
+
+  /* —— Text —— */
+  --ctc-text: var(--ctc-ink);
+  --ctc-muted: #59636e;        /* ≥4.9:1 on cream, paper, surface and white */
+
+  /* —— Lines —— */
+  --ctc-line: #d9d9d2;         /* card borders, dividers on cream */
+  --ctc-line-soft: #e3e0d6;    /* rows inside a card, hairlines on white */
+
+  /* —— On ink (rail, price panel, dark buttons) —— */
+  --ctc-on-ink: #f5f2e9;
+  --ctc-on-ink-soft: #c9ccd2;  /* labels */
+  --ctc-on-ink-mute: #8d929b;  /* footnotes (≥4.3:1 on charcoal; ≥5.8:1 on ink) */
+  --ctc-on-ink-rule: #343b46;  /* dividers inside dark panels */
+  --ctc-on-ink-edge: #4a525e;  /* outline buttons on ink */
+
+  /* —— Status (text on its own soft background) —— */
+  --ctc-good: #1d7a4c;
+  --ctc-good-bg: #e8f4ec;
+  --ctc-warn: #705119;
+  --ctc-warn-bg: #f2ead8;
+  --ctc-danger: #923e35;
+  --ctc-danger-bg: #f6e4e1;
+  --ctc-flag: #e0662f;         /* damage markers on photos; never body text */
+  --ctc-bubble-out: #e8eddb;   /* our outgoing chat bubble */
+  --ctc-focus: #3d4cff;        /* focus ring: visible on cream AND on ink */
+  --ctc-scrim: rgba(17, 21, 27, 0.74);
+
+  /* —— Type —— */
+  --ctc-display: var(--font-display-pay, "Manrope"), "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --ctc-body: var(--font-sans, "DM Sans"), "DM Sans", "Helvetica Neue", Arial, sans-serif;
+
+  /* —— Shape —— */
+  --ctc-radius-xs: 3px;        /* badges, photo captions */
+  --ctc-radius-sm: 4px;        /* buttons, inputs, chips, flags */
+  --ctc-radius-md: 6px;        /* list cards, accordions, bubbles, tables */
+  --ctc-radius-lg: 8px;        /* cards, price panel (staff) */
+  --ctc-radius-xl: 10px;       /* dialogs, price panel (customer) */
+
+  /* —— Space (4px grid) —— */
+  --ctc-space-1: 4px;
+  --ctc-space-2: 8px;
+  --ctc-space-3: 12px;
+  --ctc-space-4: 16px;
+  --ctc-space-5: 20px;
+  --ctc-space-6: 24px;
+  --ctc-space-8: 32px;
+
+  /* —— Shell —— */
+  --ctc-rail: 164px;           /* dark menu rail */
+  --ctc-queue: 285px;          /* list column (queue, filters) */
+  --ctc-topbar: 64px;
+  --ctc-touch: 44px;           /* minimum hit target; 48px on phones */
+  --ctc-shadow-bar: 0 -5px 20px rgba(17, 21, 27, 0.03);
+  --ctc-shadow-pop: 0 6px 25px rgba(17, 17, 17, 0.2);
+
+  /* —— Charts (DESIGN.md §3 Charts) —— */
+  --ctc-chart-main: var(--ctc-ink);
+  --ctc-chart-cmp: var(--ctc-on-ink-mute);   /* #8d929b */
+  --ctc-chart-grid: var(--ctc-line-soft);
+
+  /* —— Quality tiers (DESIGN.md §3) —— */
+  --ctc-tier-prime: var(--ctc-ink);
+  --ctc-tier-grade: var(--ctc-on-ink-mute);
+  --ctc-tier-junk: var(--ctc-flag);
+  --ctc-tier-unknown: var(--ctc-line);
+}
+
+/* —— The logo ——
+ * The pay link's mark: an ink rounded square with a slanted lime bar, then the
+ * name in Manrope 800. Same mark everywhere: rail, topbar, login, pay pages,
+ * favicon (docs/design/logo-mark.svg is the same drawing as a file).
+ *
+ *   <span class="ctc-brand"><span class="ctc-mark" aria-hidden="true"></span>Car Trade Club</span>
+ *
+ * Scale it with font-size on .ctc-brand: the mark is 1.57em (22px at 14px).
+ */
+.ctc-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72em;
+  font: 800 14px var(--ctc-display);
+  letter-spacing: -0.01em;
+  color: var(--ctc-ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ctc-mark {
+  flex: none;
+  width: 1.57em;
+  height: 1.57em;
+  border-radius: 0.36em;
+  background: var(--ctc-ink);
+  position: relative;
+  overflow: hidden;
+}
+.ctc-mark::after {
+  content: "";
+  position: absolute;
+  inset: 27.3% 18.2% 27.3% 40.9%; /* 6px 4px 6px 9px of 22 */
+  background: var(--ctc-lime);
+  transform: skewX(-18deg);
+}
+/* On the ink rail: cream name; the square gets a hairline so it doesn't vanish. */
+.ctc-brand--on-ink {
+  color: var(--ctc-on-ink);
+}
+.ctc-brand--on-ink .ctc-mark {
+  box-shadow: inset 0 0 0 1px var(--ctc-on-ink-edge);
+}
+
+/* Added for the Parco auto page (artifact values). Not yet in CARVALLO docs/design/tokens.css:
+   follow-up docs PR there adds them to tokens.css and DESIGN.md §3. */
+:root {
+  --ctc-lede: #3c444d;                                        /* lede paragraphs on cream */
+  --ctc-shadow-card: 0 24px 60px -24px rgba(17, 21, 27, 0.45); /* the tilted hero deal card */
+}

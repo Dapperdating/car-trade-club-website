@@ -1,0 +1,147 @@
+/* Parco auto: sections styles. Every selector is `.pa .pa-…` (see docs/PARCO-AUTOPLAN.md §10.4). */
+/* Lane A: ported from docs/reference/parco-auto-artifact.html CSS 125–217, 295–326, 436–441. */
+
+/* —— Header —— */
+.pa .pa-top {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--ctc-cream) 92%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ctc-line);
+}
+.pa .pa-top .pa-wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--pa-top); }
+.pa .pa-top nav { display: flex; align-items: center; gap: 28px; }
+.pa .pa-top nav a:not(.pa-btn) { text-decoration: none; font-size: 14px; font-weight: 500; }
+.pa .pa-top nav a:not(.pa-btn):hover { text-decoration: underline; text-underline-offset: 4px; }
+.pa .pa-top .pa-btn { min-height: 44px; padding: 0 18px; font-size: 14px; }
+@media (max-width: 760px) { .pa .pa-top nav a:not(.pa-btn) { display: none; } }
+@media (max-width: 400px) { .pa .pa-top .pa-btn { padding: 0 12px; font-size: 13px; } .pa .pa-top .ctc-brand { font-size: 14px; } }
+
+/* —— Hero —— */
+.pa .pa-hero { padding-block: 64px 48px; }
+.pa .pa-hero .pa-wrap { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 56px; align-items: center; }
+.pa .pa-hero h1 {
+  font: 800 clamp(42px, 6.4vw, 76px)/0.98 var(--ctc-display);
+  letter-spacing: -0.055em; margin: 18px 0 22px; text-wrap: balance;
+}
+.pa .pa-hero h1 span { color: var(--ctc-muted); display: block; }
+.pa .pa-lede { font-size: clamp(17px, 1.6vw, 20px); line-height: 1.55; color: var(--ctc-lede); max-width: 34em; margin: 0 0 30px; }
+.pa .pa-cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }
+.pa .pa-checks { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 26px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--ctc-muted); }
+.pa .pa-checks li::before { content: "✓ "; color: var(--ctc-ink); font-weight: 700; }
+
+.pa .pa-deal {
+  display: block;
+  background: var(--ctc-ink); color: var(--ctc-on-ink);
+  border-radius: var(--ctc-radius-xl); overflow: hidden;
+  box-shadow: var(--ctc-shadow-card);
+  transform: rotate(1.2deg);
+  cursor: pointer; border: 0; padding: 0; text-align: left; width: 100%; text-decoration: none;
+  transition: transform 300ms;
+}
+.pa .pa-deal:hover { transform: rotate(0deg) translateY(-2px); }
+.pa .pa-deal__head { display: flex; justify-content: space-between; gap: 12px; padding: 14px 18px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+.pa .pa-live { color: var(--ctc-lime); font-weight: 700; display: inline-flex; align-items: center; gap: 8px; }
+.pa .pa-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--ctc-lime); flex: none;
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--ctc-lime) 60%, transparent);
+  animation: pa-pulse 2.4s infinite;
+}
+@keyframes pa-pulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ctc-lime) 55%, transparent); }
+  70% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--ctc-lime) 0%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ctc-lime) 0%, transparent); }
+}
+.pa .pa-where { color: var(--ctc-on-ink-soft); }
+.pa .pa-deal__img { aspect-ratio: 4 / 3; width: 100%; height: auto; object-fit: cover; background: var(--ctc-charcoal); }
+.pa .pa-deal__body { padding: 18px 20px 20px; display: grid; gap: 14px; }
+.pa .pa-deal__title { font: 800 23px/1.15 var(--ctc-display); letter-spacing: -0.02em; margin: 0; }
+.pa .pa-deal__meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.pa .pa-pill-ink { font-size: 12px; padding: 4px 9px; border-radius: var(--ctc-radius-sm); background: var(--ctc-charcoal); color: var(--ctc-on-ink-soft); }
+.pa .pa-deal__price { display: flex; justify-content: space-between; align-items: end; gap: 12px; border-top: 1px solid var(--ctc-on-ink-rule); padding-top: 14px; }
+.pa .pa-deal__price small { display: block; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ctc-on-ink-mute); margin-bottom: 4px; }
+.pa .pa-deal__price strong { font: 800 32px/1 var(--ctc-display); letter-spacing: -0.03em; }
+.pa .pa-deal__price .pa-gain { text-align: right; }
+.pa .pa-deal__price .pa-gain strong { font-size: 20px; color: var(--ctc-lime); }
+
+@media (max-width: 900px) {
+  .pa .pa-hero { padding-block: 40px 32px; }
+  .pa .pa-hero .pa-wrap { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .pa .pa-deal { transform: none; max-width: 460px; }
+}
+
+/* —— Stats —— */
+.pa .pa-stats { border-top: 1px solid var(--ctc-line); border-bottom: 1px solid var(--ctc-line); }
+.pa .pa-stats .pa-wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.pa .pa-stat { padding: 26px 20px 24px 0; }
+.pa .pa-stat + .pa-stat { padding-left: 24px; border-left: 1px solid var(--ctc-line); }
+.pa .pa-stat b { display: block; font: 800 clamp(28px, 3.4vw, 40px)/1 var(--ctc-display); letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.pa .pa-stat span { display: block; margin-top: 8px; font-size: 13px; color: var(--ctc-muted); max-width: 18em; }
+@media (max-width: 760px) {
+  .pa .pa-stats .pa-wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pa .pa-stat:nth-child(3) { padding-left: 0; border-left: 0; }
+  .pa .pa-stat:nth-child(n + 3) { border-top: 1px solid var(--ctc-line); }
+}
+
+/* —— Ultime chiusure strip —— */
+/* The list is rendered twice; each copy carries its own trailing gap so translateX(-50%) lands exactly on copy 2. */
+.pa .pa-ticker { background: var(--ctc-ink); color: var(--ctc-on-ink); padding-block: 22px; overflow: hidden; }
+.pa .pa-ticker__label { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.pa .pa-ticker__label .pa-eyebrow { color: var(--ctc-on-ink-soft); }
+.pa .pa-ticker__track { display: flex; width: max-content; animation: pa-slide 90s linear infinite; }
+.pa .pa-ticker:hover .pa-ticker__track { animation-play-state: paused; }
+.pa .pa-ticker__copy { display: flex; gap: 14px; padding-right: 14px; flex: none; }
+@keyframes pa-slide { to { transform: translateX(-50%); } }
+.pa .pa-tick {
+  display: flex; align-items: center; gap: 12px; flex: none;
+  background: var(--ctc-charcoal); border-radius: var(--ctc-radius-md); padding: 6px 16px 6px 6px;
+  border: 0; color: inherit; text-align: left; cursor: pointer; text-decoration: none;
+}
+.pa .pa-tick img { width: 76px; height: 56px; object-fit: cover; border-radius: var(--ctc-radius-sm); }
+.pa .pa-tick b { display: block; font: 700 14px var(--ctc-display); white-space: nowrap; }
+.pa .pa-tick span { display: block; font-size: 12px; color: var(--ctc-on-ink-mute); white-space: nowrap; }
+.pa .pa-tick span em { font-style: normal; color: var(--ctc-lime); font-weight: 700; }
+
+/* —— Statement band —— */
+.pa .pa-band { background: var(--ctc-lime); color: var(--ctc-ink); padding-block: 56px; }
+.pa .pa-band .pa-eyebrow { color: var(--ctc-ink); font-size: 12px; letter-spacing: 0.04em; text-transform: none; font-weight: 700; }
+.pa .pa-band h2 { font: 800 clamp(28px, 4vw, 46px)/1.05 var(--ctc-display); letter-spacing: -0.045em; margin: 12px 0 0; max-width: 22em; text-wrap: balance; }
+
+/* —— How it works —— */
+.pa .pa-how { padding-block: 72px; background: var(--ctc-paper); border-top: 1px solid var(--ctc-line); }
+.pa .pa-how h2 { font: 800 clamp(30px, 4vw, 46px)/1.05 var(--ctc-display); letter-spacing: -0.045em; margin: 12px 0 36px; max-width: 18em; text-wrap: balance; }
+.pa .pa-how h2 span { color: var(--ctc-muted); }
+.pa .pa-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; list-style: none; margin: 0; padding: 0; counter-reset: s; }
+.pa .pa-steps li { border-top: 2px solid var(--ctc-ink); padding-top: 16px; counter-increment: s; }
+.pa .pa-steps li::before { content: "0" counter(s); font: 800 13px var(--ctc-display); color: var(--ctc-muted); }
+.pa .pa-steps h3 { font: 800 18px/1.25 var(--ctc-display); letter-spacing: -0.02em; margin: 10px 0 8px; }
+.pa .pa-steps p { margin: 0; color: var(--ctc-lede); font-size: 14px; }
+@media (max-width: 900px) { .pa .pa-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .pa .pa-steps { grid-template-columns: minmax(0, 1fr); } }
+
+/* —— Closing CTA —— */
+.pa .pa-close { background: var(--ctc-ink); color: var(--ctc-on-ink); padding-block: 80px; }
+.pa .pa-close .pa-wrap { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: end; }
+.pa .pa-close h2 { font: 800 clamp(34px, 5vw, 60px)/1 var(--ctc-display); letter-spacing: -0.05em; margin: 22px 0 18px; text-wrap: balance; }
+.pa .pa-close h2 span { color: var(--ctc-on-ink-mute); }
+.pa .pa-close p { color: var(--ctc-on-ink-soft); font-size: 17px; margin: 0; max-width: 32em; }
+.pa .pa-contact { display: grid; gap: 14px; }
+.pa .pa-contact .pa-btn { width: 100%; }
+.pa .pa-mail {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  border: 1px solid var(--ctc-on-ink-edge); border-radius: var(--ctc-radius-sm); padding: 8px 8px 8px 16px;
+}
+.pa .pa-mail small { display: block; font-size: 11px; color: var(--ctc-on-ink-mute); }
+.pa .pa-mail span { font: 700 15px var(--ctc-display); user-select: all; -webkit-user-select: all; word-break: break-all; }
+.pa .pa-mail button { min-height: 40px; padding: 0 14px; background: var(--ctc-charcoal); color: var(--ctc-on-ink); border: 0; border-radius: var(--ctc-radius-sm); cursor: pointer; font-size: 13px; flex: none; }
+.pa .pa-mail button:hover { background: var(--ctc-ink-2); }
+@media (max-width: 860px) { .pa .pa-close .pa-wrap { grid-template-columns: minmax(0, 1fr); } }
+
+/* —— Footer —— */
+.pa .pa-footer { background: var(--ctc-ink); color: var(--ctc-on-ink-mute); border-top: 1px solid var(--ctc-on-ink-rule); padding-block: 28px; font-size: 12px; }
+.pa .pa-footer .pa-wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 24px; align-items: center; }
+
+/* —— Reduced motion (parco.css already kills animation/transition) —— */
+@media (prefers-reduced-motion: reduce) {
+  .pa .pa-ticker { overflow-x: auto; }
+  .pa .pa-ticker__track { width: max-content; animation: none; }
+}

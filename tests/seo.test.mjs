@@ -4,7 +4,7 @@ import worker from '../dist/server/index.js';
 const origin = 'https://cartradeclub.com';
 const render = path => worker.fetch(new Request(origin + path), {ASSETS: {fetch: async () => new Response('Not found', {status: 404})}}, {waitUntil() {}, passThroughOnException() {}});
 test('public pages render unique canonical URLs and meaningful HTML', async () => {
-  for (const path of ["/", "/privacy", "/terms", "/approvvigionamento-auto-usate-concessionari", "/acquistare-auto-da-privati"]) {
+  for (const path of ["/", "/privacy", "/terms", "/approvvigionamento-auto-usate-concessionari", "/acquistare-auto-da-privati", "/parco-auto"]) {
     const response = await render(path);
     assert.equal(response.status, 200);
     const html = await response.text();
@@ -20,7 +20,7 @@ test('sitemap lists canonical successful pages without invented dates', async ()
   const xml = await (await render('/sitemap.xml')).text();
   assert.doesNotMatch(xml, /lastmod/);
   const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]);
-  assert.deepEqual(urls, ["/", "/privacy", "/terms", "/approvvigionamento-auto-usate-concessionari", "/acquistare-auto-da-privati"].map(path => origin + path));
+  assert.deepEqual(urls, ["/", "/privacy", "/terms", "/approvvigionamento-auto-usate-concessionari", "/acquistare-auto-da-privati", "/parco-auto"].map(path => origin + path));
   for (const url of urls) assert.equal((await render(new URL(url).pathname)).status, 200);
   assert.match(await (await render('/robots.txt')).text(), /Sitemap: https:\/\/cartradeclub.com\/sitemap.xml/);
 });
