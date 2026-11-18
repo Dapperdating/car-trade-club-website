@@ -4,8 +4,8 @@
 import { useEffect, useMemo, useState } from "react";
 import type { ParcoCar, SortKey, StatusFilter } from "../lib/parco";
 import {
-  DISCLAIMER_INVENTORY, PAGE_SIZE, Q, SORT_KEYS, SORT_LABEL, STATUS_FILTERS,
-  badgeText, carHref, carTitle, countByStatus, eur, filterCars, fuelsOf, gain, kmf, makesOf, sortCars,
+  DISCLAIMER_INVENTORY, PAGE_SIZE, Q, SORT_KEYS, SORT_LABEL, STATUS_FILTERS, STATUS_LABEL,
+  priceLabel, signed, carHref, carTitle, countByStatus, eur, filterCars, fuelsOf, gain, kmf, makesOf, sortCars,
 } from "../lib/parco";
 
 type State = { status: StatusFilter; make: string; fuel: string; sort: SortKey; shown: number };
@@ -67,7 +67,7 @@ export default function ParcoInventory({ cars }: { cars: ParcoCar[] }) {
     () => sortCars(filterCars(cars, { status: state.status, make: state.make, fuel: state.fuel }), state.sort),
     [cars, state.status, state.make, state.fuel, state.sort],
   );
-  const totalMarket = list.reduce((s, c) => s + c.market, 0);
+  const totalMarket = list.reduce((s, c) => s + (c.market ?? 0), 0);
   const remaining = list.length - state.shown;
 
   return (
@@ -77,7 +77,7 @@ export default function ParcoInventory({ cars }: { cars: ParcoCar[] }) {
           <div>
             <p className="pa-eyebrow">Parco auto del network</p>
             <h2>Le auto passate da noi.</h2>
-            <p>Citycar, SUV, cabrio e youngtimer da privati in tutta la Lombardia. Apri una scheda per vedere foto, prezzo concordato e margine.</p>
+            <p>Citycar, SUV, cabrio e youngtimer da privati in tutta la Lombardia. Apri una scheda per vedere foto e dettagli sul prezzo.</p>
           </div>
           <p className="pa-note">{DISCLAIMER_INVENTORY[0]}<br />{DISCLAIMER_INVENTORY[1]}</p>
         </div>
@@ -112,13 +112,15 @@ export default function ParcoInventory({ cars }: { cars: ParcoCar[] }) {
           {list.length ? (
             list.slice(0, state.shown).map((c) => {
               const title = carTitle(c);
+              const sold = c.status === "venduta";
+              const Card = sold ? "article" : "a";
               return (
-                <a key={c.code} className="pa-card" href={carHref(c.code)} data-pa-open={c.code}>
-                  <div className="pa-card__ph">
+                <Card key={c.code} className="pa-card" {...(sold ? {} : { href: carHref(c.code), "data-pa-open": c.code })}>
+                  {c.noFrontCover ? <p className="pa-no-cover-status">{STATUS_LABEL[c.status]}</p> : <div className="pa-card__ph">
                     <img src={c.gallery[0]?.thumb} alt={`${title} ${c.year}`} loading="lazy" width={560} height={420} />
-                    <span className={`pa-badge pa-badge--${c.status}`}>{badgeText(c)}</span>
-                    <span className="pa-ph-count pa-num">{c.gallery.length} foto</span>
-                  </div>
+                    {!sold && <span className={`pa-badge pa-badge--${c.status}`}>{STATUS_LABEL[c.status]}</span>}
+                    {sold ? <strong className="pa-sold-mark">Venduta</strong> : <span className="pa-ph-count pa-num">{c.gallery.length} foto</span>}
+                  </div>}
                   <div className="pa-card__body">
                     <div className="pa-card__where"><span>{c.city}</span><span className="pa-card__code">{c.code}</span></div>
                     <p className="pa-card__title">{title}</p>
@@ -129,11 +131,11 @@ export default function ParcoInventory({ cars }: { cars: ParcoCar[] }) {
                       <span className="pa-chip">{c.fuel}</span>
                     </div>
                     <div className="pa-card__price">
-                      <div><small>Prezzo concordato</small><strong>{eur(c.price)}</strong></div>
-                      <span className="pa-gain-pill">+{eur(gain(c))} margine</span>
+                      <div><small>{priceLabel(c)}</small><strong>{eur(c.price)}</strong></div>
+                      {c.market !== null && (c.priceKind === "asking" ? <span>Stima {eur(c.market)}</span> : <span className="pa-gain-pill">{signed(gain(c))}{eur(gain(c))} margine</span>)}
                     </div>
                   </div>
-                </a>
+                </Card>
               );
             })
           ) : (

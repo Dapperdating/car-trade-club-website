@@ -6,12 +6,12 @@ import { useEffect, useRef, useState } from "react";
 import type { KeyboardEvent, MouseEvent, TouchEvent } from "react";
 import { flushSync } from "react-dom";
 import type { ParcoCar, ParcoStatus } from "../lib/parco";
-import { OPEN_ATTR, Q, STATUS_LABEL, carTitle, eur, gain, gainPct, kmf } from "../lib/parco";
+import { priceLabel, signed, OPEN_ATTR, Q, STATUS_LABEL, carTitle, eur, gain, gainPct, kmf } from "../lib/parco";
 
 const STATUS_LINE: Record<ParcoStatus, (c: ParcoCar) => string> = {
   venduta: (c) => `Venduta a un concessionario del network in ${c.days} giorni.`,
   disponibile: (c) => `Disponibile ora per i concessionari della zona di ${c.city}.`,
-  trattativa: () => "In trattativa con un concessionario del network.",
+  trattativa: () => "Trattativa in corso.",
 };
 
 /** The current URL with `auto` set to `code` (or removed when null); every other param and the hash kept. */
@@ -193,11 +193,11 @@ export default function CarDialog({ cars, initialCode }: { cars: ParcoCar[]; ini
               <div><dt>Foto</dt><dd>{n} foto</dd></div>
             </dl>
             <div className="pa-dlg__panel">
-              <small>Prezzo concordato con il privato</small>
+              <small>{priceLabel(current)}</small>
               <div className="pa-dlg__big">{eur(current.price)}</div>
-              <div className="pa-dlg__row"><span>Valore di mercato stimato</span><b>{eur(current.market)}</b></div>
-              <div className="pa-dlg__row"><span>Margine lordo stimato</span><b className="pa-dlg__lime">+{eur(gain(current))} (+{gainPct(current)}%)</b></div>
-              <p className="pa-dlg__foot">Margine lordo: valore di mercato meno prezzo d&apos;acquisto. Esclusi trasporto, passaggio e ricondizionamento.</p>
+              {current.market !== null && <div className="pa-dlg__row"><span>Valore di mercato stimato</span><b>{eur(current.market)}</b></div>}
+              {current.market !== null && current.priceKind !== "asking" && <><div className="pa-dlg__row"><span>Margine lordo stimato</span><b className="pa-dlg__lime">{signed(gain(current))}{eur(gain(current))} ({signed(gainPct(current))}{gainPct(current)}%)</b></div>
+              <p className="pa-dlg__foot">Margine lordo: valore di mercato meno prezzo d&apos;acquisto. Esclusi trasporto, passaggio e ricondizionamento.</p></>}
             </div>
             <p className="pa-dlg__status">{STATUS_LINE[current.status](current)}</p>
             <a className="pa-btn pa-btn--lime" href="#contatti" onClick={onCta}>Voglio auto come questa →</a>

@@ -94,7 +94,7 @@
 .pa .pa-tick {
   display: flex; align-items: center; gap: 12px; flex: none;
   background: var(--ctc-charcoal); border-radius: var(--ctc-radius-md); padding: 6px 16px 6px 6px;
-  border: 0; color: inherit; text-align: left; cursor: pointer; text-decoration: none;
+  border: 0; color: inherit; text-align: left; text-decoration: none;
 }
 .pa .pa-tick img { width: 76px; height: 56px; object-fit: cover; border-radius: var(--ctc-radius-sm); }
 .pa .pa-tick b { display: block; font: 700 14px var(--ctc-display); white-space: nowrap; }

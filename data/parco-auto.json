@@ -2,6 +2,40 @@
   "_note": "Illustrative set from the Parco Auto artifact (claude.ai/artifact/WbZF3wz1DotNbkFRfDhzEy, version 1794927818-41ed). Prices, market values, statuses, cities and days are illustrative, not CRM data. `ref` links each car to data/cars.json.",
   "cars": [
     {
+      "code": "CTC-0PRT",
+      "ref": null,
+      "make": "Jeep",
+      "model": "Renegade",
+      "version": "1.4 Turbo",
+      "year": 2018,
+      "km": 119000,
+      "fuel": "Benzina",
+      "price": 8500,
+      "market": 10500,
+      "status": "disponibile",
+      "city": "Rovato",
+      "days": null,
+      "added": 0,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-0prt-front.webp",
+          "thumb": "/parco-auto/img/ctc-0prt-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0prt-1.webp",
+          "thumb": "/parco-auto/img/ctc-0prt-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0prt-2.webp",
+          "thumb": "/parco-auto/img/ctc-0prt-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0prt-3.webp",
+          "thumb": "/parco-auto/img/ctc-0prt-3.webp"
+        }
+      ]
+    },
+    {
       "code": "CTC-ZEY6",
       "ref": "CAR-002",
       "make": "Citroën",
@@ -13,17 +47,17 @@
       "price": 15400,
       "market": 19300,
       "status": "venduta",
-      "city": "Brescia",
+      "city": "Pavia",
       "days": 3,
       "added": 18,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-zey6-1.webp",
-          "thumb": "/parco-auto/img/ctc-zey6-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-zey6-2.webp",
           "thumb": "/parco-auto/img/ctc-zey6-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-zey6-1.webp",
+          "thumb": "/parco-auto/img/ctc-zey6-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-zey6-3.webp",
@@ -43,10 +77,14 @@
       "price": 5900,
       "market": 7650,
       "status": "venduta",
-      "city": "Brescia",
+      "city": "Rho",
       "days": 14,
       "added": 33,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-p3fd-4.webp",
+          "thumb": "/parco-auto/img/ctc-p3fd-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-p3fd-1.webp",
           "thumb": "/parco-auto/img/ctc-p3fd-t.webp"
@@ -58,10 +96,6 @@
         {
           "src": "/parco-auto/img/ctc-p3fd-3.webp",
           "thumb": "/parco-auto/img/ctc-p3fd-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-p3fd-4.webp",
-          "thumb": "/parco-auto/img/ctc-p3fd-4.webp"
         }
       ]
     },
@@ -76,8 +110,8 @@
       "fuel": "Diesel",
       "price": 46500,
       "market": 54900,
-      "status": "disponibile",
-      "city": "Como",
+      "status": "venduta",
+      "city": "Lodi",
       "days": null,
       "added": 15,
       "gallery": [
@@ -111,17 +145,17 @@
       "price": 31500,
       "market": 38900,
       "status": "venduta",
-      "city": "Pavia",
+      "city": "Sondrio",
       "days": 9,
       "added": 34,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-f6cz-1.webp",
-          "thumb": "/parco-auto/img/ctc-f6cz-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-f6cz-2.webp",
           "thumb": "/parco-auto/img/ctc-f6cz-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-f6cz-1.webp",
+          "thumb": "/parco-auto/img/ctc-f6cz-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-f6cz-3.webp",
@@ -145,7 +179,7 @@
       "price": 17200,
       "market": 21500,
       "status": "venduta",
-      "city": "Pavia",
+      "city": "Sondrio",
       "days": 11,
       "added": 22,
       "gallery": [
@@ -178,18 +212,18 @@
       "fuel": "Metano",
       "price": 7300,
       "market": 9600,
-      "status": "trattativa",
-      "city": "Lodi",
+      "status": "venduta",
+      "city": "Desio",
       "days": null,
       "added": 10,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-zdyp-1.webp",
-          "thumb": "/parco-auto/img/ctc-zdyp-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-zdyp-2.webp",
           "thumb": "/parco-auto/img/ctc-zdyp-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-zdyp-1.webp",
+          "thumb": "/parco-auto/img/ctc-zdyp-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-zdyp-3.webp",
@@ -213,7 +247,7 @@
       "price": 9600,
       "market": 11900,
       "status": "venduta",
-      "city": "Lecco",
+      "city": "Varese",
       "days": 6,
       "added": 19,
       "gallery": [
@@ -244,20 +278,20 @@
       "year": 2021,
       "km": 39600,
       "fuel": "Benzina",
-      "price": 17900,
+      "price": 15000,
       "market": 21600,
       "status": "venduta",
-      "city": "Busto Arsizio",
+      "city": "Cremona",
       "days": 5,
       "added": 8,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-g64p-1.webp",
-          "thumb": "/parco-auto/img/ctc-g64p-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-g64p-2.webp",
           "thumb": "/parco-auto/img/ctc-g64p-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-g64p-1.webp",
+          "thumb": "/parco-auto/img/ctc-g64p-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-g64p-3.webp",
@@ -267,7 +301,8 @@
           "src": "/parco-auto/img/ctc-g64p-4.webp",
           "thumb": "/parco-auto/img/ctc-g64p-4.webp"
         }
-      ]
+      ],
+      "salePriceConfirmed": true
     },
     {
       "code": "CTC-8G9A",
@@ -281,10 +316,14 @@
       "price": 9800,
       "market": 12400,
       "status": "venduta",
-      "city": "Brescia",
+      "city": "Lissone",
       "days": 3,
       "added": 27,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-8g9a-4.webp",
+          "thumb": "/parco-auto/img/ctc-8g9a-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-8g9a-1.webp",
           "thumb": "/parco-auto/img/ctc-8g9a-t.webp"
@@ -296,10 +335,6 @@
         {
           "src": "/parco-auto/img/ctc-8g9a-3.webp",
           "thumb": "/parco-auto/img/ctc-8g9a-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-8g9a-4.webp",
-          "thumb": "/parco-auto/img/ctc-8g9a-4.webp"
         }
       ]
     },
@@ -315,7 +350,7 @@
       "price": 24900,
       "market": 29500,
       "status": "venduta",
-      "city": "Treviglio",
+      "city": "Pavia",
       "days": 6,
       "added": 4,
       "gallery": [
@@ -323,7 +358,8 @@
           "src": "/parco-auto/img/ctc-enjz-1.webp",
           "thumb": "/parco-auto/img/ctc-enjz-t.webp"
         }
-      ]
+      ],
+      "noFrontCover": true
     },
     {
       "code": "CTC-JHVS",
@@ -336,11 +372,15 @@
       "fuel": "Diesel",
       "price": 6200,
       "market": 8500,
-      "status": "disponibile",
+      "status": "venduta",
       "city": "Legnano",
       "days": null,
       "added": 19,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-jhvs-4.webp",
+          "thumb": "/parco-auto/img/ctc-jhvs-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-jhvs-1.webp",
           "thumb": "/parco-auto/img/ctc-jhvs-t.webp"
@@ -352,10 +392,6 @@
         {
           "src": "/parco-auto/img/ctc-jhvs-3.webp",
           "thumb": "/parco-auto/img/ctc-jhvs-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-jhvs-4.webp",
-          "thumb": "/parco-auto/img/ctc-jhvs-4.webp"
         }
       ]
     },
@@ -371,7 +407,7 @@
       "price": 19400,
       "market": 23500,
       "status": "venduta",
-      "city": "Busto Arsizio",
+      "city": "Legnano",
       "days": 12,
       "added": 4,
       "gallery": [
@@ -405,10 +441,14 @@
       "price": 29800,
       "market": 36500,
       "status": "venduta",
-      "city": "Legnano",
+      "city": "Desio",
       "days": 10,
       "added": 19,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-p1ej-3.webp",
+          "thumb": "/parco-auto/img/ctc-p1ej-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-p1ej-1.webp",
           "thumb": "/parco-auto/img/ctc-p1ej-t.webp"
@@ -416,10 +456,6 @@
         {
           "src": "/parco-auto/img/ctc-p1ej-2.webp",
           "thumb": "/parco-auto/img/ctc-p1ej-2.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-p1ej-3.webp",
-          "thumb": "/parco-auto/img/ctc-p1ej-3.webp"
         },
         {
           "src": "/parco-auto/img/ctc-p1ej-4.webp",
@@ -439,7 +475,7 @@
       "price": 26400,
       "market": 31800,
       "status": "venduta",
-      "city": "Varese",
+      "city": "Lissone",
       "days": 9,
       "added": 25,
       "gallery": [
@@ -473,17 +509,17 @@
       "price": 24400,
       "market": 28900,
       "status": "venduta",
-      "city": "Milano",
+      "city": "Como",
       "days": 6,
       "added": 17,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-e4fk-1.webp",
-          "thumb": "/parco-auto/img/ctc-e4fk-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-e4fk-2.webp",
           "thumb": "/parco-auto/img/ctc-e4fk-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-e4fk-1.webp",
+          "thumb": "/parco-auto/img/ctc-e4fk-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-e4fk-3.webp",
@@ -507,7 +543,7 @@
       "price": 27200,
       "market": 32900,
       "status": "venduta",
-      "city": "Legnano",
+      "city": "Bergamo",
       "days": 10,
       "added": 37,
       "gallery": [
@@ -541,10 +577,14 @@
       "price": 11900,
       "market": 14800,
       "status": "venduta",
-      "city": "Crema",
+      "city": "Lodi",
       "days": 10,
       "added": 17,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-a64a-front.webp",
+          "thumb": "/parco-auto/img/ctc-a64a-front-t.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-a64a-1.webp",
           "thumb": "/parco-auto/img/ctc-a64a-t.webp"
@@ -574,8 +614,8 @@
       "fuel": "Diesel",
       "price": 24800,
       "market": 29700,
-      "status": "trattativa",
-      "city": "Bergamo",
+      "status": "venduta",
+      "city": "Lecco",
       "days": null,
       "added": 11,
       "gallery": [
@@ -608,11 +648,15 @@
       "fuel": "Benzina",
       "price": 9800,
       "market": 12400,
-      "status": "disponibile",
-      "city": "Legnano",
+      "status": "venduta",
+      "city": "Varese",
       "days": null,
       "added": 29,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-df8z-4.webp",
+          "thumb": "/parco-auto/img/ctc-df8z-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-df8z-1.webp",
           "thumb": "/parco-auto/img/ctc-df8z-t.webp"
@@ -624,10 +668,6 @@
         {
           "src": "/parco-auto/img/ctc-df8z-3.webp",
           "thumb": "/parco-auto/img/ctc-df8z-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-df8z-4.webp",
-          "thumb": "/parco-auto/img/ctc-df8z-4.webp"
         }
       ]
     },
@@ -642,8 +682,8 @@
       "fuel": "Benzina",
       "price": 11400,
       "market": 14200,
-      "status": "trattativa",
-      "city": "Como",
+      "status": "venduta",
+      "city": "Lecco",
       "days": null,
       "added": 7,
       "gallery": [
@@ -702,8 +742,8 @@
       "fuel": "Diesel",
       "price": 8900,
       "market": 11900,
-      "status": "trattativa",
-      "city": "Pavia",
+      "status": "venduta",
+      "city": "Lodi",
       "days": null,
       "added": 31,
       "gallery": [
@@ -737,10 +777,14 @@
       "price": 12900,
       "market": 15600,
       "status": "venduta",
-      "city": "Desenzano del Garda",
+      "city": "Rho",
       "days": 11,
       "added": 20,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-k9e4-4.webp",
+          "thumb": "/parco-auto/img/ctc-k9e4-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-k9e4-1.webp",
           "thumb": "/parco-auto/img/ctc-k9e4-t.webp"
@@ -752,10 +796,6 @@
         {
           "src": "/parco-auto/img/ctc-k9e4-3.webp",
           "thumb": "/parco-auto/img/ctc-k9e4-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-k9e4-4.webp",
-          "thumb": "/parco-auto/img/ctc-k9e4-4.webp"
         }
       ]
     },
@@ -770,8 +810,8 @@
       "fuel": "Benzina",
       "price": 7400,
       "market": 9600,
-      "status": "trattativa",
-      "city": "Brescia",
+      "status": "venduta",
+      "city": "Varese",
       "days": null,
       "added": 34,
       "gallery": [
@@ -804,8 +844,8 @@
       "fuel": "GPL",
       "price": 13900,
       "market": 18500,
-      "status": "disponibile",
-      "city": "Milano",
+      "status": "venduta",
+      "city": "Mantova",
       "days": null,
       "added": 22,
       "gallery": [
@@ -817,7 +857,8 @@
           "src": "/parco-auto/img/ctc-05h2-2.webp",
           "thumb": "/parco-auto/img/ctc-05h2-2.webp"
         }
-      ]
+      ],
+      "noFrontCover": true
     },
     {
       "code": "CTC-0B8S",
@@ -831,10 +872,14 @@
       "price": 28900,
       "market": 33900,
       "status": "venduta",
-      "city": "Gallarate",
+      "city": "Como",
       "days": 8,
       "added": 14,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-0b8s-front.webp",
+          "thumb": "/parco-auto/img/ctc-0b8s-front-t.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-0b8s-1.webp",
           "thumb": "/parco-auto/img/ctc-0b8s-t.webp"
@@ -865,10 +910,14 @@
       "price": 8400,
       "market": 10600,
       "status": "venduta",
-      "city": "Como",
+      "city": "Varese",
       "days": 13,
       "added": 34,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-0dkf-4.webp",
+          "thumb": "/parco-auto/img/ctc-0dkf-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-0dkf-1.webp",
           "thumb": "/parco-auto/img/ctc-0dkf-t.webp"
@@ -880,10 +929,6 @@
         {
           "src": "/parco-auto/img/ctc-0dkf-3.webp",
           "thumb": "/parco-auto/img/ctc-0dkf-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-0dkf-4.webp",
-          "thumb": "/parco-auto/img/ctc-0dkf-4.webp"
         }
       ]
     },
@@ -928,8 +973,8 @@
       "fuel": "Diesel",
       "price": 9800,
       "market": 12900,
-      "status": "disponibile",
-      "city": "Bergamo",
+      "status": "venduta",
+      "city": "Crema",
       "days": null,
       "added": 6,
       "gallery": [
@@ -941,7 +986,8 @@
           "src": "/parco-auto/img/ctc-2ewx-2.webp",
           "thumb": "/parco-auto/img/ctc-2ewx-2.webp"
         }
-      ]
+      ],
+      "noFrontCover": true
     },
     {
       "code": "CTC-2HJR",
@@ -954,18 +1000,18 @@
       "fuel": "Benzina",
       "price": 9500,
       "market": 13400,
-      "status": "disponibile",
+      "status": "venduta",
       "city": "Legnano",
       "days": null,
       "added": 30,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-2hjr-1.webp",
-          "thumb": "/parco-auto/img/ctc-2hjr-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-2hjr-2.webp",
           "thumb": "/parco-auto/img/ctc-2hjr-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-2hjr-1.webp",
+          "thumb": "/parco-auto/img/ctc-2hjr-t.webp"
         }
       ]
     },
@@ -981,7 +1027,7 @@
       "price": 9200,
       "market": 11500,
       "status": "venduta",
-      "city": "Varese",
+      "city": "Milano",
       "days": 3,
       "added": 38,
       "gallery": [
@@ -1015,7 +1061,7 @@
       "price": 6300,
       "market": 8200,
       "status": "venduta",
-      "city": "Milano",
+      "city": "Lissone",
       "days": 6,
       "added": 37,
       "gallery": [
@@ -1049,10 +1095,14 @@
       "price": 17400,
       "market": 21900,
       "status": "venduta",
-      "city": "Desenzano del Garda",
+      "city": "Pavia",
       "days": 7,
       "added": 16,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-46cd-4.webp",
+          "thumb": "/parco-auto/img/ctc-46cd-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-46cd-1.webp",
           "thumb": "/parco-auto/img/ctc-46cd-t.webp"
@@ -1064,10 +1114,6 @@
         {
           "src": "/parco-auto/img/ctc-46cd-3.webp",
           "thumb": "/parco-auto/img/ctc-46cd-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-46cd-4.webp",
-          "thumb": "/parco-auto/img/ctc-46cd-4.webp"
         }
       ]
     },
@@ -1082,11 +1128,15 @@
       "fuel": "Benzina",
       "price": 3200,
       "market": 4300,
-      "status": "disponibile",
-      "city": "Busto Arsizio",
+      "status": "venduta",
+      "city": "Brescia",
       "days": null,
       "added": 7,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-4b12-3.webp",
+          "thumb": "/parco-auto/img/ctc-4b12-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-4b12-1.webp",
           "thumb": "/parco-auto/img/ctc-4b12-t.webp"
@@ -1094,10 +1144,6 @@
         {
           "src": "/parco-auto/img/ctc-4b12-2.webp",
           "thumb": "/parco-auto/img/ctc-4b12-2.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-4b12-3.webp",
-          "thumb": "/parco-auto/img/ctc-4b12-3.webp"
         },
         {
           "src": "/parco-auto/img/ctc-4b12-4.webp",
@@ -1116,8 +1162,8 @@
       "fuel": "Benzina",
       "price": 6100,
       "market": 7900,
-      "status": "disponibile",
-      "city": "Gallarate",
+      "status": "venduta",
+      "city": "Seregno",
       "days": null,
       "added": 4,
       "gallery": [
@@ -1151,7 +1197,7 @@
       "price": 8400,
       "market": 10600,
       "status": "venduta",
-      "city": "Brescia",
+      "city": "Cremona",
       "days": 9,
       "added": 16,
       "gallery": [
@@ -1182,13 +1228,17 @@
       "year": 2015,
       "km": 224000,
       "fuel": "Diesel",
-      "price": 17900,
+      "price": 7000,
       "market": 22900,
       "status": "venduta",
-      "city": "Varese",
+      "city": "Milano",
       "days": 10,
       "added": 3,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-5vsx-3.webp",
+          "thumb": "/parco-auto/img/ctc-5vsx-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-5vsx-1.webp",
           "thumb": "/parco-auto/img/ctc-5vsx-t.webp"
@@ -1198,14 +1248,11 @@
           "thumb": "/parco-auto/img/ctc-5vsx-2.webp"
         },
         {
-          "src": "/parco-auto/img/ctc-5vsx-3.webp",
-          "thumb": "/parco-auto/img/ctc-5vsx-3.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-5vsx-4.webp",
           "thumb": "/parco-auto/img/ctc-5vsx-4.webp"
         }
-      ]
+      ],
+      "salePriceConfirmed": true
     },
     {
       "code": "CTC-6BD0",
@@ -1219,7 +1266,7 @@
       "price": 22900,
       "market": 27400,
       "status": "venduta",
-      "city": "Milano",
+      "city": "Lissone",
       "days": 8,
       "added": 21,
       "gallery": [
@@ -1253,7 +1300,7 @@
       "price": 8100,
       "market": 10300,
       "status": "venduta",
-      "city": "Lecco",
+      "city": "Vigevano",
       "days": 10,
       "added": 38,
       "gallery": [
@@ -1286,8 +1333,8 @@
       "fuel": "Diesel",
       "price": 42900,
       "market": 50500,
-      "status": "disponibile",
-      "city": "Desenzano del Garda",
+      "status": "venduta",
+      "city": "Lodi",
       "days": null,
       "added": 18,
       "gallery": [
@@ -1321,7 +1368,7 @@
       "price": 18600,
       "market": 22900,
       "status": "venduta",
-      "city": "Gallarate",
+      "city": "Varese",
       "days": 2,
       "added": 7,
       "gallery": [
@@ -1354,18 +1401,18 @@
       "fuel": "Diesel",
       "price": 10900,
       "market": 13600,
-      "status": "trattativa",
-      "city": "Legnano",
+      "status": "venduta",
+      "city": "Bergamo",
       "days": null,
       "added": 26,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-7gjx-1.webp",
-          "thumb": "/parco-auto/img/ctc-7gjx-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-7gjx-2.webp",
           "thumb": "/parco-auto/img/ctc-7gjx-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7gjx-1.webp",
+          "thumb": "/parco-auto/img/ctc-7gjx-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-7gjx-3.webp",
@@ -1386,13 +1433,17 @@
       "year": 2018,
       "km": 145500,
       "fuel": "Diesel",
-      "price": 31500,
+      "price": 22500,
       "market": 37900,
       "status": "venduta",
-      "city": "Bergamo",
+      "city": "Pavia",
       "days": 10,
       "added": 9,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-7gxe-3.webp",
+          "thumb": "/parco-auto/img/ctc-7gxe-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-7gxe-1.webp",
           "thumb": "/parco-auto/img/ctc-7gxe-t.webp"
@@ -1402,14 +1453,11 @@
           "thumb": "/parco-auto/img/ctc-7gxe-2.webp"
         },
         {
-          "src": "/parco-auto/img/ctc-7gxe-3.webp",
-          "thumb": "/parco-auto/img/ctc-7gxe-3.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-7gxe-4.webp",
           "thumb": "/parco-auto/img/ctc-7gxe-4.webp"
         }
-      ]
+      ],
+      "salePriceConfirmed": true
     },
     {
       "code": "CTC-7XEN",
@@ -1422,8 +1470,8 @@
       "fuel": "Benzina",
       "price": 9300,
       "market": 11600,
-      "status": "disponibile",
-      "city": "Lodi",
+      "status": "venduta",
+      "city": "Rho",
       "days": null,
       "added": 33,
       "gallery": [
@@ -1452,11 +1500,15 @@
       "fuel": "GPL",
       "price": 7600,
       "market": 9700,
-      "status": "disponibile",
-      "city": "Cantù",
+      "status": "venduta",
+      "city": "Mantova",
       "days": null,
       "added": 10,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-8rvj-4.webp",
+          "thumb": "/parco-auto/img/ctc-8rvj-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-8rvj-1.webp",
           "thumb": "/parco-auto/img/ctc-8rvj-t.webp"
@@ -1468,10 +1520,6 @@
         {
           "src": "/parco-auto/img/ctc-8rvj-3.webp",
           "thumb": "/parco-auto/img/ctc-8rvj-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-8rvj-4.webp",
-          "thumb": "/parco-auto/img/ctc-8rvj-4.webp"
         }
       ]
     },
@@ -1487,7 +1535,7 @@
       "price": 31400,
       "market": 36900,
       "status": "venduta",
-      "city": "Legnano",
+      "city": "Gallarate",
       "days": 7,
       "added": 2,
       "gallery": [
@@ -1509,10 +1557,14 @@
       "price": 14200,
       "market": 17900,
       "status": "venduta",
-      "city": "Milano",
+      "city": "Lodi",
       "days": 14,
       "added": 14,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-90k7-4.webp",
+          "thumb": "/parco-auto/img/ctc-90k7-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-90k7-1.webp",
           "thumb": "/parco-auto/img/ctc-90k7-t.webp"
@@ -1524,10 +1576,6 @@
         {
           "src": "/parco-auto/img/ctc-90k7-3.webp",
           "thumb": "/parco-auto/img/ctc-90k7-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-90k7-4.webp",
-          "thumb": "/parco-auto/img/ctc-90k7-4.webp"
         }
       ]
     },
@@ -1543,7 +1591,7 @@
       "price": 29400,
       "market": 34500,
       "status": "venduta",
-      "city": "Brescia",
+      "city": "Cremona",
       "days": 14,
       "added": 16,
       "gallery": [
@@ -1577,7 +1625,7 @@
       "price": 11900,
       "market": 14500,
       "status": "venduta",
-      "city": "Lodi",
+      "city": "Bergamo",
       "days": 7,
       "added": 28,
       "gallery": [
@@ -1611,7 +1659,7 @@
       "price": 18500,
       "market": 22400,
       "status": "venduta",
-      "city": "Brescia",
+      "city": "Rho",
       "days": 9,
       "added": 10,
       "gallery": [
@@ -1645,10 +1693,14 @@
       "price": 15400,
       "market": 17900,
       "status": "venduta",
-      "city": "Cremona",
+      "city": "Milano",
       "days": 12,
       "added": 34,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-bkdq-3.webp",
+          "thumb": "/parco-auto/img/ctc-bkdq-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-bkdq-1.webp",
           "thumb": "/parco-auto/img/ctc-bkdq-t.webp"
@@ -1656,10 +1708,6 @@
         {
           "src": "/parco-auto/img/ctc-bkdq-2.webp",
           "thumb": "/parco-auto/img/ctc-bkdq-2.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-bkdq-3.webp",
-          "thumb": "/parco-auto/img/ctc-bkdq-3.webp"
         },
         {
           "src": "/parco-auto/img/ctc-bkdq-4.webp",
@@ -1679,7 +1727,7 @@
       "price": 17900,
       "market": 21900,
       "status": "venduta",
-      "city": "Crema",
+      "city": "Gallarate",
       "days": 3,
       "added": 25,
       "gallery": [
@@ -1713,10 +1761,14 @@
       "price": 27900,
       "market": 32900,
       "status": "venduta",
-      "city": "Varese",
+      "city": "Desio",
       "days": 10,
       "added": 4,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-cbn6-3.webp",
+          "thumb": "/parco-auto/img/ctc-cbn6-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-cbn6-1.webp",
           "thumb": "/parco-auto/img/ctc-cbn6-t.webp"
@@ -1724,10 +1776,6 @@
         {
           "src": "/parco-auto/img/ctc-cbn6-2.webp",
           "thumb": "/parco-auto/img/ctc-cbn6-2.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-cbn6-3.webp",
-          "thumb": "/parco-auto/img/ctc-cbn6-3.webp"
         },
         {
           "src": "/parco-auto/img/ctc-cbn6-4.webp",
@@ -1746,11 +1794,19 @@
       "fuel": "Diesel",
       "price": 12400,
       "market": 15900,
-      "status": "disponibile",
-      "city": "Lodi",
+      "status": "venduta",
+      "city": "Cremona",
       "days": null,
       "added": 17,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-cp3y-front.webp",
+          "thumb": "/parco-auto/img/ctc-cp3y-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cp3y-4.webp",
+          "thumb": "/parco-auto/img/ctc-cp3y-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-cp3y-1.webp",
           "thumb": "/parco-auto/img/ctc-cp3y-t.webp"
@@ -1762,10 +1818,6 @@
         {
           "src": "/parco-auto/img/ctc-cp3y-3.webp",
           "thumb": "/parco-auto/img/ctc-cp3y-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-cp3y-4.webp",
-          "thumb": "/parco-auto/img/ctc-cp3y-4.webp"
         }
       ]
     },
@@ -1781,7 +1833,7 @@
       "price": 5400,
       "market": 7200,
       "status": "venduta",
-      "city": "Pavia",
+      "city": "Rho",
       "days": 7,
       "added": 23,
       "gallery": [
@@ -1815,7 +1867,7 @@
       "price": 26400,
       "market": 31200,
       "status": "venduta",
-      "city": "Bergamo",
+      "city": "Como",
       "days": 10,
       "added": 8,
       "gallery": [
@@ -1848,8 +1900,8 @@
       "fuel": "Benzina",
       "price": 18900,
       "market": 24500,
-      "status": "disponibile",
-      "city": "Milano",
+      "status": "trattativa",
+      "city": "Lissone",
       "days": null,
       "added": 10,
       "gallery": [
@@ -1883,7 +1935,7 @@
       "price": 8400,
       "market": 10900,
       "status": "venduta",
-      "city": "Varese",
+      "city": "Cremona",
       "days": 14,
       "added": 14,
       "gallery": [
@@ -1917,7 +1969,7 @@
       "price": 7400,
       "market": 9200,
       "status": "venduta",
-      "city": "Monza",
+      "city": "Desio",
       "days": 8,
       "added": 25,
       "gallery": [
@@ -1951,7 +2003,7 @@
       "price": 39500,
       "market": 46900,
       "status": "venduta",
-      "city": "Cremona",
+      "city": "Desio",
       "days": 12,
       "added": 29,
       "gallery": [
@@ -1990,6 +2042,10 @@
       "added": 28,
       "gallery": [
         {
+          "src": "/parco-auto/img/ctc-ewpr-4.webp",
+          "thumb": "/parco-auto/img/ctc-ewpr-4.webp"
+        },
+        {
           "src": "/parco-auto/img/ctc-ewpr-1.webp",
           "thumb": "/parco-auto/img/ctc-ewpr-t.webp"
         },
@@ -2000,10 +2056,6 @@
         {
           "src": "/parco-auto/img/ctc-ewpr-3.webp",
           "thumb": "/parco-auto/img/ctc-ewpr-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-ewpr-4.webp",
-          "thumb": "/parco-auto/img/ctc-ewpr-4.webp"
         }
       ]
     },
@@ -2019,10 +2071,14 @@
       "price": 13200,
       "market": 15500,
       "status": "venduta",
-      "city": "Milano",
+      "city": "Legnano",
       "days": 7,
       "added": 24,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-f441-3.webp",
+          "thumb": "/parco-auto/img/ctc-f441-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-f441-1.webp",
           "thumb": "/parco-auto/img/ctc-f441-t.webp"
@@ -2030,10 +2086,6 @@
         {
           "src": "/parco-auto/img/ctc-f441-2.webp",
           "thumb": "/parco-auto/img/ctc-f441-2.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-f441-3.webp",
-          "thumb": "/parco-auto/img/ctc-f441-3.webp"
         },
         {
           "src": "/parco-auto/img/ctc-f441-4.webp",
@@ -2050,30 +2102,27 @@
       "year": 2016,
       "km": 164400,
       "fuel": "Diesel",
-      "price": 11400,
-      "market": 14300,
-      "status": "venduta",
-      "city": "Busto Arsizio",
-      "days": 5,
-      "added": 19,
+      "price": 11000,
+      "market": 10700,
+      "status": "trattativa",
+      "city": "Mantova",
+      "days": null,
+      "added": -76,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-g6g3-1.webp",
-          "thumb": "/parco-auto/img/ctc-g6g3-t.webp"
+          "src": "/parco-auto/img/ctc-g6g3-front.webp",
+          "thumb": "/parco-auto/img/ctc-g6g3-front-t.webp"
         },
         {
-          "src": "/parco-auto/img/ctc-g6g3-2.webp",
-          "thumb": "/parco-auto/img/ctc-g6g3-2.webp"
+          "src": "/parco-auto/img/ctc-g6g3-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-g6g3-crm-1-t.webp"
         },
         {
-          "src": "/parco-auto/img/ctc-g6g3-3.webp",
-          "thumb": "/parco-auto/img/ctc-g6g3-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-g6g3-4.webp",
-          "thumb": "/parco-auto/img/ctc-g6g3-4.webp"
+          "src": "/parco-auto/img/ctc-g6g3-crm-2.webp",
+          "thumb": "/parco-auto/img/ctc-g6g3-crm-2.webp"
         }
-      ]
+      ],
+      "priceKind": "asking"
     },
     {
       "code": "CTC-GCFJ",
@@ -2087,10 +2136,14 @@
       "price": 15900,
       "market": 18900,
       "status": "venduta",
-      "city": "Como",
+      "city": "Mantova",
       "days": 9,
       "added": 10,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-gcfj-front.webp",
+          "thumb": "/parco-auto/img/ctc-gcfj-front-t.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-gcfj-1.webp",
           "thumb": "/parco-auto/img/ctc-gcfj-t.webp"
@@ -2120,8 +2173,8 @@
       "fuel": "Benzina",
       "price": 4900,
       "market": 7400,
-      "status": "disponibile",
-      "city": "Brescia",
+      "status": "venduta",
+      "city": "Vigevano",
       "days": null,
       "added": 3,
       "gallery": [
@@ -2155,7 +2208,7 @@
       "price": 13300,
       "market": 16700,
       "status": "venduta",
-      "city": "Pavia",
+      "city": "Monza",
       "days": 4,
       "added": 36,
       "gallery": [
@@ -2189,10 +2242,14 @@
       "price": 24900,
       "market": 28900,
       "status": "venduta",
-      "city": "Legnano",
+      "city": "Varese",
       "days": 14,
       "added": 19,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-kwzt-3.webp",
+          "thumb": "/parco-auto/img/ctc-kwzt-3.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-kwzt-1.webp",
           "thumb": "/parco-auto/img/ctc-kwzt-t.webp"
@@ -2200,10 +2257,6 @@
         {
           "src": "/parco-auto/img/ctc-kwzt-2.webp",
           "thumb": "/parco-auto/img/ctc-kwzt-2.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-kwzt-3.webp",
-          "thumb": "/parco-auto/img/ctc-kwzt-3.webp"
         },
         {
           "src": "/parco-auto/img/ctc-kwzt-4.webp",
@@ -2223,7 +2276,7 @@
       "price": 18400,
       "market": 22500,
       "status": "venduta",
-      "city": "Pavia",
+      "city": "Gallarate",
       "days": 6,
       "added": 36,
       "gallery": [
@@ -2257,7 +2310,7 @@
       "price": 38900,
       "market": 45900,
       "status": "venduta",
-      "city": "Crema",
+      "city": "Desio",
       "days": 10,
       "added": 31,
       "gallery": [
@@ -2291,7 +2344,7 @@
       "price": 10400,
       "market": 13200,
       "status": "venduta",
-      "city": "Lecco",
+      "city": "Como",
       "days": 2,
       "added": 35,
       "gallery": [
@@ -2324,8 +2377,8 @@
       "fuel": "Diesel",
       "price": 52900,
       "market": 61500,
-      "status": "trattativa",
-      "city": "Pavia",
+      "status": "venduta",
+      "city": "Lecco",
       "days": null,
       "added": 37,
       "gallery": [
@@ -2358,8 +2411,8 @@
       "fuel": "Benzina",
       "price": 17900,
       "market": 21300,
-      "status": "disponibile",
-      "city": "Gallarate",
+      "status": "venduta",
+      "city": "Legnano",
       "days": null,
       "added": 4,
       "gallery": [
@@ -2393,7 +2446,7 @@
       "price": 8100,
       "market": 10400,
       "status": "venduta",
-      "city": "Cantù",
+      "city": "Vigevano",
       "days": 11,
       "added": 20,
       "gallery": [
@@ -2424,10 +2477,10 @@
       "year": 2010,
       "km": 49000,
       "fuel": "Benzina",
-      "price": 4900,
-      "market": 6500,
+      "price": 5000,
+      "market": 6300,
       "status": "trattativa",
-      "city": "Cantù",
+      "city": "Pavia",
       "days": null,
       "added": 34,
       "gallery": [
@@ -2447,7 +2500,8 @@
           "src": "/parco-auto/img/ctc-rnt2-4.webp",
           "thumb": "/parco-auto/img/ctc-rnt2-4.webp"
         }
-      ]
+      ],
+      "priceKind": "asking"
     },
     {
       "code": "CTC-S3E5",
@@ -2461,7 +2515,7 @@
       "price": 41900,
       "market": 47900,
       "status": "venduta",
-      "city": "Como",
+      "city": "Cremona",
       "days": 7,
       "added": 14,
       "gallery": [
@@ -2495,7 +2549,7 @@
       "price": 18900,
       "market": 22900,
       "status": "venduta",
-      "city": "Treviglio",
+      "city": "Rho",
       "days": 4,
       "added": 1,
       "gallery": [
@@ -2521,7 +2575,7 @@
       "price": 9900,
       "market": 13400,
       "status": "venduta",
-      "city": "Bergamo",
+      "city": "Milano",
       "days": 6,
       "added": 18,
       "gallery": [
@@ -2552,20 +2606,20 @@
       "year": 2012,
       "km": 160000,
       "fuel": "Diesel",
-      "price": 12400,
+      "price": 8000,
       "market": 15600,
       "status": "disponibile",
-      "city": "Bergamo",
+      "city": "Desio",
       "days": null,
       "added": 20,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-vhze-1.webp",
-          "thumb": "/parco-auto/img/ctc-vhze-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-vhze-2.webp",
           "thumb": "/parco-auto/img/ctc-vhze-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vhze-1.webp",
+          "thumb": "/parco-auto/img/ctc-vhze-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-vhze-3.webp",
@@ -2589,17 +2643,17 @@
       "price": 13400,
       "market": 16500,
       "status": "venduta",
-      "city": "Milano",
+      "city": "Lodi",
       "days": 3,
       "added": 14,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-vpv4-1.webp",
-          "thumb": "/parco-auto/img/ctc-vpv4-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-vpv4-2.webp",
           "thumb": "/parco-auto/img/ctc-vpv4-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vpv4-1.webp",
+          "thumb": "/parco-auto/img/ctc-vpv4-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-vpv4-3.webp",
@@ -2623,10 +2677,14 @@
       "price": 13900,
       "market": 17200,
       "status": "venduta",
-      "city": "Cremona",
+      "city": "Varese",
       "days": 14,
       "added": 37,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-vqd4-front.webp",
+          "thumb": "/parco-auto/img/ctc-vqd4-front-t.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-vqd4-1.webp",
           "thumb": "/parco-auto/img/ctc-vqd4-t.webp"
@@ -2657,7 +2715,7 @@
       "price": 7400,
       "market": 9500,
       "status": "venduta",
-      "city": "Lodi",
+      "city": "Como",
       "days": 6,
       "added": 12,
       "gallery": [
@@ -2691,10 +2749,14 @@
       "price": 10900,
       "market": 13800,
       "status": "venduta",
-      "city": "Desenzano del Garda",
+      "city": "Milano",
       "days": 6,
       "added": 31,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-wdk3-4.webp",
+          "thumb": "/parco-auto/img/ctc-wdk3-4.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-wdk3-1.webp",
           "thumb": "/parco-auto/img/ctc-wdk3-t.webp"
@@ -2706,10 +2768,6 @@
         {
           "src": "/parco-auto/img/ctc-wdk3-3.webp",
           "thumb": "/parco-auto/img/ctc-wdk3-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-wdk3-4.webp",
-          "thumb": "/parco-auto/img/ctc-wdk3-4.webp"
         }
       ]
     },
@@ -2725,10 +2783,14 @@
       "price": 13900,
       "market": 16900,
       "status": "venduta",
-      "city": "Bergamo",
+      "city": "Sondrio",
       "days": 13,
       "added": 30,
       "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-x95d-front.webp",
+          "thumb": "/parco-auto/img/ctc-x95d-front-t.webp"
+        },
         {
           "src": "/parco-auto/img/ctc-x95d-1.webp",
           "thumb": "/parco-auto/img/ctc-x95d-t.webp"
@@ -2759,7 +2821,7 @@
       "price": 10400,
       "market": 12600,
       "status": "venduta",
-      "city": "Sondrio",
+      "city": "Desio",
       "days": 2,
       "added": 26,
       "gallery": [
@@ -2790,10 +2852,10 @@
       "year": 2025,
       "km": 34000,
       "fuel": "GPL",
-      "price": 17400,
+      "price": 13000,
       "market": 20500,
       "status": "venduta",
-      "city": "Varese",
+      "city": "Rho",
       "days": 12,
       "added": 3,
       "gallery": [
@@ -2813,7 +2875,8 @@
           "src": "/parco-auto/img/ctc-xxrh-4.webp",
           "thumb": "/parco-auto/img/ctc-xxrh-4.webp"
         }
-      ]
+      ],
+      "salePriceConfirmed": true
     },
     {
       "code": "CTC-Y23D",
@@ -2824,10 +2887,10 @@
       "year": 1999,
       "km": 155000,
       "fuel": "Benzina",
-      "price": 7400,
+      "price": 7000,
       "market": 9900,
-      "status": "trattativa",
-      "city": "Milano",
+      "status": "disponibile",
+      "city": "Varese",
       "days": null,
       "added": 2,
       "gallery": [
@@ -2856,18 +2919,18 @@
       "fuel": "Benzina",
       "price": 14400,
       "market": 17900,
-      "status": "disponibile",
-      "city": "Rho",
+      "status": "venduta",
+      "city": "Como",
       "days": null,
       "added": 16,
       "gallery": [
         {
-          "src": "/parco-auto/img/ctc-yf05-1.webp",
-          "thumb": "/parco-auto/img/ctc-yf05-t.webp"
-        },
-        {
           "src": "/parco-auto/img/ctc-yf05-2.webp",
           "thumb": "/parco-auto/img/ctc-yf05-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-yf05-1.webp",
+          "thumb": "/parco-auto/img/ctc-yf05-t.webp"
         },
         {
           "src": "/parco-auto/img/ctc-yf05-3.webp",
@@ -2878,6 +2941,605 @@
           "thumb": "/parco-auto/img/ctc-yf05-4.webp"
         }
       ]
+    },
+    {
+      "code": "CTC-239E",
+      "ref": "CTC-239E",
+      "city": "Varese",
+      "make": "Mitsubishi",
+      "model": "Lancer Evolution X",
+      "version": "MR Ralliart",
+      "year": 2009,
+      "km": 65000,
+      "fuel": "Benzina",
+      "market": 40000,
+      "days": null,
+      "added": -100,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-239e-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-239e-crm-1-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-239e-interni.webp",
+          "thumb": "/parco-auto/img/ctc-239e-interni.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-239e-sedili.webp",
+          "thumb": "/parco-auto/img/ctc-239e-sedili.webp"
+        }
+      ],
+      "status": "disponibile",
+      "price": 24000
+    },
+    {
+      "code": "CTC-XMR8",
+      "ref": "CTC-XMR8",
+      "city": "Brescia",
+      "make": "Škoda",
+      "model": "Kodiaq",
+      "version": "Sportline 2.0 diesel",
+      "year": 2018,
+      "km": 67700,
+      "fuel": "Diesel",
+      "market": 20500,
+      "days": null,
+      "added": -99,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-xmr8-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-xmr8-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 19500
+    },
+    {
+      "code": "CTC-8833",
+      "ref": "CTC-8833",
+      "city": "Lecco",
+      "make": "Audi",
+      "model": "SQ2",
+      "version": "",
+      "year": 2022,
+      "km": 57500,
+      "fuel": "Benzina",
+      "market": 31000,
+      "days": null,
+      "added": -98,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-8833-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-8833-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 27150
+    },
+    {
+      "code": "CTC-QG10",
+      "ref": "CTC-QG10",
+      "city": "Varese",
+      "make": "Kia",
+      "model": "Sportage",
+      "version": "1.6 benzina",
+      "year": 2025,
+      "km": 5100,
+      "fuel": "Benzina",
+      "market": 27500,
+      "days": null,
+      "added": -97,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-qg10-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-qg10-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 22000,
+      "noFrontCover": true
+    },
+    {
+      "code": "CTC-TQTG",
+      "ref": "CTC-TQTG",
+      "city": "Monza",
+      "make": "BMW",
+      "model": "Serie 2 Gran Coupé",
+      "version": "220d M Sport",
+      "year": 2024,
+      "km": 34200,
+      "fuel": "Diesel",
+      "market": 31000,
+      "days": null,
+      "added": -96,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-tqtg-front.webp",
+          "thumb": "/parco-auto/img/ctc-tqtg-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-tqtg-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-tqtg-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 27350
+    },
+    {
+      "code": "CTC-VVQV",
+      "ref": "CTC-VVQV",
+      "city": "Sondrio",
+      "make": "Škoda",
+      "model": "Kamiq",
+      "version": "",
+      "year": 2020,
+      "km": 68000,
+      "fuel": "Benzina",
+      "market": 13800,
+      "days": null,
+      "added": -95,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-vvqv-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-vvqv-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 10620
+    },
+    {
+      "code": "CTC-Q3X1",
+      "ref": "CTC-Q3X1",
+      "city": "Cremona",
+      "make": "Citroën",
+      "model": "DS3",
+      "version": "",
+      "year": 2012,
+      "km": 192000,
+      "fuel": "Diesel",
+      "market": null,
+      "days": null,
+      "added": -94,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-q3x1-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-q3x1-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 2250
+    },
+    {
+      "code": "CTC-19D5",
+      "ref": "CTC-19D5",
+      "city": "Como",
+      "make": "Mini",
+      "model": "One",
+      "version": "",
+      "year": 2009,
+      "km": 129000,
+      "fuel": "Benzina",
+      "market": 3442,
+      "days": null,
+      "added": -93,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-19d5-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-19d5-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 3000
+    },
+    {
+      "code": "CTC-DT25",
+      "ref": "CTC-DT25",
+      "city": "Cremona",
+      "make": "Peugeot",
+      "model": "307",
+      "version": "D-Sign",
+      "year": 2007,
+      "km": 149268,
+      "fuel": "Benzina",
+      "market": 1483,
+      "days": null,
+      "added": -92,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-dt25-front.webp",
+          "thumb": "/parco-auto/img/ctc-dt25-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-dt25-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-dt25-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 1190
+    },
+    {
+      "code": "CTC-WDKC",
+      "ref": "CTC-WDKC",
+      "city": "Monza",
+      "make": "Audi",
+      "model": "A4",
+      "version": "",
+      "year": 2012,
+      "km": 158000,
+      "fuel": "Diesel",
+      "market": 5550,
+      "days": null,
+      "added": -91,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-wdkc-front.webp",
+          "thumb": "/parco-auto/img/ctc-wdkc-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-wdkc-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-wdkc-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 4300
+    },
+    {
+      "code": "CTC-PXFF",
+      "ref": "CTC-PXFF",
+      "city": "Lodi",
+      "make": "Fiat",
+      "model": "500X",
+      "version": "",
+      "year": 2018,
+      "km": 62000,
+      "fuel": "Benzina",
+      "market": 11477,
+      "days": null,
+      "added": -90,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-pxff-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-pxff-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 9000
+    },
+    {
+      "code": "CTC-JKGG",
+      "ref": "CTC-JKGG",
+      "city": "Mantova",
+      "make": "Ford",
+      "model": "C-Max",
+      "version": "",
+      "year": 2018,
+      "km": 93000,
+      "fuel": "Benzina",
+      "market": 8800,
+      "days": null,
+      "added": -89,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-jkgg-front.webp",
+          "thumb": "/parco-auto/img/ctc-jkgg-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-jkgg-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-jkgg-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 6500
+    },
+    {
+      "code": "CTC-QCBG",
+      "ref": "CTC-QCBG",
+      "city": "Milano",
+      "make": "Fiat",
+      "model": "500X",
+      "version": "",
+      "year": 2020,
+      "km": 80000,
+      "fuel": "Benzina",
+      "market": 10965,
+      "days": null,
+      "added": -88,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-qcbg-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-qcbg-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 9500
+    },
+    {
+      "code": "CTC-VHNY",
+      "ref": "CTC-VHNY",
+      "city": "Bergamo",
+      "make": "BMW",
+      "model": "X3",
+      "version": "",
+      "year": 2012,
+      "km": 170000,
+      "fuel": "Diesel",
+      "market": 9350,
+      "days": null,
+      "added": -87,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-vhny-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-vhny-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 6300
+    },
+    {
+      "code": "CTC-CB7B",
+      "ref": "CTC-CB7B",
+      "city": "Mantova",
+      "make": "Kia",
+      "model": "XCeed",
+      "version": "",
+      "year": 2019,
+      "km": 116000,
+      "fuel": "Diesel",
+      "market": 11815,
+      "days": null,
+      "added": -86,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-cb7b-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-cb7b-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 10000
+    },
+    {
+      "code": "CTC-X6ZA",
+      "ref": "CTC-X6ZA",
+      "city": "Cremona",
+      "make": "Opel",
+      "model": "Zafira Tourer",
+      "version": "",
+      "year": 2015,
+      "km": 151633,
+      "fuel": "Metano",
+      "market": 6200,
+      "days": null,
+      "added": -85,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-x6za-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-x6za-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 5100
+    },
+    {
+      "code": "CTC-NTHN",
+      "ref": "CTC-NTHN",
+      "city": "Mantova",
+      "make": "Opel",
+      "model": "Corsa",
+      "version": "",
+      "year": 2011,
+      "km": 210000,
+      "fuel": "Diesel",
+      "market": 2760,
+      "days": null,
+      "added": -84,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-nthn-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-nthn-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 1710
+    },
+    {
+      "code": "CTC-TE8Z",
+      "ref": "CTC-TE8Z",
+      "city": "Varese",
+      "make": "Audi",
+      "model": "A6",
+      "version": "Terza serie",
+      "year": 2007,
+      "km": 290000,
+      "fuel": "Diesel",
+      "market": 4033,
+      "days": null,
+      "added": -83,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-te8z-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-te8z-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 2000
+    },
+    {
+      "code": "CTC-5VDR",
+      "ref": "CTC-5VDR",
+      "city": "Sondrio",
+      "make": "Opel",
+      "model": "Agila",
+      "version": "",
+      "year": 2007,
+      "km": 40000,
+      "fuel": "Benzina",
+      "market": 2465,
+      "days": null,
+      "added": -82,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-5vdr-front.webp",
+          "thumb": "/parco-auto/img/ctc-5vdr-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-5vdr-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-5vdr-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 1000
+    },
+    {
+      "code": "CTC-64DT",
+      "ref": "CTC-64DT",
+      "city": "Lecco",
+      "make": "BMW",
+      "model": "316",
+      "version": "",
+      "year": 2018,
+      "km": 250000,
+      "fuel": "Diesel",
+      "market": 10200,
+      "days": null,
+      "added": -81,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-64dt-front.webp",
+          "thumb": "/parco-auto/img/ctc-64dt-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-64dt-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-64dt-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 5300
+    },
+    {
+      "code": "CTC-93PK",
+      "ref": "CTC-93PK",
+      "city": "Varese",
+      "make": "Fiat",
+      "model": "Panda",
+      "version": "Metano",
+      "year": 2016,
+      "km": 150000,
+      "fuel": "Metano",
+      "market": 5015,
+      "days": null,
+      "added": -80,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-93pk-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-93pk-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 850,
+      "noFrontCover": true
+    },
+    {
+      "code": "CTC-6QHZ",
+      "ref": "CTC-6QHZ",
+      "city": "Mantova",
+      "make": "Kia",
+      "model": "Rio",
+      "version": "",
+      "year": 2012,
+      "km": 90000,
+      "fuel": "Benzina",
+      "market": 3950,
+      "days": null,
+      "added": -79,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-6qhz-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-6qhz-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 2500,
+      "noFrontCover": true
+    },
+    {
+      "code": "CTC-K8JM",
+      "ref": "CTC-K8JM",
+      "city": "Cremona",
+      "make": "Alfa Romeo",
+      "model": "159",
+      "version": "1.9 JTDM",
+      "year": 2006,
+      "km": 216000,
+      "fuel": "Diesel",
+      "market": 2464,
+      "days": null,
+      "added": -78,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-k8jm-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-k8jm-crm-1-t.webp"
+        }
+      ],
+      "status": "venduta",
+      "price": 540
+    },
+    {
+      "code": "CTC-RWPC",
+      "ref": "CTC-RWPC",
+      "city": "Cremona",
+      "make": "Volkswagen",
+      "model": "ID.3",
+      "version": "Pure Edition Plus",
+      "year": 2025,
+      "km": 12300,
+      "fuel": "Elettrica",
+      "market": 28300,
+      "days": null,
+      "added": -77,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-rwpc-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-rwpc-crm-1-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-rwpc-crm-2.webp",
+          "thumb": "/parco-auto/img/ctc-rwpc-crm-2.webp"
+        }
+      ],
+      "status": "trattativa",
+      "price": 27000,
+      "priceKind": "asking"
+    },
+    {
+      "code": "CTC-9EHG",
+      "ref": "CTC-9EHG",
+      "city": "Brescia",
+      "make": "Citroën",
+      "model": "C3",
+      "version": "1.2 VTi 82 Exclusive",
+      "year": 2013,
+      "km": 80000,
+      "fuel": "Benzina",
+      "market": 3298,
+      "days": null,
+      "added": -75,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-9ehg-front.webp",
+          "thumb": "/parco-auto/img/ctc-9ehg-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-9ehg-crm-1.webp",
+          "thumb": "/parco-auto/img/ctc-9ehg-crm-1-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-9ehg-crm-2.webp",
+          "thumb": "/parco-auto/img/ctc-9ehg-crm-2.webp"
+        }
+      ],
+      "status": "trattativa",
+      "price": 3200,
+      "priceKind": "asking"
     }
   ]
 }

@@ -22,8 +22,8 @@ export function ParcoHeader() {
   );
 }
 
-export function Hero({ featured }: { featured: ParcoCar }) {
-  const title = carTitle(featured);
+export function Hero({ featured }: { featured: ParcoCar | null }) {
+  const title = featured ? carTitle(featured) : "";
   return (
     <section className="pa-hero">
       <div className="pa-wrap">
@@ -41,8 +41,8 @@ export function Hero({ featured }: { featured: ParcoCar }) {
             <li>Paghi solo se compri</li>
           </ul>
         </div>
-        <a className="pa-deal" href={carHref(featured.code)} data-pa-open={featured.code} aria-label="Apri la scheda dell'auto in evidenza">
-          <div className="pa-deal__head"><span className="pa-live"><span className="pa-dot" aria-hidden="true" />Opportunità disponibile</span><span className="pa-where">{featured.city}</span></div>
+        {featured && <a className="pa-deal" href={carHref(featured.code)} data-pa-open={featured.code} aria-label="Apri la scheda dell'auto in evidenza">
+          <div className="pa-deal__head"><span className="pa-live"><span className="pa-dot" aria-hidden="true" />Disponibile</span><span className="pa-where">{featured.city}</span></div>
           {/* eslint-disable-next-line @next/next/no-img-element -- pre-built webp, served as-is */}
           <img className="pa-deal__img" src={featured.gallery[0]?.src} alt={title} width={1024} height={768} fetchPriority="high" />
           <div className="pa-deal__body">
@@ -53,7 +53,7 @@ export function Hero({ featured }: { featured: ParcoCar }) {
               <div className="pa-gain"><small>Margine stimato</small><strong className="pa-num">+{eur(gain(featured))}</strong></div>
             </div>
           </div>
-        </a>
+        </a>}
       </div>
     </section>
   );
@@ -76,11 +76,14 @@ function TickItems({ cars, hidden }: { cars: ParcoCar[]; hidden?: boolean }) {
   return (
     <div className="pa-ticker__copy" aria-hidden={hidden ? "true" : undefined}>
       {cars.map((c) => (
-        <a key={c.code} className="pa-tick" href={carHref(c.code)} data-pa-open={c.code} tabIndex={hidden ? -1 : undefined}>
+        <div key={c.code} className="pa-tick">
+          {!c.noFrontCover && <span className="pa-tick-photo">
           {/* eslint-disable-next-line @next/next/no-img-element -- pre-built webp thumb */}
           <img src={c.gallery[0]?.thumb} alt="" loading="lazy" width={76} height={56} />
-          <span><b>{carTitle(c)}</b><span>{c.year} · {c.city} · <em>venduta in {c.days} gg</em></span></span>
-        </a>
+            <strong className="pa-sold-mark" aria-hidden="true">Venduta</strong>
+          </span>}
+          <span><b>{carTitle(c)}</b><span>{c.year} · {c.city} · <em>Venduta</em></span></span>
+        </div>
       ))}
     </div>
   );

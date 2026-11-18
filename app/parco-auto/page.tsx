@@ -3,7 +3,7 @@ import "./parco.css";
 import "./sections.css";
 import "./inventory.css";
 import "./dialog.css";
-import { CARS, findCar, getFeatured, getStats, getTicker } from "../lib/parco";
+import { CARS, getFeatured, getStats, getTicker } from "../lib/parco";
 import { Band, Closing, Hero, HowItWorks, ParcoFooter, ParcoHeader, Stats, Ticker } from "./sections";
 import ParcoInventory from "./ParcoInventory";
 import CarDialog from "./CarDialog";
@@ -22,7 +22,8 @@ type Props = { searchParams: Promise<Record<string, string | string[] | undefine
 
 export default async function ParcoAutoPage({ searchParams }: Props) {
   const sp = await searchParams;
-  const initialCode = findCar(typeof sp.auto === "string" ? sp.auto : null)?.code ?? null;
+  const openCars = CARS.filter(c => c.status !== "venduta");
+  const initialCode = openCars.find(c => c.code === sp.auto)?.code ?? null;
   const cars = [...CARS];
   const jsonLd = JSON.stringify(buildParcoJsonLd(cars)).replace(/</g, "\\u003c");
   return (
@@ -40,7 +41,7 @@ export default async function ParcoAutoPage({ searchParams }: Props) {
         <Closing />
       </main>
       <ParcoFooter />
-      <CarDialog cars={cars} initialCode={initialCode} />
+      <CarDialog cars={openCars} initialCode={initialCode} />
     </div>
   );
 }

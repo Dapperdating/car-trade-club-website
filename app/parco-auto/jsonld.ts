@@ -18,7 +18,7 @@ export function buildParcoJsonLd(cars: readonly ParcoCar[]): Record<string, unkn
       itemListElement: cars.map((c, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `${ORIGIN}/parco-auto?auto=${encodeURIComponent(c.code)}`,
+        url: c.status === "venduta" ? undefined : `${ORIGIN}/parco-auto?auto=${encodeURIComponent(c.code)}`,
         item: {
           "@type": "Car",
           name: `${c.make} ${c.model}`,
@@ -27,7 +27,7 @@ export function buildParcoJsonLd(cars: readonly ParcoCar[]): Record<string, unkn
           vehicleModelDate: String(c.year),
           fuelType: c.fuel,
           mileageFromOdometer: { "@type": "QuantitativeValue", value: c.km, unitCode: "KMT" },
-          image: `${ORIGIN}${c.gallery[0]?.src ?? ""}`,
+          image: c.noFrontCover ? undefined : `${ORIGIN}${c.gallery[0].src}`,
         },
       })),
     },
