@@ -1,0 +1,56 @@
+/* Parco auto: shared base (Lane 0). Lane rules live in sections.css / inventory.css / dialog.css. */
+.pa {
+  --pa-wrap: 1180px;
+  --pa-top: 68px;
+  --pa-gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --pa-gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  background: var(--ctc-cream);
+  color: var(--ctc-text);
+  font: 400 15px/1.5 var(--ctc-body);
+  -webkit-font-smoothing: antialiased;
+}
+.pa *, .pa *::before, .pa *::after { box-sizing: border-box; }
+.pa [hidden] { display: none !important; }
+.pa a { color: inherit; }
+.pa img { max-width: 100%; display: block; }
+.pa button, .pa select, .pa input { font: inherit; color: inherit; }
+.pa :focus-visible { outline: 2px solid var(--ctc-focus); outline-offset: 2px; }
+.pa [id] { scroll-margin-top: calc(var(--pa-top) + 16px); }
+
+/* Neutralise the site's old global element rules (globals.css, mobile.css, forms.css). 0,1,2 beats their 0,1,1. */
+div.pa nav { position: static; height: auto; width: auto; padding: 0; border: 0; z-index: auto; display: flex; align-items: center; justify-content: flex-start; }
+div.pa section { padding: 0; }
+div.pa footer { display: block; padding: 0; border: 0; font-size: inherit; gap: 0; grid-template-columns: none; }
+div.pa footer > div { display: block; gap: 0; }
+div.pa footer span, div.pa footer b, div.pa footer small { color: inherit; }
+
+.pa .pa-wrap { max-width: calc(var(--pa-wrap) + 64px); margin: 0 auto; padding-left: var(--pa-gutter-l); padding-right: var(--pa-gutter-r); }
+@media (min-width: 768px) {
+  .pa .pa-wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); }
+}
+.pa .pa-eyebrow { font: 700 11px/1.2 var(--ctc-body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ctc-muted); margin: 0; }
+.pa .pa-num { font-variant-numeric: tabular-nums; }
+
+.pa .pa-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 48px; padding: 0 22px;
+  border-radius: var(--ctc-radius-sm); border: 1px solid transparent;
+  font: 800 15px var(--ctc-display); text-decoration: none; cursor: pointer;
+  transition: background-color 180ms, color 180ms, border-color 180ms;
+}
+.pa .pa-btn--lime { background: var(--ctc-lime); color: var(--ctc-ink); }
+.pa .pa-btn--lime:hover { background: var(--ctc-lime-hover); }
+.pa .pa-btn--ink { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.pa .pa-btn--ink:hover { background: var(--ctc-ink-2); }
+.pa .pa-btn--ghost-ink { background: transparent; color: var(--ctc-on-ink); border-color: var(--ctc-on-ink-edge); }
+.pa .pa-btn--ghost-ink:hover { border-color: var(--ctc-on-ink-soft); }
+.pa .pa-btn--outline { background: transparent; border-color: var(--ctc-ink); color: var(--ctc-ink); }
+.pa .pa-btn--outline:hover { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.pa .pa-link-u { font: 700 15px var(--ctc-display); text-decoration: none; border-bottom: 1.5px solid var(--ctc-ink); padding-bottom: 2px; }
+
+.pa .pa-skip { position: absolute; left: 16px; top: -100px; z-index: 60; padding: 12px 16px; border-radius: var(--ctc-radius-sm); background: var(--ctc-lime); color: var(--ctc-ink); font: 800 14px var(--ctc-display); text-decoration: none; }
+.pa .pa-skip:focus { top: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pa *, .pa *::before, .pa *::after { animation: none !important; transition: none !important; }
+}

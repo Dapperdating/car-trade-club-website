@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./brand-tokens.css";
 import "./globals.css";
 import "./forms.css";
 import "./mobile.css";
