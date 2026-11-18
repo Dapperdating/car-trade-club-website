@@ -1,0 +1,1103 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body><title>Parco Auto Car Trade Club</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Le auto negoziate dal network Car Trade Club: foto, prezzo concordato con il privato e margine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Manrope:wght@600;700;800&display=swap">
+<style>
+/* Layout: cream marketing page like cartradeclub.com — hero + ink deal card, stats, ink "ultime chiusure" strip,
+   lime statement band, filterable photo grid of the network's cars, ink closing CTA. Light only (CTC design system). */
+:root {
+  color-scheme: light;
+  --ctc-ink: #11151b;
+  --ctc-ink-2: #2a313b;
+  --ctc-charcoal: #282e37;
+  --ctc-cream: #f5f2e9;
+  --ctc-paper: #fcfaf4;
+  --ctc-white: #ffffff;
+  --ctc-surface: #ebe8df;
+  --ctc-lime: #c8ff45;
+  --ctc-lime-hover: #b7ed36;
+  --ctc-text: var(--ctc-ink);
+  --ctc-muted: #59636e;
+  --ctc-lede: #3c444d;
+  --ctc-line: #d9d9d2;
+  --ctc-line-soft: #e3e0d6;
+  --ctc-on-ink: #f5f2e9;
+  --ctc-on-ink-soft: #c9ccd2;
+  --ctc-on-ink-mute: #8d929b;
+  --ctc-on-ink-rule: #343b46;
+  --ctc-on-ink-edge: #4a525e;
+  --ctc-good: #1d7a4c;
+  --ctc-good-bg: #e8f4ec;
+  --ctc-warn: #705119;
+  --ctc-warn-bg: #f2ead8;
+  --ctc-focus: #3d4cff;
+  --ctc-scrim: rgba(17, 21, 27, 0.74);
+  --ctc-display: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --ctc-body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --ctc-radius-xs: 3px;
+  --ctc-radius-sm: 4px;
+  --ctc-radius-md: 6px;
+  --ctc-radius-lg: 8px;
+  --ctc-radius-xl: 10px;
+  --ctc-shadow-pop: 0 6px 25px rgba(17, 17, 17, 0.2);
+  --ctc-shadow-card: 0 24px 60px -24px rgba(17, 21, 27, 0.45);
+  --wrap: 1180px;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--ctc-cream);
+  color: var(--ctc-text);
+  font: 400 15px/1.5 var(--ctc-body);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 30; background: var(--ctc-cream);
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+button, select, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--ctc-focus); outline-offset: 2px; }
+
+.wrap {
+  max-width: calc(var(--wrap) + 64px);
+  margin: 0 auto;
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+}
+@media (min-width: 768px) {
+  .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); }
+}
+
+.eyebrow {
+  font: 700 11px/1.2 var(--ctc-body);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ctc-muted);
+  margin: 0;
+}
+.num { font-variant-numeric: tabular-nums; }
+
+/* —— Logo (tokens.css) —— */
+.ctc-brand {
+  display: inline-flex; align-items: center; gap: 0.72em;
+  font: 800 15px var(--ctc-display); letter-spacing: -0.01em;
+  color: var(--ctc-ink); text-decoration: none; white-space: nowrap;
+}
+.ctc-mark {
+  flex: none; width: 1.57em; height: 1.57em; border-radius: 0.36em;
+  background: var(--ctc-ink); position: relative; overflow: hidden;
+}
+.ctc-mark::after {
+  content: ""; position: absolute; inset: 27.3% 18.2% 27.3% 40.9%;
+  background: var(--ctc-lime); transform: skewX(-18deg);
+}
+.ctc-brand--on-ink { color: var(--ctc-on-ink); }
+.ctc-brand--on-ink .ctc-mark { box-shadow: inset 0 0 0 1px var(--ctc-on-ink-edge); }
+
+/* —— Buttons —— */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 48px; padding: 0 22px;
+  border-radius: var(--ctc-radius-sm); border: 1px solid transparent;
+  font: 800 15px var(--ctc-display); text-decoration: none; cursor: pointer;
+  transition: background-color 180ms, color 180ms, border-color 180ms;
+}
+.btn--lime { background: var(--ctc-lime); color: var(--ctc-ink); }
+.btn--lime:hover { background: var(--ctc-lime-hover); }
+.btn--ink { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.btn--ink:hover { background: var(--ctc-ink-2); }
+.btn--ghost-ink { background: transparent; color: var(--ctc-on-ink); border-color: var(--ctc-on-ink-edge); }
+.btn--ghost-ink:hover { border-color: var(--ctc-on-ink-soft); }
+.link-u {
+  font: 700 15px var(--ctc-display); text-decoration: none;
+  border-bottom: 1.5px solid var(--ctc-ink); padding-bottom: 2px;
+}
+
+/* —— Header —— */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--ctc-cream) 92%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ctc-line);
+}
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+.top nav { display: flex; align-items: center; gap: 28px; }
+.top nav a:not(.btn) { text-decoration: none; font-size: 14px; font-weight: 500; }
+.top nav a:not(.btn):hover { text-decoration: underline; text-underline-offset: 4px; }
+.top .btn { min-height: 44px; padding: 0 18px; font-size: 14px; }
+@media (max-width: 760px) { .top nav a:not(.btn) { display: none; } }
+@media (max-width: 400px) { .top .btn { padding: 0 12px; font-size: 13px; } .ctc-brand { font-size: 14px; } }
+
+/* —— Hero —— */
+.hero { padding-block: 64px 48px; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 56px; align-items: center; }
+.hero h1 {
+  font: 800 clamp(42px, 6.4vw, 76px)/0.98 var(--ctc-display);
+  letter-spacing: -0.055em; margin: 18px 0 22px; text-wrap: balance;
+}
+.hero h1 span { color: var(--ctc-muted); display: block; }
+.hero .lede { font-size: clamp(17px, 1.6vw, 20px); line-height: 1.55; color: var(--ctc-lede); max-width: 34em; margin: 0 0 30px; }
+.hero .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }
+.checks { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 26px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--ctc-muted); }
+.checks li::before { content: "✓ "; color: var(--ctc-ink); font-weight: 700; }
+
+.deal {
+  background: var(--ctc-ink); color: var(--ctc-on-ink);
+  border-radius: var(--ctc-radius-xl); overflow: hidden;
+  box-shadow: var(--ctc-shadow-card);
+  transform: rotate(1.2deg);
+  cursor: pointer; border: 0; padding: 0; text-align: left; width: 100%;
+  transition: transform 300ms;
+}
+.deal:hover { transform: rotate(0deg) translateY(-2px); }
+.deal__head { display: flex; justify-content: space-between; gap: 12px; padding: 14px 18px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+.deal__head .live { color: var(--ctc-lime); font-weight: 700; display: inline-flex; align-items: center; gap: 8px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ctc-lime); box-shadow: 0 0 0 0 rgba(200, 255, 69, 0.6); animation: pulse 2.4s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(200, 255, 69, 0.55); } 70% { box-shadow: 0 0 0 9px rgba(200, 255, 69, 0); } 100% { box-shadow: 0 0 0 0 rgba(200, 255, 69, 0); } }
+.deal__head .where { color: var(--ctc-on-ink-soft); }
+.deal__img { aspect-ratio: 4 / 3; width: 100%; height: auto; object-fit: cover; background: var(--ctc-charcoal); }
+.deal__body { padding: 18px 20px 20px; display: grid; gap: 14px; }
+.deal__title { font: 800 23px/1.15 var(--ctc-display); letter-spacing: -0.02em; margin: 0; }
+.deal__meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill-ink { font-size: 12px; padding: 4px 9px; border-radius: var(--ctc-radius-sm); background: var(--ctc-charcoal); color: var(--ctc-on-ink-soft); }
+.deal__price { display: flex; justify-content: space-between; align-items: end; gap: 12px; border-top: 1px solid var(--ctc-on-ink-rule); padding-top: 14px; }
+.deal__price small { display: block; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ctc-on-ink-mute); margin-bottom: 4px; }
+.deal__price strong { font: 800 32px/1 var(--ctc-display); letter-spacing: -0.03em; }
+.deal__price .gain { text-align: right; }
+.deal__price .gain strong { font-size: 20px; color: var(--ctc-lime); }
+
+@media (max-width: 900px) {
+  .hero { padding-block: 40px 32px; }
+  .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .deal { transform: none; max-width: 460px; }
+}
+
+/* —— Stats —— */
+.stats { border-top: 1px solid var(--ctc-line); border-bottom: 1px solid var(--ctc-line); }
+.stats .wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.stat { padding: 26px 20px 24px 0; }
+.stat + .stat { padding-left: 24px; border-left: 1px solid var(--ctc-line); }
+.stat b { display: block; font: 800 clamp(28px, 3.4vw, 40px)/1 var(--ctc-display); letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.stat span { display: block; margin-top: 8px; font-size: 13px; color: var(--ctc-muted); max-width: 18em; }
+@media (max-width: 760px) {
+  .stats .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat:nth-child(3) { padding-left: 0; border-left: 0; }
+  .stat:nth-child(n + 3) { border-top: 1px solid var(--ctc-line); }
+}
+
+/* —— Ultime chiusure strip —— */
+.ticker { background: var(--ctc-ink); color: var(--ctc-on-ink); padding-block: 22px; overflow: hidden; }
+.ticker__label { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.ticker__label .eyebrow { color: var(--ctc-on-ink-soft); }
+.ticker__track { display: flex; gap: 14px; width: max-content; animation: slide 90s linear infinite; }
+.ticker:hover .ticker__track { animation-play-state: paused; }
+@keyframes slide { to { transform: translateX(-50%); } }
+.tick {
+  display: flex; align-items: center; gap: 12px; flex: none;
+  background: var(--ctc-charcoal); border-radius: var(--ctc-radius-md); padding: 6px 16px 6px 6px;
+  border: 0; color: inherit; text-align: left; cursor: pointer;
+}
+.tick img { width: 76px; height: 56px; object-fit: cover; border-radius: var(--ctc-radius-sm); }
+.tick b { display: block; font: 700 14px var(--ctc-display); white-space: nowrap; }
+.tick span { display: block; font-size: 12px; color: var(--ctc-on-ink-mute); white-space: nowrap; }
+.tick span em { font-style: normal; color: var(--ctc-lime); font-weight: 700; }
+
+/* —— Statement band —— */
+.band { background: var(--ctc-lime); color: var(--ctc-ink); padding-block: 56px; }
+.band .eyebrow { color: var(--ctc-ink); font-size: 12px; letter-spacing: 0.04em; text-transform: none; font-weight: 700; }
+.band h2 { font: 800 clamp(28px, 4vw, 46px)/1.05 var(--ctc-display); letter-spacing: -0.045em; margin: 12px 0 0; max-width: 22em; text-wrap: balance; }
+
+/* —— Inventory —— */
+.inv { padding-block: 72px 80px; }
+.inv__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 28px; }
+.inv__head h2 { font: 800 clamp(32px, 4.4vw, 52px)/1.02 var(--ctc-display); letter-spacing: -0.05em; margin: 12px 0 10px; }
+.inv__head p { margin: 0; color: var(--ctc-muted); max-width: 40em; }
+.note { font-size: 12px; color: var(--ctc-muted); }
+
+.toolbar {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 68px); z-index: 10;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+  padding-block: 12px; margin-bottom: 22px;
+  background: var(--ctc-cream); border-bottom: 1px solid var(--ctc-line);
+}
+.seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--ctc-surface); border-radius: var(--ctc-radius-md); }
+.seg button {
+  min-height: 38px; padding: 0 14px; border: 0; border-radius: var(--ctc-radius-sm);
+  background: transparent; font-size: 14px; font-weight: 500; cursor: pointer;
+  transition: background-color 180ms, color 180ms;
+}
+.seg button:hover { background: var(--ctc-paper); }
+.seg button[aria-pressed="true"] { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.seg button .c { font-variant-numeric: tabular-nums; opacity: 0.7; margin-left: 4px; font-size: 12px; }
+.selects { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+.select {
+  min-height: 46px; padding: 0 34px 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm);
+  background: var(--ctc-paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2311151b' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 12px center;
+  appearance: none; -webkit-appearance: none; font-size: 14px; cursor: pointer;
+}
+.count { font-size: 13px; color: var(--ctc-muted); width: 100%; }
+@media (max-width: 760px) {
+  .toolbar { position: static; }
+  .selects { margin-left: 0; width: 100%; }
+  .select { flex: 1 1 140px; font-size: 16px; }
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 22px; }
+.card {
+  display: flex; flex-direction: column; text-align: left; padding: 0; cursor: pointer;
+  background: var(--ctc-paper); border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-lg);
+  overflow: hidden; color: inherit;
+  transition: border-color 180ms;
+}
+.card:hover { border-color: var(--ctc-ink); }
+.card__ph { position: relative; aspect-ratio: 4 / 3; background: var(--ctc-surface); overflow: hidden; }
+.card__ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 300ms; }
+.card:hover .card__ph img { transform: scale(1.025); }
+.badge {
+  position: absolute; top: 10px; left: 10px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font: 700 11px/1 var(--ctc-body); letter-spacing: 0.04em;
+  padding: 7px 9px; border-radius: var(--ctc-radius-xs);
+}
+.badge--venduta { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.badge--disponibile { background: var(--ctc-good-bg); color: var(--ctc-good); }
+.badge--disponibile::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.badge--trattativa { background: var(--ctc-warn-bg); color: var(--ctc-warn); }
+.ph-count {
+  position: absolute; right: 10px; bottom: 10px; font-size: 11px; padding: 4px 7px;
+  border-radius: var(--ctc-radius-xs); background: var(--ctc-scrim); color: var(--ctc-on-ink);
+}
+.card__body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.card__where { font-size: 12px; color: var(--ctc-muted); display: flex; justify-content: space-between; gap: 8px; }
+.card__where .code { font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+.card__title { font: 800 19px/1.2 var(--ctc-display); letter-spacing: -0.02em; margin: 4px 0 0; }
+.card__ver { font-size: 13px; color: var(--ctc-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card__facts { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+.chip { font-size: 12px; padding: 4px 8px; border-radius: var(--ctc-radius-sm); background: var(--ctc-surface); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.card__price { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 10px; padding-top: 14px; border-top: 1px solid var(--ctc-line-soft); }
+.card__price small { display: block; font-size: 11px; color: var(--ctc-muted); margin-bottom: 3px; }
+.card__price strong { font: 800 22px/1 var(--ctc-display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.gain-pill { font: 700 12px/1 var(--ctc-body); padding: 6px 8px; border-radius: var(--ctc-radius-sm); background: var(--ctc-good-bg); color: var(--ctc-good); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.empty { padding: 48px 20px; text-align: center; color: var(--ctc-muted); border: 1px dashed var(--ctc-line); border-radius: var(--ctc-radius-lg); }
+.more { display: flex; justify-content: center; margin-top: 30px; }
+.btn--outline { background: transparent; border-color: var(--ctc-ink); color: var(--ctc-ink); }
+.btn--outline:hover { background: var(--ctc-ink); color: var(--ctc-on-ink); }
+
+/* —— How it works —— */
+.how { padding-block: 72px; background: var(--ctc-paper); border-top: 1px solid var(--ctc-line); }
+.how h2 { font: 800 clamp(30px, 4vw, 46px)/1.05 var(--ctc-display); letter-spacing: -0.045em; margin: 12px 0 36px; max-width: 18em; text-wrap: balance; }
+.how h2 span { color: var(--ctc-muted); }
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; list-style: none; margin: 0; padding: 0; counter-reset: s; }
+.steps li { border-top: 2px solid var(--ctc-ink); padding-top: 16px; counter-increment: s; }
+.steps li::before { content: "0" counter(s); font: 800 13px var(--ctc-display); color: var(--ctc-muted); }
+.steps h3 { font: 800 18px/1.25 var(--ctc-display); letter-spacing: -0.02em; margin: 10px 0 8px; }
+.steps p { margin: 0; color: var(--ctc-lede); font-size: 14px; }
+@media (max-width: 900px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .steps { grid-template-columns: minmax(0, 1fr); } }
+
+/* —— Closing CTA —— */
+.close { background: var(--ctc-ink); color: var(--ctc-on-ink); padding-block: 80px; }
+.close .wrap { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: end; }
+.close h2 { font: 800 clamp(34px, 5vw, 60px)/1 var(--ctc-display); letter-spacing: -0.05em; margin: 22px 0 18px; text-wrap: balance; }
+.close h2 span { color: var(--ctc-on-ink-mute); }
+.close p { color: var(--ctc-on-ink-soft); font-size: 17px; margin: 0; max-width: 32em; }
+.contact { display: grid; gap: 14px; }
+.contact .btn { width: 100%; }
+.mail {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  border: 1px solid var(--ctc-on-ink-edge); border-radius: var(--ctc-radius-sm); padding: 8px 8px 8px 16px;
+}
+.mail small { display: block; font-size: 11px; color: var(--ctc-on-ink-mute); }
+.mail span { font: 700 15px var(--ctc-display); user-select: all; word-break: break-all; }
+.mail button { min-height: 40px; padding: 0 14px; background: var(--ctc-charcoal); color: var(--ctc-on-ink); border: 0; border-radius: var(--ctc-radius-sm); cursor: pointer; font-size: 13px; flex: none; }
+.mail button:hover { background: var(--ctc-ink-2); }
+@media (max-width: 860px) { .close .wrap { grid-template-columns: minmax(0, 1fr); } }
+
+footer { background: var(--ctc-ink); color: var(--ctc-on-ink-mute); border-top: 1px solid var(--ctc-on-ink-rule); padding-block: 28px; font-size: 12px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 24px; align-items: center; }
+
+/* —— Car dialog —— */
+dialog {
+  width: min(1080px, calc(100vw - 32px)); max-height: calc(100dvh - 32px);
+  padding: 0; border: 0; border-radius: var(--ctc-radius-xl);
+  background: var(--ctc-white); color: var(--ctc-text); box-shadow: var(--ctc-shadow-pop);
+  overflow: auto;
+}
+dialog::backdrop { background: var(--ctc-scrim); }
+.dlg { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
+.gal { background: var(--ctc-ink); display: flex; flex-direction: column; }
+.gal__main { position: relative; aspect-ratio: 4 / 3; background: var(--ctc-charcoal); }
+.gal__main img { width: 100%; height: 100%; object-fit: cover; }
+.gal__nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 44px; height: 44px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--ctc-scrim); color: var(--ctc-on-ink); font-size: 20px; line-height: 1;
+}
+.gal__nav:hover { background: var(--ctc-ink); }
+.gal__nav--prev { left: 12px; }
+.gal__nav--next { right: 12px; }
+.gal__idx { position: absolute; left: 12px; bottom: 12px; font-size: 12px; padding: 4px 8px; border-radius: var(--ctc-radius-xs); background: var(--ctc-scrim); color: var(--ctc-on-ink); }
+.gal__thumbs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; padding: 6px; }
+.gal__thumbs button { padding: 0; border: 2px solid transparent; border-radius: var(--ctc-radius-sm); overflow: hidden; cursor: pointer; background: var(--ctc-charcoal); aspect-ratio: 4 / 3; }
+.gal__thumbs button[aria-current="true"] { border-color: var(--ctc-lime); }
+.gal__thumbs img { width: 100%; height: 100%; object-fit: cover; }
+.info { padding: 26px 26px 24px; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.info__top { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.x { width: 44px; height: 44px; flex: none; border: 1px solid var(--ctc-line); background: var(--ctc-white); border-radius: 50%; cursor: pointer; font-size: 18px; }
+.x:hover { border-color: var(--ctc-ink); }
+.info h3 { font: 800 27px/1.08 var(--ctc-display); letter-spacing: -0.03em; margin: 8px 0 4px; }
+.info .ver { color: var(--ctc-muted); font-size: 14px; margin: 0; }
+.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--ctc-line-soft); border: 1px solid var(--ctc-line-soft); border-radius: var(--ctc-radius-md); overflow: hidden; margin: 0; }
+.facts div { background: var(--ctc-white); padding: 10px 12px; }
+.facts dt { font-size: 11px; color: var(--ctc-muted); }
+.facts dd { margin: 2px 0 0; font: 700 14px var(--ctc-display); font-variant-numeric: tabular-nums; }
+.panel { background: var(--ctc-ink); color: var(--ctc-on-ink); border-radius: var(--ctc-radius-xl); padding: 20px; }
+.panel small { display: block; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ctc-on-ink-soft); }
+.panel .big { font: 800 42px/1 var(--ctc-display); letter-spacing: -0.03em; margin: 8px 0 16px; font-variant-numeric: tabular-nums; }
+.panel .row { display: flex; justify-content: space-between; gap: 12px; padding-block: 9px; border-top: 1px solid var(--ctc-on-ink-rule); font-size: 14px; color: var(--ctc-on-ink-soft); }
+.panel .row b { font: 700 15px var(--ctc-display); color: var(--ctc-on-ink); font-variant-numeric: tabular-nums; }
+.panel .row b.lime { color: var(--ctc-lime); }
+.panel .foot { font-size: 11px; color: var(--ctc-on-ink-mute); margin: 8px 0 0; }
+.sold-line { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ctc-lede); margin: 0; }
+@media (max-width: 820px) {
+  dialog { width: 100vw; max-width: 100vw; max-height: 100dvh; height: 100dvh; border-radius: 0; margin: 0; }
+  .dlg { grid-template-columns: minmax(0, 1fr); }
+  .info { padding: 20px max(16px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+  .gal { position: relative; }
+  .x-mobile { display: flex; }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+  background: var(--ctc-ink); color: var(--ctc-on-ink); padding: 10px 16px; border-radius: var(--ctc-radius-md);
+  box-shadow: var(--ctc-shadow-pop); font-size: 14px; z-index: 50;
+}
+
+/* —— Editor (only people with edit access see it; staff tooling, English) —— */
+.ed-open { align-self: stretch; min-height: 44px; padding: 0 16px; border: 1px dashed var(--ctc-ink); border-radius: var(--ctc-radius-sm); background: var(--ctc-paper); font: 700 14px var(--ctc-display); cursor: pointer; }
+.ed-open:hover { background: var(--ctc-surface); }
+.ed { display: grid; gap: 14px; padding: 16px; background: var(--ctc-cream); border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-lg); }
+.ed__title { margin: 0; font: 800 16px var(--ctc-display); }
+.ed__title span { display: block; font: 400 12px var(--ctc-body); color: var(--ctc-muted); margin-top: 2px; }
+.ed__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.ed label { display: grid; gap: 4px; font-size: 12px; color: var(--ctc-muted); }
+.ed select { min-height: 46px; padding: 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); font: 700 15px var(--ctc-display); color: var(--ctc-ink); cursor: pointer; }
+.ed__wide { grid-column: 1 / -1; }
+.ed input[type="text"] { min-height: 46px; padding: 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); font: 700 15px var(--ctc-display); color: var(--ctc-ink); }
+.ed input[type="text"]:focus { border-color: var(--ctc-ink); outline: none; }
+.ed__del { justify-self: start; min-height: 44px; padding: 0; border: 0; background: none; color: var(--ctc-warn); font-size: 13px; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.ed__del[data-armed="true"] { font-weight: 700; }
+.ed-add-car { min-height: 46px; padding: 0 16px; border: 1px dashed var(--ctc-ink); border-radius: var(--ctc-radius-sm); background: var(--ctc-paper); font: 700 14px var(--ctc-display); cursor: pointer; }
+.ed-add-car:hover { background: var(--ctc-surface); }
+.ed input[type="number"] { min-height: 46px; padding: 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); font: 700 16px var(--ctc-display); color: var(--ctc-ink); font-variant-numeric: tabular-nums; }
+.ed input[type="number"]:focus { border-color: var(--ctc-ink); outline: none; }
+.ed__calc { margin: -4px 0 0; font-size: 13px; color: var(--ctc-lede); font-variant-numeric: tabular-nums; }
+.ed__ph-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.ed__ph-head b { font: 700 14px var(--ctc-display); }
+.ed__ph-head small { display: block; font-size: 12px; color: var(--ctc-muted); }
+.ed__add { position: relative; display: inline-flex !important; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--ctc-ink); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); color: var(--ctc-ink) !important; font: 700 14px var(--ctc-display) !important; cursor: pointer; white-space: nowrap; }
+.ed__add:hover { background: var(--ctc-surface); }
+.ed__add input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.ed__add[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
+.ed__photos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; }
+.ed__photos li { position: relative; background: var(--ctc-white); border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-md); overflow: hidden; }
+.ed__photos li.is-cover { border-color: var(--ctc-ink); }
+.ed__photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ctc-surface); }
+.ed__photos .tag { position: absolute; top: 6px; left: 6px; font: 700 10px/1 var(--ctc-body); letter-spacing: 0.04em; padding: 5px 6px; border-radius: var(--ctc-radius-xs); background: var(--ctc-ink); color: var(--ctc-on-ink); }
+.ed__photos .ctl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ctc-line-soft); }
+.ed__photos .ctl button { min-height: 44px; border: 0; background: transparent; cursor: pointer; font-size: 16px; }
+.ed__photos .ctl button + button { border-left: 1px solid var(--ctc-line-soft); }
+.ed__photos .ctl button:hover:not(:disabled) { background: var(--ctc-surface); }
+.ed__photos .ctl button:disabled { opacity: 0.3; cursor: default; }
+.ed__photos .wait { display: grid; place-items: center; aspect-ratio: 4 / 3; font-size: 12px; color: var(--ctc-muted); }
+.ed__err { margin: 0; font-size: 13px; color: var(--ctc-warn); min-height: 0; }
+.ed__err:empty { display: none; }
+.ed__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.ed__actions .btn { flex: 1 1 140px; }
+.ed__actions .btn:disabled { opacity: 0.6; cursor: wait; }
+.ed-bar {
+  position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 40;
+  max-width: calc(100vw - 32px); padding: 10px 14px; border-radius: var(--ctc-radius-md);
+  background: var(--ctc-ink); color: var(--ctc-on-ink-soft); font-size: 13px; box-shadow: var(--ctc-shadow-pop);
+}
+.ed-bar b { color: var(--ctc-on-ink); }
+@media (max-width: 520px) { .ed__row { grid-template-columns: minmax(0, 1fr); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+  .ticker { overflow-x: auto; }
+  .ticker__track { width: max-content; }
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="ctc-brand" href="#inizio" aria-label="Car Trade Club, inizio pagina"><span class="ctc-mark" aria-hidden="true"></span>Car Trade Club</a>
+    <nav aria-label="Sezioni">
+      <a href="#auto">Le auto</a>
+      <a href="#come">Come funziona</a>
+      <a class="btn btn--ink" href="#contatti">Entra nel network</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Il network · Auto da privati per concessionari</p>
+        <h1>234 auto trattate.<span>Tutte già negoziate.</span></h1>
+        <p class="lede">Questo è il parco auto passato dal network Car Trade Club: foto vere, prezzo concordato con il privato e margine visibile prima di comprare. Entra nel network e ricevi le prossime nella tua zona.</p>
+        <div class="cta-row">
+          <a class="btn btn--lime" href="#contatti">Entra nel network →</a>
+          <a class="link-u" href="#auto">Guarda le auto</a>
+        </div>
+        <ul class="checks">
+          <li>Prezzo già concordato</li>
+          <li>Foto e dati completi</li>
+          <li>Paghi solo se compri</li>
+        </ul>
+      </div>
+      <button class="deal" id="featured" type="button" aria-label="Apri la scheda dell'auto in evidenza"></button>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Il network in numeri">
+    <div class="wrap">
+      <div class="stat"><b class="num">234</b><span>auto negoziate con privati</span></div>
+      <div class="stat"><b class="num">2,7 mln €</b><span>valore di mercato trattato</span></div>
+      <div class="stat"><b class="num" id="statMargin">+24%</b><span>margine lordo medio sul prezzo d'acquisto</span></div>
+      <div class="stat"><b class="num" id="statDays">8 giorni</b><span>tempo medio dall'offerta alla vendita</span></div>
+    </div>
+  </section>
+
+  <section class="ticker" aria-label="Ultime chiusure">
+    <div class="wrap ticker__label"><span class="dot" aria-hidden="true"></span><p class="eyebrow">Ultime chiusure nel network</p></div>
+    <div class="ticker__track" id="ticker"></div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Non semplici lead.</p>
+      <h2>Auto vere, con foto vere e un prezzo già concordato con il privato.</h2>
+    </div>
+  </section>
+
+  <section class="inv" id="auto">
+    <div class="wrap">
+      <div class="inv__head">
+        <div>
+          <p class="eyebrow">Parco auto del network</p>
+          <h2>Le auto passate da noi.</h2>
+          <p>Citycar, SUV, cabrio e youngtimer da privati in tutta la Lombardia. Apri una scheda per vedere foto, prezzo concordato e margine.</p>
+        </div>
+        <p class="note">Selezione illustrativa di auto trattate dal network.<br>Prezzi, margini e disponibilità sono indicativi.</p>
+      </div>
+
+      <div class="toolbar" role="group" aria-label="Filtra le auto">
+        <div class="seg" id="seg">
+          <button type="button" data-s="all" aria-pressed="true">Tutte<span class="c" data-c="all"></span></button>
+          <button type="button" data-s="disponibile" aria-pressed="false">Disponibili<span class="c" data-c="disponibile"></span></button>
+          <button type="button" data-s="trattativa" aria-pressed="false">In trattativa<span class="c" data-c="trattativa"></span></button>
+          <button type="button" data-s="venduta" aria-pressed="false">Vendute<span class="c" data-c="venduta"></span></button>
+        </div>
+        <div class="selects">
+          <select class="select" id="fMake" aria-label="Marca"><option value="">Tutte le marche</option></select>
+          <select class="select" id="fFuel" aria-label="Alimentazione"><option value="">Ogni alimentazione</option></select>
+          <select class="select" id="fSort" aria-label="Ordina">
+            <option value="recent">Più recenti</option>
+            <option value="margin">Margine più alto</option>
+            <option value="priceAsc">Prezzo crescente</option>
+            <option value="priceDesc">Prezzo decrescente</option>
+            <option value="year">Anno più recente</option>
+          </select>
+        </div>
+        <button class="ed-add-car" id="edAddCar" type="button" hidden>+ Add a car</button>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <div class="more"><button class="btn btn--outline" id="more" type="button" hidden>Mostra altre auto</button></div>
+    </div>
+  </section>
+
+  <section class="how" id="come">
+    <div class="wrap">
+      <p class="eyebrow">Come funziona</p>
+      <h2>Il lavoro pesante lo facciamo noi. <span>La decisione resta tua.</span></h2>
+      <ol class="steps">
+        <li><h3>Definiamo il tuo stock ideale</h3><p>Zona, marchi, modelli, anzianità, chilometraggio e fascia di acquisto.</p></li>
+        <li><h3>Troviamo e qualifichiamo i privati</h3><p>Venditori realmente intenzionati, con foto e dati dell'auto già raccolti.</p></li>
+        <li><h3>Concordiamo il prezzo</h3><p>Il nostro team gestisce la prima trattativa e prepara un'opportunità concreta.</p></li>
+        <li><h3>Tu valuti e acquisti</h3><p>Ricevi il deal su WhatsApp, scegli se procedere e organizzi verifica e ritiro.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="close" id="contatti">
+    <div class="wrap">
+      <div>
+        <span class="ctc-brand ctc-brand--on-ink"><span class="ctc-mark" aria-hidden="true"></span>Car Trade Club</span>
+        <h2>Il prossimo acquisto <span>potrebbe essere già negoziato.</span></h2>
+        <p>Dicci che auto cerchi e in quale zona operi. Ti ricontattiamo entro un giorno lavorativo per parlare di stock e volumi.</p>
+      </div>
+      <div class="contact">
+        <a class="btn btn--lime" href="https://cartradeclub.com/" target="_blank" rel="noopener">Attiva la tua zona →</a>
+        <div class="mail">
+          <div><small>Oppure scrivici</small><span id="mailAddr">mattia@cartradeclub.com</span></div>
+          <button type="button" id="copyMail">Copia</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 CAR TRADE CLUB LIMITED · Company No. 17413707 · London, United Kingdom</span>
+    <span>Selezione illustrativa: prezzi, margini e disponibilità indicativi.</span>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+  <div class="dlg">
+    <div class="gal">
+      <div class="gal__main">
+        <img id="gMain" alt="">
+        <button class="gal__nav gal__nav--prev" id="gPrev" type="button" aria-label="Foto precedente">‹</button>
+        <button class="gal__nav gal__nav--next" id="gNext" type="button" aria-label="Foto successiva">›</button>
+        <span class="gal__idx num" id="gIdx"></span>
+      </div>
+      <div class="gal__thumbs" id="gThumbs"></div>
+    </div>
+    <div class="info">
+      <div class="info__top" id="dInfoTop">
+        <div>
+          <p class="eyebrow" id="dEyebrow"></p>
+          <h3 id="dTitle"></h3>
+          <p class="ver" id="dVer"></p>
+        </div>
+        <button class="x" id="dClose" type="button" aria-label="Chiudi">✕</button>
+      </div>
+      <button class="ed-open" id="edOpen" type="button" hidden>✎ Edit this car</button>
+      <dl class="facts" id="dFacts"></dl>
+      <div class="panel">
+        <small>Prezzo concordato con il privato</small>
+        <div class="big" id="dPrice"></div>
+        <div class="row"><span>Valore di mercato stimato</span><b id="dMarket"></b></div>
+        <div class="row"><span>Margine lordo stimato</span><b class="lime" id="dGain"></b></div>
+        <p class="foot">Margine lordo: valore di mercato meno prezzo d'acquisto. Esclusi trasporto, passaggio e ricondizionamento.</p>
+      </div>
+      <p class="sold-line" id="dStatus"></p>
+      <a class="btn btn--lime" id="dCta" href="#contatti">Voglio auto come questa →</a>
+      <section class="ed" id="ed" hidden aria-label="Edit this car">
+        <p class="ed__title" id="edTitle">Edit this car<span>Only people with edit access see this. Saving updates the page for everyone, dealers included.</span></p>
+        <div class="ed__row">
+          <label>Make<input id="edMake" type="text" autocomplete="off" placeholder="e.g. BMW"></label>
+          <label>Model<input id="edModel" type="text" autocomplete="off" placeholder="e.g. X3"></label>
+          <label class="ed__wide">Version<input id="edVersion" type="text" autocomplete="off" placeholder="e.g. xDrive20d Msport"></label>
+          <label>Year<input id="edYear" type="number" inputmode="numeric" min="1950" max="2030" step="1"></label>
+          <label>Km<input id="edKm" type="number" inputmode="numeric" min="0" step="1000"></label>
+          <label>Fuel<select id="edFuel"><option>Diesel</option><option>Benzina</option><option>Ibrida</option><option>GPL</option><option>Metano</option><option>Elettrica</option></select></label>
+          <label>City<input id="edCity" type="text" list="edCities" autocomplete="off"></label>
+        </div>
+        <datalist id="edCities"><option value="Milano"><option value="Monza"><option value="Bergamo"><option value="Brescia"><option value="Como"><option value="Varese"><option value="Lecco"><option value="Lodi"><option value="Cremona"><option value="Mantova"><option value="Pavia"><option value="Sondrio"><option value="Busto Arsizio"><option value="Legnano"><option value="Gallarate"><option value="Saronno"><option value="Seregno"><option value="Vigevano"><option value="Treviglio"><option value="Desenzano del Garda"><option value="Rho"><option value="Cantù"><option value="Crema"></datalist>
+        <div class="ed__row">
+          <label>Agreed price (€)<input id="edPrice" type="number" inputmode="numeric" min="0" step="100"></label>
+          <label>Market value (€)<input id="edMarket" type="number" inputmode="numeric" min="0" step="100"></label>
+        </div>
+        <p class="ed__calc" id="edCalc"></p>
+        <div class="ed__row">
+          <label>Availability<select id="edStatus"><option value="disponibile">Available</option><option value="trattativa">Under negotiation</option><option value="venduta">Sold</option></select></label>
+          <label id="edDaysWrap">Sold in (days)<input id="edDays" type="number" inputmode="numeric" min="1" max="90" step="1"></label>
+        </div>
+        <div class="ed__ph-head">
+          <div><b>Photos</b><small>The first one is the cover on the card.</small></div>
+          <label class="ed__add" id="edAdd">Add photos<input id="edFile" type="file" accept="image/*" multiple></label>
+        </div>
+        <ol class="ed__photos" id="edPhotos"></ol>
+        <p class="ed__err" id="edErr" role="alert"></p>
+        <div class="ed__actions">
+          <button class="btn btn--lime" id="edSave" type="button">Save to page</button>
+          <button class="btn btn--outline" id="edCancel" type="button">Cancel</button>
+        </div>
+        <button class="ed__del" id="edDelete" type="button">Delete this car from the page</button>
+      </section>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const CARS = [{"code":"CTC-ZEY6","make":"Citroën","model":"C5 Aircross","version":"1.5 BlueHDi 130 Shine","year":2019,"km":66450,"fuel":"Diesel","price":15400,"market":19300,"status":"venduta","city":"Brescia","days":3,"added":18,"gallery":[{"src":"ctc-zey6-1.webp","thumb":"ctc-zey6-t.webp"},{"src":"ctc-zey6-2.webp","thumb":"ctc-zey6-2.webp"},{"src":"ctc-zey6-3.webp","thumb":"ctc-zey6-3.webp"}]},{"code":"CTC-P3FD","make":"Suzuki","model":"Swift","version":"1.2 Cool GPL","year":2019,"km":135000,"fuel":"GPL","price":5900,"market":7650,"status":"venduta","city":"Brescia","days":14,"added":33,"gallery":[{"src":"ctc-p3fd-1.webp","thumb":"ctc-p3fd-t.webp"},{"src":"ctc-p3fd-2.webp","thumb":"ctc-p3fd-2.webp"},{"src":"ctc-p3fd-3.webp","thumb":"ctc-p3fd-3.webp"},{"src":"ctc-p3fd-4.webp","thumb":"ctc-p3fd-4.webp"}]},{"code":"CTC-PED1","make":"BMW","model":"X3","version":"xDrive20d Msport Pro","year":2025,"km":11000,"fuel":"Diesel","price":46500,"market":54900,"status":"disponibile","city":"Como","days":null,"added":15,"gallery":[{"src":"ctc-ped1-1.webp","thumb":"ctc-ped1-t.webp"},{"src":"ctc-ped1-2.webp","thumb":"ctc-ped1-2.webp"},{"src":"ctc-ped1-3.webp","thumb":"ctc-ped1-3.webp"},{"src":"ctc-ped1-4.webp","thumb":"ctc-ped1-4.webp"}]},{"code":"CTC-F6CZ","make":"Toyota","model":"Proace Verso","version":"Electric 75 kWh L1","year":2025,"km":40000,"fuel":"Elettrica","price":31500,"market":38900,"status":"venduta","city":"Pavia","days":9,"added":34,"gallery":[{"src":"ctc-f6cz-1.webp","thumb":"ctc-f6cz-t.webp"},{"src":"ctc-f6cz-2.webp","thumb":"ctc-f6cz-2.webp"},{"src":"ctc-f6cz-3.webp","thumb":"ctc-f6cz-3.webp"},{"src":"ctc-f6cz-4.webp","thumb":"ctc-f6cz-4.webp"}]},{"code":"CTC-DWAJ","make":"Land Rover","model":"Range Rover Evoque","version":"2.0 TD4 150 CV SE","year":2018,"km":130000,"fuel":"Diesel","price":17200,"market":21500,"status":"venduta","city":"Pavia","days":11,"added":22,"gallery":[{"src":"ctc-dwaj-1.webp","thumb":"ctc-dwaj-t.webp"},{"src":"ctc-dwaj-2.webp","thumb":"ctc-dwaj-2.webp"},{"src":"ctc-dwaj-3.webp","thumb":"ctc-dwaj-3.webp"},{"src":"ctc-dwaj-4.webp","thumb":"ctc-dwaj-4.webp"}]},{"code":"CTC-ZDYP","make":"Volkswagen","model":"Golf","version":"1.5 TGI Business","year":2018,"km":220000,"fuel":"Metano","price":7300,"market":9600,"status":"trattativa","city":"Lodi","days":null,"added":10,"gallery":[{"src":"ctc-zdyp-1.webp","thumb":"ctc-zdyp-t.webp"},{"src":"ctc-zdyp-2.webp","thumb":"ctc-zdyp-2.webp"},{"src":"ctc-zdyp-3.webp","thumb":"ctc-zdyp-3.webp"},{"src":"ctc-zdyp-4.webp","thumb":"ctc-zdyp-4.webp"}]},{"code":"CTC-CM2B","make":"Dacia","model":"Sandero Stepway","version":"TCe 100 GPL Comfort","year":2021,"km":68000,"fuel":"GPL","price":9600,"market":11900,"status":"venduta","city":"Lecco","days":6,"added":19,"gallery":[{"src":"ctc-cm2b-1.webp","thumb":"ctc-cm2b-t.webp"},{"src":"ctc-cm2b-2.webp","thumb":"ctc-cm2b-2.webp"},{"src":"ctc-cm2b-3.webp","thumb":"ctc-cm2b-3.webp"},{"src":"ctc-cm2b-4.webp","thumb":"ctc-cm2b-4.webp"}]},{"code":"CTC-G64P","make":"Mini","model":"Cooper Cabrio","version":"1.5 136 CV","year":2021,"km":39600,"fuel":"Benzina","price":17900,"market":21600,"status":"venduta","city":"Busto Arsizio","days":5,"added":8,"gallery":[{"src":"ctc-g64p-1.webp","thumb":"ctc-g64p-t.webp"},{"src":"ctc-g64p-2.webp","thumb":"ctc-g64p-2.webp"},{"src":"ctc-g64p-3.webp","thumb":"ctc-g64p-3.webp"},{"src":"ctc-g64p-4.webp","thumb":"ctc-g64p-4.webp"}]},{"code":"CTC-8G9A","make":"Fiat","model":"Doblò","version":"1.4 Natural Power","year":2020,"km":56000,"fuel":"Metano","price":9800,"market":12400,"status":"venduta","city":"Brescia","days":3,"added":27,"gallery":[{"src":"ctc-8g9a-1.webp","thumb":"ctc-8g9a-t.webp"},{"src":"ctc-8g9a-2.webp","thumb":"ctc-8g9a-2.webp"},{"src":"ctc-8g9a-3.webp","thumb":"ctc-8g9a-3.webp"},{"src":"ctc-8g9a-4.webp","thumb":"ctc-8g9a-4.webp"}]},{"code":"CTC-ENJZ","make":"Toyota","model":"C-HR","version":"1.8 Hybrid Trend","year":2024,"km":29000,"fuel":"Ibrida","price":24900,"market":29500,"status":"venduta","city":"Treviglio","days":6,"added":4,"gallery":[{"src":"ctc-enjz-1.webp","thumb":"ctc-enjz-t.webp"}]},{"code":"CTC-JHVS","make":"Mini","model":"Paceman","version":"Cooper SD","year":2015,"km":200000,"fuel":"Diesel","price":6200,"market":8500,"status":"disponibile","city":"Legnano","days":null,"added":19,"gallery":[{"src":"ctc-jhvs-1.webp","thumb":"ctc-jhvs-t.webp"},{"src":"ctc-jhvs-2.webp","thumb":"ctc-jhvs-2.webp"},{"src":"ctc-jhvs-3.webp","thumb":"ctc-jhvs-3.webp"},{"src":"ctc-jhvs-4.webp","thumb":"ctc-jhvs-4.webp"}]},{"code":"CTC-Z53P","make":"DR","model":"6.0","version":"1.5 Bi-Fuel GPL","year":2025,"km":26500,"fuel":"GPL","price":19400,"market":23500,"status":"venduta","city":"Busto Arsizio","days":12,"added":4,"gallery":[{"src":"ctc-z53p-1.webp","thumb":"ctc-z53p-t.webp"},{"src":"ctc-z53p-2.webp","thumb":"ctc-z53p-2.webp"},{"src":"ctc-z53p-3.webp","thumb":"ctc-z53p-3.webp"},{"src":"ctc-z53p-4.webp","thumb":"ctc-z53p-4.webp"}]},{"code":"CTC-P1EJ","make":"Maserati","model":"Ghibli","version":"3.0 V6 Diesel 275 CV","year":2019,"km":115000,"fuel":"Diesel","price":29800,"market":36500,"status":"venduta","city":"Legnano","days":10,"added":19,"gallery":[{"src":"ctc-p1ej-1.webp","thumb":"ctc-p1ej-t.webp"},{"src":"ctc-p1ej-2.webp","thumb":"ctc-p1ej-2.webp"},{"src":"ctc-p1ej-3.webp","thumb":"ctc-p1ej-3.webp"},{"src":"ctc-p1ej-4.webp","thumb":"ctc-p1ej-4.webp"}]},{"code":"CTC-W3V6","make":"Land Rover","model":"Range Rover Evoque","version":"D165 R-Dynamic","year":2021,"km":113500,"fuel":"Diesel","price":26400,"market":31800,"status":"venduta","city":"Varese","days":9,"added":25,"gallery":[{"src":"ctc-w3v6-1.webp","thumb":"ctc-w3v6-t.webp"},{"src":"ctc-w3v6-2.webp","thumb":"ctc-w3v6-2.webp"},{"src":"ctc-w3v6-3.webp","thumb":"ctc-w3v6-3.webp"},{"src":"ctc-w3v6-4.webp","thumb":"ctc-w3v6-4.webp"}]},{"code":"CTC-E4FK","make":"Mercedes-Benz","model":"Classe A","version":"220 d 4MATIC AMG Line","year":2022,"km":85000,"fuel":"Diesel","price":24400,"market":28900,"status":"venduta","city":"Milano","days":6,"added":17,"gallery":[{"src":"ctc-e4fk-1.webp","thumb":"ctc-e4fk-t.webp"},{"src":"ctc-e4fk-2.webp","thumb":"ctc-e4fk-2.webp"},{"src":"ctc-e4fk-3.webp","thumb":"ctc-e4fk-3.webp"},{"src":"ctc-e4fk-4.webp","thumb":"ctc-e4fk-4.webp"}]},{"code":"CTC-XJ8A","make":"Cupra","model":"Formentor","version":"1.4 e-Hybrid 204 CV","year":2023,"km":25000,"fuel":"Ibrida","price":27200,"market":32900,"status":"venduta","city":"Legnano","days":10,"added":37,"gallery":[{"src":"ctc-xj8a-1.webp","thumb":"ctc-xj8a-t.webp"},{"src":"ctc-xj8a-2.webp","thumb":"ctc-xj8a-2.webp"},{"src":"ctc-xj8a-3.webp","thumb":"ctc-xj8a-3.webp"},{"src":"ctc-xj8a-4.webp","thumb":"ctc-xj8a-4.webp"}]},{"code":"CTC-A64A","make":"Kia","model":"Sportage","version":"1.6 CRDi MHEV Energy","year":2019,"km":165000,"fuel":"Ibrida","price":11900,"market":14800,"status":"venduta","city":"Crema","days":10,"added":17,"gallery":[{"src":"ctc-a64a-1.webp","thumb":"ctc-a64a-t.webp"},{"src":"ctc-a64a-2.webp","thumb":"ctc-a64a-2.webp"},{"src":"ctc-a64a-3.webp","thumb":"ctc-a64a-3.webp"},{"src":"ctc-a64a-4.webp","thumb":"ctc-a64a-4.webp"}]},{"code":"CTC-6CWS","make":"BMW","model":"X1","version":"sDrive18d xLine","year":2022,"km":80000,"fuel":"Diesel","price":24800,"market":29700,"status":"trattativa","city":"Bergamo","days":null,"added":11,"gallery":[{"src":"ctc-6cws-1.webp","thumb":"ctc-6cws-t.webp"},{"src":"ctc-6cws-2.webp","thumb":"ctc-6cws-2.webp"},{"src":"ctc-6cws-3.webp","thumb":"ctc-6cws-3.webp"},{"src":"ctc-6cws-4.webp","thumb":"ctc-6cws-4.webp"}]},{"code":"CTC-DF8Z","make":"Fiat","model":"500X","version":"1.0 T3 Cross","year":2018,"km":80000,"fuel":"Benzina","price":9800,"market":12400,"status":"disponibile","city":"Legnano","days":null,"added":29,"gallery":[{"src":"ctc-df8z-1.webp","thumb":"ctc-df8z-t.webp"},{"src":"ctc-df8z-2.webp","thumb":"ctc-df8z-2.webp"},{"src":"ctc-df8z-3.webp","thumb":"ctc-df8z-3.webp"},{"src":"ctc-df8z-4.webp","thumb":"ctc-df8z-4.webp"}]},{"code":"CTC-6XH5","make":"Jeep","model":"Renegade","version":"1.0 T3 Limited","year":2019,"km":112000,"fuel":"Benzina","price":11400,"market":14200,"status":"trattativa","city":"Como","days":null,"added":7,"gallery":[{"src":"ctc-6xh5-1.webp","thumb":"ctc-6xh5-t.webp"},{"src":"ctc-6xh5-2.webp","thumb":"ctc-6xh5-2.webp"},{"src":"ctc-6xh5-3.webp","thumb":"ctc-6xh5-3.webp"},{"src":"ctc-6xh5-4.webp","thumb":"ctc-6xh5-4.webp"}]},{"code":"CTC-7271","make":"Jeep","model":"Grand Cherokee","version":"3.0 CRD Limited","year":2014,"km":210000,"fuel":"Diesel","price":11800,"market":15500,"status":"venduta","city":"Cremona","days":3,"added":10,"gallery":[{"src":"ctc-7271-1.webp","thumb":"ctc-7271-t.webp"},{"src":"ctc-7271-2.webp","thumb":"ctc-7271-2.webp"},{"src":"ctc-7271-3.webp","thumb":"ctc-7271-3.webp"},{"src":"ctc-7271-4.webp","thumb":"ctc-7271-4.webp"}]},{"code":"CTC-S8XV","make":"Audi","model":"A5 Sportback","version":"2.0 TDI quattro","year":2012,"km":168000,"fuel":"Diesel","price":8900,"market":11900,"status":"trattativa","city":"Pavia","days":null,"added":31,"gallery":[{"src":"ctc-s8xv-1.webp","thumb":"ctc-s8xv-t.webp"},{"src":"ctc-s8xv-2.webp","thumb":"ctc-s8xv-2.webp"},{"src":"ctc-s8xv-3.webp","thumb":"ctc-s8xv-3.webp"},{"src":"ctc-s8xv-4.webp","thumb":"ctc-s8xv-4.webp"}]},{"code":"CTC-K9E4","make":"Fiat","model":"500","version":"1.0 Hybrid Dolcevita","year":2024,"km":14000,"fuel":"Ibrida","price":12900,"market":15600,"status":"venduta","city":"Desenzano del Garda","days":11,"added":20,"gallery":[{"src":"ctc-k9e4-1.webp","thumb":"ctc-k9e4-t.webp"},{"src":"ctc-k9e4-2.webp","thumb":"ctc-k9e4-2.webp"},{"src":"ctc-k9e4-3.webp","thumb":"ctc-k9e4-3.webp"},{"src":"ctc-k9e4-4.webp","thumb":"ctc-k9e4-4.webp"}]},{"code":"CTC-H5AN","make":"Mini","model":"Cooper Coupé","version":"1.6 122 CV","year":2012,"km":109000,"fuel":"Benzina","price":7400,"market":9600,"status":"trattativa","city":"Brescia","days":null,"added":34,"gallery":[{"src":"ctc-h5an-1.webp","thumb":"ctc-h5an-t.webp"},{"src":"ctc-h5an-2.webp","thumb":"ctc-h5an-2.webp"},{"src":"ctc-h5an-3.webp","thumb":"ctc-h5an-3.webp"},{"src":"ctc-h5an-4.webp","thumb":"ctc-h5an-4.webp"}]},{"code":"CTC-05H2","make":"Jeep","model":"Wrangler","version":"4.0 Sahara","year":2004,"km":200000,"fuel":"GPL","price":13900,"market":18500,"status":"disponibile","city":"Milano","days":null,"added":22,"gallery":[{"src":"ctc-05h2-1.webp","thumb":"ctc-05h2-t.webp"},{"src":"ctc-05h2-2.webp","thumb":"ctc-05h2-2.webp"}]},{"code":"CTC-0B8S","make":"Audi","model":"A3 Sportback","version":"35 TDI S line edition","year":2024,"km":31000,"fuel":"Diesel","price":28900,"market":33900,"status":"venduta","city":"Gallarate","days":8,"added":14,"gallery":[{"src":"ctc-0b8s-1.webp","thumb":"ctc-0b8s-t.webp"},{"src":"ctc-0b8s-2.webp","thumb":"ctc-0b8s-2.webp"},{"src":"ctc-0b8s-3.webp","thumb":"ctc-0b8s-3.webp"},{"src":"ctc-0b8s-4.webp","thumb":"ctc-0b8s-4.webp"}]},{"code":"CTC-0DKF","make":"BMW","model":"216d Active Tourer","version":"Advantage","year":2016,"km":122000,"fuel":"Diesel","price":8400,"market":10600,"status":"venduta","city":"Como","days":13,"added":34,"gallery":[{"src":"ctc-0dkf-1.webp","thumb":"ctc-0dkf-t.webp"},{"src":"ctc-0dkf-2.webp","thumb":"ctc-0dkf-2.webp"},{"src":"ctc-0dkf-3.webp","thumb":"ctc-0dkf-3.webp"},{"src":"ctc-0dkf-4.webp","thumb":"ctc-0dkf-4.webp"}]},{"code":"CTC-22J5","make":"Peugeot","model":"3008","version":"1.5 BlueHDi Allure","year":2018,"km":170000,"fuel":"Diesel","price":10400,"market":13200,"status":"venduta","city":"Bergamo","days":10,"added":11,"gallery":[{"src":"ctc-22j5-1.webp","thumb":"ctc-22j5-t.webp"},{"src":"ctc-22j5-2.webp","thumb":"ctc-22j5-2.webp"},{"src":"ctc-22j5-3.webp","thumb":"ctc-22j5-3.webp"}]},{"code":"CTC-2EWX","make":"BMW","model":"420d Coupé","version":"Msport","year":2014,"km":250000,"fuel":"Diesel","price":9800,"market":12900,"status":"disponibile","city":"Bergamo","days":null,"added":6,"gallery":[{"src":"ctc-2ewx-1.webp","thumb":"ctc-2ewx-t.webp"},{"src":"ctc-2ewx-2.webp","thumb":"ctc-2ewx-2.webp"}]},{"code":"CTC-2HJR","make":"BMW","model":"630i Cabrio","version":"3.0 258 CV","year":2005,"km":240000,"fuel":"Benzina","price":9500,"market":13400,"status":"disponibile","city":"Legnano","days":null,"added":30,"gallery":[{"src":"ctc-2hjr-1.webp","thumb":"ctc-2hjr-t.webp"},{"src":"ctc-2hjr-2.webp","thumb":"ctc-2hjr-2.webp"}]},{"code":"CTC-2RSZ","make":"Peugeot","model":"308","version":"1.5 BlueHDi Allure","year":2020,"km":150000,"fuel":"Diesel","price":9200,"market":11500,"status":"venduta","city":"Varese","days":3,"added":38,"gallery":[{"src":"ctc-2rsz-1.webp","thumb":"ctc-2rsz-t.webp"},{"src":"ctc-2rsz-2.webp","thumb":"ctc-2rsz-2.webp"},{"src":"ctc-2rsz-3.webp","thumb":"ctc-2rsz-3.webp"},{"src":"ctc-2rsz-4.webp","thumb":"ctc-2rsz-4.webp"}]},{"code":"CTC-4268","make":"DS","model":"DS 3","version":"1.6 BlueHDi So Chic","year":2016,"km":159000,"fuel":"Diesel","price":6300,"market":8200,"status":"venduta","city":"Milano","days":6,"added":37,"gallery":[{"src":"ctc-4268-1.webp","thumb":"ctc-4268-t.webp"},{"src":"ctc-4268-2.webp","thumb":"ctc-4268-2.webp"},{"src":"ctc-4268-3.webp","thumb":"ctc-4268-3.webp"},{"src":"ctc-4268-4.webp","thumb":"ctc-4268-4.webp"}]},{"code":"CTC-46CD","make":"Alfa Romeo","model":"Stelvio","version":"2.2 Turbo 190 CV Q4 Executive","year":2018,"km":168000,"fuel":"Diesel","price":17400,"market":21900,"status":"venduta","city":"Desenzano del Garda","days":7,"added":16,"gallery":[{"src":"ctc-46cd-1.webp","thumb":"ctc-46cd-t.webp"},{"src":"ctc-46cd-2.webp","thumb":"ctc-46cd-2.webp"},{"src":"ctc-46cd-3.webp","thumb":"ctc-46cd-3.webp"},{"src":"ctc-46cd-4.webp","thumb":"ctc-46cd-4.webp"}]},{"code":"CTC-4B12","make":"Fiat","model":"Panda","version":"1.2 Dynamic","year":2008,"km":58500,"fuel":"Benzina","price":3200,"market":4300,"status":"disponibile","city":"Busto Arsizio","days":null,"added":7,"gallery":[{"src":"ctc-4b12-1.webp","thumb":"ctc-4b12-t.webp"},{"src":"ctc-4b12-2.webp","thumb":"ctc-4b12-2.webp"},{"src":"ctc-4b12-3.webp","thumb":"ctc-4b12-3.webp"},{"src":"ctc-4b12-4.webp","thumb":"ctc-4b12-4.webp"}]},{"code":"CTC-58MP","make":"Fiat","model":"Punto","version":"1.2 Street","year":2017,"km":92000,"fuel":"Benzina","price":6100,"market":7900,"status":"disponibile","city":"Gallarate","days":null,"added":4,"gallery":[{"src":"ctc-58mp-1.webp","thumb":"ctc-58mp-t.webp"},{"src":"ctc-58mp-2.webp","thumb":"ctc-58mp-2.webp"},{"src":"ctc-58mp-3.webp","thumb":"ctc-58mp-3.webp"},{"src":"ctc-58mp-4.webp","thumb":"ctc-58mp-4.webp"}]},{"code":"CTC-5H2J","make":"Mercedes-Benz","model":"Classe A","version":"180 CDI Executive","year":2014,"km":165000,"fuel":"Diesel","price":8400,"market":10600,"status":"venduta","city":"Brescia","days":9,"added":16,"gallery":[{"src":"ctc-5h2j-1.webp","thumb":"ctc-5h2j-t.webp"},{"src":"ctc-5h2j-2.webp","thumb":"ctc-5h2j-2.webp"},{"src":"ctc-5h2j-3.webp","thumb":"ctc-5h2j-3.webp"},{"src":"ctc-5h2j-4.webp","thumb":"ctc-5h2j-4.webp"}]},{"code":"CTC-5VSX","make":"Land Rover","model":"Discovery 4","version":"3.0 SDV6 HSE 7 posti","year":2015,"km":224000,"fuel":"Diesel","price":17900,"market":22900,"status":"venduta","city":"Varese","days":10,"added":3,"gallery":[{"src":"ctc-5vsx-1.webp","thumb":"ctc-5vsx-t.webp"},{"src":"ctc-5vsx-2.webp","thumb":"ctc-5vsx-2.webp"},{"src":"ctc-5vsx-3.webp","thumb":"ctc-5vsx-3.webp"},{"src":"ctc-5vsx-4.webp","thumb":"ctc-5vsx-4.webp"}]},{"code":"CTC-6BD0","make":"Jeep","model":"Compass 4xe","version":"1.3 PHEV Limited","year":2021,"km":25000,"fuel":"Ibrida","price":22900,"market":27400,"status":"venduta","city":"Milano","days":8,"added":21,"gallery":[{"src":"ctc-6bd0-1.webp","thumb":"ctc-6bd0-t.webp"},{"src":"ctc-6bd0-2.webp","thumb":"ctc-6bd0-2.webp"},{"src":"ctc-6bd0-3.webp","thumb":"ctc-6bd0-3.webp"},{"src":"ctc-6bd0-4.webp","thumb":"ctc-6bd0-4.webp"}]},{"code":"CTC-6MQR","make":"Peugeot","model":"308 SW","version":"1.5 BlueHDi 120 EAT6 Business","year":2017,"km":146000,"fuel":"Diesel","price":8100,"market":10300,"status":"venduta","city":"Lecco","days":10,"added":38,"gallery":[{"src":"ctc-6mqr-1.webp","thumb":"ctc-6mqr-t.webp"},{"src":"ctc-6mqr-2.webp","thumb":"ctc-6mqr-2.webp"},{"src":"ctc-6mqr-3.webp","thumb":"ctc-6mqr-3.webp"},{"src":"ctc-6mqr-4.webp","thumb":"ctc-6mqr-4.webp"}]},{"code":"CTC-6VE4","make":"Mercedes-Benz","model":"GLC","version":"300 de 4MATIC AMG Line","year":2023,"km":85000,"fuel":"Diesel","price":42900,"market":50500,"status":"disponibile","city":"Desenzano del Garda","days":null,"added":18,"gallery":[{"src":"ctc-6ve4-1.webp","thumb":"ctc-6ve4-t.webp"},{"src":"ctc-6ve4-2.webp","thumb":"ctc-6ve4-2.webp"},{"src":"ctc-6ve4-3.webp","thumb":"ctc-6ve4-3.webp"},{"src":"ctc-6ve4-4.webp","thumb":"ctc-6ve4-4.webp"}]},{"code":"CTC-749X","make":"Alfa Romeo","model":"Stelvio","version":"2.2 Turbo 210 CV Q4 Veloce","year":2018,"km":159000,"fuel":"Diesel","price":18600,"market":22900,"status":"venduta","city":"Gallarate","days":2,"added":7,"gallery":[{"src":"ctc-749x-1.webp","thumb":"ctc-749x-t.webp"},{"src":"ctc-749x-2.webp","thumb":"ctc-749x-2.webp"},{"src":"ctc-749x-3.webp","thumb":"ctc-749x-3.webp"},{"src":"ctc-749x-4.webp","thumb":"ctc-749x-4.webp"}]},{"code":"CTC-7GJX","make":"Peugeot","model":"308 SW","version":"1.5 BlueHDi GT Line","year":2019,"km":127000,"fuel":"Diesel","price":10900,"market":13600,"status":"trattativa","city":"Legnano","days":null,"added":26,"gallery":[{"src":"ctc-7gjx-1.webp","thumb":"ctc-7gjx-t.webp"},{"src":"ctc-7gjx-2.webp","thumb":"ctc-7gjx-2.webp"},{"src":"ctc-7gjx-3.webp","thumb":"ctc-7gjx-3.webp"},{"src":"ctc-7gjx-4.webp","thumb":"ctc-7gjx-4.webp"}]},{"code":"CTC-7GXE","make":"BMW","model":"X6","version":"xDrive30d Msport","year":2018,"km":145500,"fuel":"Diesel","price":31500,"market":37900,"status":"venduta","city":"Bergamo","days":10,"added":9,"gallery":[{"src":"ctc-7gxe-1.webp","thumb":"ctc-7gxe-t.webp"},{"src":"ctc-7gxe-2.webp","thumb":"ctc-7gxe-2.webp"},{"src":"ctc-7gxe-3.webp","thumb":"ctc-7gxe-3.webp"},{"src":"ctc-7gxe-4.webp","thumb":"ctc-7gxe-4.webp"}]},{"code":"CTC-7XEN","make":"Audi","model":"A1 Sportback","version":"1.2 TFSI S line edition","year":2014,"km":98000,"fuel":"Benzina","price":9300,"market":11600,"status":"disponibile","city":"Lodi","days":null,"added":33,"gallery":[{"src":"ctc-7xen-1.webp","thumb":"ctc-7xen-t.webp"},{"src":"ctc-7xen-2.webp","thumb":"ctc-7xen-2.webp"},{"src":"ctc-7xen-3.webp","thumb":"ctc-7xen-3.webp"}]},{"code":"CTC-8RVJ","make":"Dacia","model":"Duster","version":"1.6 GPL Black Shadow","year":2017,"km":120000,"fuel":"GPL","price":7600,"market":9700,"status":"disponibile","city":"Cantù","days":null,"added":10,"gallery":[{"src":"ctc-8rvj-1.webp","thumb":"ctc-8rvj-t.webp"},{"src":"ctc-8rvj-2.webp","thumb":"ctc-8rvj-2.webp"},{"src":"ctc-8rvj-3.webp","thumb":"ctc-8rvj-3.webp"},{"src":"ctc-8rvj-4.webp","thumb":"ctc-8rvj-4.webp"}]},{"code":"CTC-8YVW","make":"Mercedes-Benz","model":"GLA","version":"200 d Automatic AMG Line Premium Plus","year":2023,"km":56000,"fuel":"Diesel","price":31400,"market":36900,"status":"venduta","city":"Legnano","days":7,"added":2,"gallery":[{"src":"ctc-8yvw-1.webp","thumb":"ctc-8yvw-t.webp"}]},{"code":"CTC-90K7","make":"Mercedes-Benz","model":"Classe C","version":"220 d Sport Plus Auto","year":2016,"km":150000,"fuel":"Diesel","price":14200,"market":17900,"status":"venduta","city":"Milano","days":14,"added":14,"gallery":[{"src":"ctc-90k7-1.webp","thumb":"ctc-90k7-t.webp"},{"src":"ctc-90k7-2.webp","thumb":"ctc-90k7-2.webp"},{"src":"ctc-90k7-3.webp","thumb":"ctc-90k7-3.webp"},{"src":"ctc-90k7-4.webp","thumb":"ctc-90k7-4.webp"}]},{"code":"CTC-A859","make":"Audi","model":"Q3","version":"45 TFSI e S line","year":2022,"km":87000,"fuel":"Ibrida","price":29400,"market":34500,"status":"venduta","city":"Brescia","days":14,"added":16,"gallery":[{"src":"ctc-a859-1.webp","thumb":"ctc-a859-t.webp"},{"src":"ctc-a859-2.webp","thumb":"ctc-a859-2.webp"},{"src":"ctc-a859-3.webp","thumb":"ctc-a859-3.webp"},{"src":"ctc-a859-4.webp","thumb":"ctc-a859-4.webp"}]},{"code":"CTC-AH5T","make":"DR","model":"Evo 4","version":"1.5 Bi-Fuel GPL","year":2022,"km":45000,"fuel":"GPL","price":11900,"market":14500,"status":"venduta","city":"Lodi","days":7,"added":28,"gallery":[{"src":"ctc-ah5t-1.webp","thumb":"ctc-ah5t-t.webp"},{"src":"ctc-ah5t-2.webp","thumb":"ctc-ah5t-2.webp"},{"src":"ctc-ah5t-3.webp","thumb":"ctc-ah5t-3.webp"},{"src":"ctc-ah5t-4.webp","thumb":"ctc-ah5t-4.webp"}]},{"code":"CTC-AJKA","make":"SWM","model":"G05 Pro","version":"1.5T 177 CV","year":2025,"km":19000,"fuel":"Benzina","price":18500,"market":22400,"status":"venduta","city":"Brescia","days":9,"added":10,"gallery":[{"src":"ctc-ajka-1.webp","thumb":"ctc-ajka-t.webp"},{"src":"ctc-ajka-2.webp","thumb":"ctc-ajka-2.webp"},{"src":"ctc-ajka-3.webp","thumb":"ctc-ajka-3.webp"},{"src":"ctc-ajka-4.webp","thumb":"ctc-ajka-4.webp"}]},{"code":"CTC-BKDQ","make":"Renault","model":"Clio","version":"1.0 TCe Eco-G Techno","year":2025,"km":10600,"fuel":"GPL","price":15400,"market":17900,"status":"venduta","city":"Cremona","days":12,"added":34,"gallery":[{"src":"ctc-bkdq-1.webp","thumb":"ctc-bkdq-t.webp"},{"src":"ctc-bkdq-2.webp","thumb":"ctc-bkdq-2.webp"},{"src":"ctc-bkdq-3.webp","thumb":"ctc-bkdq-3.webp"},{"src":"ctc-bkdq-4.webp","thumb":"ctc-bkdq-4.webp"}]},{"code":"CTC-BRYD","make":"MG","model":"EHS","version":"1.5 PHEV Luxury","year":2022,"km":126000,"fuel":"Ibrida","price":17900,"market":21900,"status":"venduta","city":"Crema","days":3,"added":25,"gallery":[{"src":"ctc-bryd-1.webp","thumb":"ctc-bryd-t.webp"},{"src":"ctc-bryd-2.webp","thumb":"ctc-bryd-2.webp"},{"src":"ctc-bryd-3.webp","thumb":"ctc-bryd-3.webp"},{"src":"ctc-bryd-4.webp","thumb":"ctc-bryd-4.webp"}]},{"code":"CTC-CBN6","make":"Mercedes-Benz","model":"GLA","version":"200 d AMG Line","year":2023,"km":101000,"fuel":"Diesel","price":27900,"market":32900,"status":"venduta","city":"Varese","days":10,"added":4,"gallery":[{"src":"ctc-cbn6-1.webp","thumb":"ctc-cbn6-t.webp"},{"src":"ctc-cbn6-2.webp","thumb":"ctc-cbn6-2.webp"},{"src":"ctc-cbn6-3.webp","thumb":"ctc-cbn6-3.webp"},{"src":"ctc-cbn6-4.webp","thumb":"ctc-cbn6-4.webp"}]},{"code":"CTC-CP3Y","make":"Jeep","model":"Grand Cherokee","version":"3.0 CRD Overland","year":2013,"km":178000,"fuel":"Diesel","price":12400,"market":15900,"status":"disponibile","city":"Lodi","days":null,"added":17,"gallery":[{"src":"ctc-cp3y-1.webp","thumb":"ctc-cp3y-t.webp"},{"src":"ctc-cp3y-2.webp","thumb":"ctc-cp3y-2.webp"},{"src":"ctc-cp3y-3.webp","thumb":"ctc-cp3y-3.webp"},{"src":"ctc-cp3y-4.webp","thumb":"ctc-cp3y-4.webp"}]},{"code":"CTC-CQNR","make":"Renault","model":"Captur","version":"1.5 dCi Intens","year":2015,"km":241000,"fuel":"Diesel","price":5400,"market":7200,"status":"venduta","city":"Pavia","days":7,"added":23,"gallery":[{"src":"ctc-cqnr-1.webp","thumb":"ctc-cqnr-t.webp"},{"src":"ctc-cqnr-2.webp","thumb":"ctc-cqnr-2.webp"},{"src":"ctc-cqnr-3.webp","thumb":"ctc-cqnr-3.webp"},{"src":"ctc-cqnr-4.webp","thumb":"ctc-cqnr-4.webp"}]},{"code":"CTC-CTZW","make":"Kia","model":"Sportage","version":"1.6 T-GDi HEV GT-Line","year":2023,"km":33000,"fuel":"Ibrida","price":26400,"market":31200,"status":"venduta","city":"Bergamo","days":10,"added":8,"gallery":[{"src":"ctc-ctzw-1.webp","thumb":"ctc-ctzw-t.webp"},{"src":"ctc-ctzw-2.webp","thumb":"ctc-ctzw-2.webp"},{"src":"ctc-ctzw-3.webp","thumb":"ctc-ctzw-3.webp"},{"src":"ctc-ctzw-4.webp","thumb":"ctc-ctzw-4.webp"}]},{"code":"CTC-D4Y6","make":"Porsche","model":"Boxster","version":"3.2 S","year":2000,"km":90000,"fuel":"Benzina","price":18900,"market":24500,"status":"disponibile","city":"Milano","days":null,"added":10,"gallery":[{"src":"ctc-d4y6-1.webp","thumb":"ctc-d4y6-t.webp"},{"src":"ctc-d4y6-2.webp","thumb":"ctc-d4y6-2.webp"},{"src":"ctc-d4y6-3.webp","thumb":"ctc-d4y6-3.webp"},{"src":"ctc-d4y6-4.webp","thumb":"ctc-d4y6-4.webp"}]},{"code":"CTC-D9WJ","make":"Škoda","model":"Octavia Wagon","version":"1.4 G-TEC Executive","year":2016,"km":150000,"fuel":"Metano","price":8400,"market":10900,"status":"venduta","city":"Varese","days":14,"added":14,"gallery":[{"src":"ctc-d9wj-1.webp","thumb":"ctc-d9wj-t.webp"},{"src":"ctc-d9wj-2.webp","thumb":"ctc-d9wj-2.webp"},{"src":"ctc-d9wj-3.webp","thumb":"ctc-d9wj-3.webp"},{"src":"ctc-d9wj-4.webp","thumb":"ctc-d9wj-4.webp"}]},{"code":"CTC-DEBY","make":"Opel","model":"Karl Rocks","version":"1.0 75 CV","year":2019,"km":57860,"fuel":"Benzina","price":7400,"market":9200,"status":"venduta","city":"Monza","days":8,"added":25,"gallery":[{"src":"ctc-deby-1.webp","thumb":"ctc-deby-t.webp"},{"src":"ctc-deby-2.webp","thumb":"ctc-deby-2.webp"},{"src":"ctc-deby-3.webp","thumb":"ctc-deby-3.webp"},{"src":"ctc-deby-4.webp","thumb":"ctc-deby-4.webp"}]},{"code":"CTC-EHTK","make":"Ford","model":"Ranger Raptor","version":"2.0 EcoBlue 213 CV","year":2020,"km":28000,"fuel":"Diesel","price":39500,"market":46900,"status":"venduta","city":"Cremona","days":12,"added":29,"gallery":[{"src":"ctc-ehtk-1.webp","thumb":"ctc-ehtk-t.webp"},{"src":"ctc-ehtk-2.webp","thumb":"ctc-ehtk-2.webp"},{"src":"ctc-ehtk-3.webp","thumb":"ctc-ehtk-3.webp"},{"src":"ctc-ehtk-4.webp","thumb":"ctc-ehtk-4.webp"}]},{"code":"CTC-EWPR","make":"Volkswagen","model":"Maggiolino","version":"1.2 TSI Design","year":2012,"km":106000,"fuel":"Benzina","price":7900,"market":9900,"status":"venduta","city":"Varese","days":7,"added":28,"gallery":[{"src":"ctc-ewpr-1.webp","thumb":"ctc-ewpr-t.webp"},{"src":"ctc-ewpr-2.webp","thumb":"ctc-ewpr-2.webp"},{"src":"ctc-ewpr-3.webp","thumb":"ctc-ewpr-3.webp"},{"src":"ctc-ewpr-4.webp","thumb":"ctc-ewpr-4.webp"}]},{"code":"CTC-F441","make":"Opel","model":"Corsa","version":"1.2 Edition","year":2024,"km":27000,"fuel":"Benzina","price":13200,"market":15500,"status":"venduta","city":"Milano","days":7,"added":24,"gallery":[{"src":"ctc-f441-1.webp","thumb":"ctc-f441-t.webp"},{"src":"ctc-f441-2.webp","thumb":"ctc-f441-2.webp"},{"src":"ctc-f441-3.webp","thumb":"ctc-f441-3.webp"},{"src":"ctc-f441-4.webp","thumb":"ctc-f441-4.webp"}]},{"code":"CTC-G6G3","make":"BMW","model":"320d Touring","version":"Advantage","year":2016,"km":164400,"fuel":"Diesel","price":11400,"market":14300,"status":"venduta","city":"Busto Arsizio","days":5,"added":19,"gallery":[{"src":"ctc-g6g3-1.webp","thumb":"ctc-g6g3-t.webp"},{"src":"ctc-g6g3-2.webp","thumb":"ctc-g6g3-2.webp"},{"src":"ctc-g6g3-3.webp","thumb":"ctc-g6g3-3.webp"},{"src":"ctc-g6g3-4.webp","thumb":"ctc-g6g3-4.webp"}]},{"code":"CTC-GCFJ","make":"DR","model":"3.0","version":"1.5 Bi-Fuel GPL","year":2024,"km":5400,"fuel":"GPL","price":15900,"market":18900,"status":"venduta","city":"Como","days":9,"added":10,"gallery":[{"src":"ctc-gcfj-1.webp","thumb":"ctc-gcfj-t.webp"},{"src":"ctc-gcfj-2.webp","thumb":"ctc-gcfj-2.webp"},{"src":"ctc-gcfj-3.webp","thumb":"ctc-gcfj-3.webp"},{"src":"ctc-gcfj-4.webp","thumb":"ctc-gcfj-4.webp"}]},{"code":"CTC-HNGF","make":"Lancia","model":"Thema","version":"2.0 16v i.e.","year":1993,"km":197000,"fuel":"Benzina","price":4900,"market":7400,"status":"disponibile","city":"Brescia","days":null,"added":3,"gallery":[{"src":"ctc-hngf-1.webp","thumb":"ctc-hngf-t.webp"},{"src":"ctc-hngf-2.webp","thumb":"ctc-hngf-2.webp"},{"src":"ctc-hngf-3.webp","thumb":"ctc-hngf-3.webp"},{"src":"ctc-hngf-4.webp","thumb":"ctc-hngf-4.webp"}]},{"code":"CTC-K1WY","make":"Mini","model":"Countryman","version":"Cooper SD ALL4","year":2017,"km":158000,"fuel":"Diesel","price":13300,"market":16700,"status":"venduta","city":"Pavia","days":4,"added":36,"gallery":[{"src":"ctc-k1wy-1.webp","thumb":"ctc-k1wy-t.webp"},{"src":"ctc-k1wy-2.webp","thumb":"ctc-k1wy-2.webp"},{"src":"ctc-k1wy-3.webp","thumb":"ctc-k1wy-3.webp"},{"src":"ctc-k1wy-4.webp","thumb":"ctc-k1wy-4.webp"}]},{"code":"CTC-KWZT","make":"Hyundai","model":"Tucson","version":"1.6 CRDi 48V XLine","year":2023,"km":48000,"fuel":"Diesel","price":24900,"market":28900,"status":"venduta","city":"Legnano","days":14,"added":19,"gallery":[{"src":"ctc-kwzt-1.webp","thumb":"ctc-kwzt-t.webp"},{"src":"ctc-kwzt-2.webp","thumb":"ctc-kwzt-2.webp"},{"src":"ctc-kwzt-3.webp","thumb":"ctc-kwzt-3.webp"},{"src":"ctc-kwzt-4.webp","thumb":"ctc-kwzt-4.webp"}]},{"code":"CTC-M296","make":"BMW","model":"X1","version":"xDrive18d xLine","year":2020,"km":156000,"fuel":"Diesel","price":18400,"market":22500,"status":"venduta","city":"Pavia","days":6,"added":36,"gallery":[{"src":"ctc-m296-1.webp","thumb":"ctc-m296-t.webp"},{"src":"ctc-m296-2.webp","thumb":"ctc-m296-2.webp"},{"src":"ctc-m296-3.webp","thumb":"ctc-m296-3.webp"},{"src":"ctc-m296-4.webp","thumb":"ctc-m296-4.webp"}]},{"code":"CTC-M76D","make":"Volkswagen","model":"Golf R","version":"2.0 TSI 4Motion DSG 20 Years","year":2023,"km":35000,"fuel":"Benzina","price":38900,"market":45900,"status":"venduta","city":"Crema","days":10,"added":31,"gallery":[{"src":"ctc-m76d-1.webp","thumb":"ctc-m76d-t.webp"},{"src":"ctc-m76d-2.webp","thumb":"ctc-m76d-2.webp"},{"src":"ctc-m76d-3.webp","thumb":"ctc-m76d-3.webp"},{"src":"ctc-m76d-4.webp","thumb":"ctc-m76d-4.webp"}]},{"code":"CTC-MXZN","make":"Nissan","model":"Qashqai","version":"1.5 dCi N-Connecta","year":2017,"km":153000,"fuel":"Diesel","price":10400,"market":13200,"status":"venduta","city":"Lecco","days":2,"added":35,"gallery":[{"src":"ctc-mxzn-1.webp","thumb":"ctc-mxzn-t.webp"},{"src":"ctc-mxzn-2.webp","thumb":"ctc-mxzn-2.webp"},{"src":"ctc-mxzn-3.webp","thumb":"ctc-mxzn-3.webp"},{"src":"ctc-mxzn-4.webp","thumb":"ctc-mxzn-4.webp"}]},{"code":"CTC-N3E2","make":"Land Rover","model":"Range Rover Velar","version":"D204 Dynamic SE","year":2024,"km":37000,"fuel":"Diesel","price":52900,"market":61500,"status":"trattativa","city":"Pavia","days":null,"added":37,"gallery":[{"src":"ctc-n3e2-1.webp","thumb":"ctc-n3e2-t.webp"},{"src":"ctc-n3e2-2.webp","thumb":"ctc-n3e2-2.webp"},{"src":"ctc-n3e2-3.webp","thumb":"ctc-n3e2-3.webp"},{"src":"ctc-n3e2-4.webp","thumb":"ctc-n3e2-4.webp"}]},{"code":"CTC-NKY5","make":"Peugeot","model":"208","version":"PureTech 100 GT","year":2024,"km":13700,"fuel":"Benzina","price":17900,"market":21300,"status":"disponibile","city":"Gallarate","days":null,"added":4,"gallery":[{"src":"ctc-nky5-1.webp","thumb":"ctc-nky5-t.webp"},{"src":"ctc-nky5-2.webp","thumb":"ctc-nky5-2.webp"},{"src":"ctc-nky5-3.webp","thumb":"ctc-nky5-3.webp"},{"src":"ctc-nky5-4.webp","thumb":"ctc-nky5-4.webp"}]},{"code":"CTC-Q0GA","make":"Fiat","model":"500X","version":"1.6 MultiJet Cross","year":2016,"km":160000,"fuel":"Diesel","price":8100,"market":10400,"status":"venduta","city":"Cantù","days":11,"added":20,"gallery":[{"src":"ctc-q0ga-1.webp","thumb":"ctc-q0ga-t.webp"},{"src":"ctc-q0ga-2.webp","thumb":"ctc-q0ga-2.webp"},{"src":"ctc-q0ga-3.webp","thumb":"ctc-q0ga-3.webp"},{"src":"ctc-q0ga-4.webp","thumb":"ctc-q0ga-4.webp"}]},{"code":"CTC-RNT2","make":"Smart","model":"Fortwo Coupé","version":"1.0 mhd Passion","year":2010,"km":49000,"fuel":"Benzina","price":4900,"market":6500,"status":"trattativa","city":"Cantù","days":null,"added":34,"gallery":[{"src":"ctc-rnt2-1.webp","thumb":"ctc-rnt2-t.webp"},{"src":"ctc-rnt2-2.webp","thumb":"ctc-rnt2-2.webp"},{"src":"ctc-rnt2-3.webp","thumb":"ctc-rnt2-3.webp"},{"src":"ctc-rnt2-4.webp","thumb":"ctc-rnt2-4.webp"}]},{"code":"CTC-S3E5","make":"Toyota","model":"RAV4","version":"2.5 Hybrid AWD-i Lounge","year":2025,"km":2000,"fuel":"Ibrida","price":41900,"market":47900,"status":"venduta","city":"Como","days":7,"added":14,"gallery":[{"src":"ctc-s3e5-1.webp","thumb":"ctc-s3e5-t.webp"},{"src":"ctc-s3e5-2.webp","thumb":"ctc-s3e5-2.webp"},{"src":"ctc-s3e5-3.webp","thumb":"ctc-s3e5-3.webp"},{"src":"ctc-s3e5-4.webp","thumb":"ctc-s3e5-4.webp"}]},{"code":"CTC-TXSZ","make":"Lexus","model":"NX","version":"300h Executive","year":2016,"km":140000,"fuel":"Ibrida","price":18900,"market":22900,"status":"venduta","city":"Treviglio","days":4,"added":1,"gallery":[{"src":"ctc-txsz-1.webp","thumb":"ctc-txsz-t.webp"},{"src":"ctc-txsz-2.webp","thumb":"ctc-txsz-2.webp"}]},{"code":"CTC-V150","make":"BMW","model":"Z3 Roadster","version":"1.9 140 CV","year":1997,"km":120000,"fuel":"Benzina","price":9900,"market":13400,"status":"venduta","city":"Bergamo","days":6,"added":18,"gallery":[{"src":"ctc-v150-1.webp","thumb":"ctc-v150-t.webp"},{"src":"ctc-v150-2.webp","thumb":"ctc-v150-2.webp"},{"src":"ctc-v150-3.webp","thumb":"ctc-v150-3.webp"},{"src":"ctc-v150-4.webp","thumb":"ctc-v150-4.webp"}]},{"code":"CTC-VHZE","make":"Audi","model":"A5 Cabrio","version":"3.0 TDI multitronic Advanced","year":2012,"km":160000,"fuel":"Diesel","price":12400,"market":15600,"status":"disponibile","city":"Bergamo","days":null,"added":20,"gallery":[{"src":"ctc-vhze-1.webp","thumb":"ctc-vhze-t.webp"},{"src":"ctc-vhze-2.webp","thumb":"ctc-vhze-2.webp"},{"src":"ctc-vhze-3.webp","thumb":"ctc-vhze-3.webp"},{"src":"ctc-vhze-4.webp","thumb":"ctc-vhze-4.webp"}]},{"code":"CTC-VPV4","make":"BMW","model":"218d Coupé","version":"Msport","year":2016,"km":105000,"fuel":"Diesel","price":13400,"market":16500,"status":"venduta","city":"Milano","days":3,"added":14,"gallery":[{"src":"ctc-vpv4-1.webp","thumb":"ctc-vpv4-t.webp"},{"src":"ctc-vpv4-2.webp","thumb":"ctc-vpv4-2.webp"},{"src":"ctc-vpv4-3.webp","thumb":"ctc-vpv4-3.webp"},{"src":"ctc-vpv4-4.webp","thumb":"ctc-vpv4-4.webp"}]},{"code":"CTC-VQD4","make":"Škoda","model":"Superb Wagon","version":"2.0 TDI DSG Style","year":2016,"km":138000,"fuel":"Diesel","price":13900,"market":17200,"status":"venduta","city":"Cremona","days":14,"added":37,"gallery":[{"src":"ctc-vqd4-1.webp","thumb":"ctc-vqd4-t.webp"},{"src":"ctc-vqd4-2.webp","thumb":"ctc-vqd4-2.webp"},{"src":"ctc-vqd4-3.webp","thumb":"ctc-vqd4-3.webp"},{"src":"ctc-vqd4-4.webp","thumb":"ctc-vqd4-4.webp"}]},{"code":"CTC-VYBT","make":"Smart","model":"Fortwo Brabus","version":"Cabrio Xclusive","year":2013,"km":140000,"fuel":"Benzina","price":7400,"market":9500,"status":"venduta","city":"Lodi","days":6,"added":12,"gallery":[{"src":"ctc-vybt-1.webp","thumb":"ctc-vybt-t.webp"},{"src":"ctc-vybt-2.webp","thumb":"ctc-vybt-2.webp"},{"src":"ctc-vybt-3.webp","thumb":"ctc-vybt-3.webp"},{"src":"ctc-vybt-4.webp","thumb":"ctc-vybt-4.webp"}]},{"code":"CTC-WDK3","make":"Mercedes-Benz","model":"GLK","version":"220 CDI 4MATIC Premium","year":2012,"km":186000,"fuel":"Diesel","price":10900,"market":13800,"status":"venduta","city":"Desenzano del Garda","days":6,"added":31,"gallery":[{"src":"ctc-wdk3-1.webp","thumb":"ctc-wdk3-t.webp"},{"src":"ctc-wdk3-2.webp","thumb":"ctc-wdk3-2.webp"},{"src":"ctc-wdk3-3.webp","thumb":"ctc-wdk3-3.webp"},{"src":"ctc-wdk3-4.webp","thumb":"ctc-wdk3-4.webp"}]},{"code":"CTC-X95D","make":"Audi","model":"A4","version":"2.0 TDI ultra S tronic Business","year":2017,"km":166000,"fuel":"Diesel","price":13900,"market":16900,"status":"venduta","city":"Bergamo","days":13,"added":30,"gallery":[{"src":"ctc-x95d-1.webp","thumb":"ctc-x95d-t.webp"},{"src":"ctc-x95d-2.webp","thumb":"ctc-x95d-2.webp"},{"src":"ctc-x95d-3.webp","thumb":"ctc-x95d-3.webp"},{"src":"ctc-x95d-4.webp","thumb":"ctc-x95d-4.webp"}]},{"code":"CTC-XVH5","make":"Toyota","model":"Yaris","version":"1.5 Hybrid White Edition","year":2017,"km":80500,"fuel":"Ibrida","price":10400,"market":12600,"status":"venduta","city":"Sondrio","days":2,"added":26,"gallery":[{"src":"ctc-xvh5-1.webp","thumb":"ctc-xvh5-t.webp"},{"src":"ctc-xvh5-2.webp","thumb":"ctc-xvh5-2.webp"},{"src":"ctc-xvh5-3.webp","thumb":"ctc-xvh5-3.webp"},{"src":"ctc-xvh5-4.webp","thumb":"ctc-xvh5-4.webp"}]},{"code":"CTC-XXRH","make":"Dacia","model":"Jogger","version":"Eco-G 120 Journey","year":2025,"km":34000,"fuel":"GPL","price":17400,"market":20500,"status":"venduta","city":"Varese","days":12,"added":3,"gallery":[{"src":"ctc-xxrh-1.webp","thumb":"ctc-xxrh-t.webp"},{"src":"ctc-xxrh-2.webp","thumb":"ctc-xxrh-2.webp"},{"src":"ctc-xxrh-3.webp","thumb":"ctc-xxrh-3.webp"},{"src":"ctc-xxrh-4.webp","thumb":"ctc-xxrh-4.webp"}]},{"code":"CTC-Y23D","make":"Mercedes-Benz","model":"SLK","version":"230 Kompressor","year":1999,"km":155000,"fuel":"Benzina","price":7400,"market":9900,"status":"trattativa","city":"Milano","days":null,"added":2,"gallery":[{"src":"ctc-y23d-1.webp","thumb":"ctc-y23d-t.webp"},{"src":"ctc-y23d-2.webp","thumb":"ctc-y23d-2.webp"},{"src":"ctc-y23d-3.webp","thumb":"ctc-y23d-3.webp"},{"src":"ctc-y23d-4.webp","thumb":"ctc-y23d-4.webp"}]},{"code":"CTC-YF05","make":"Audi","model":"A5 Cabrio","version":"2.0 TFSI S line","year":2013,"km":130000,"fuel":"Benzina","price":14400,"market":17900,"status":"disponibile","city":"Rho","days":null,"added":16,"gallery":[{"src":"ctc-yf05-1.webp","thumb":"ctc-yf05-t.webp"},{"src":"ctc-yf05-2.webp","thumb":"ctc-yf05-2.webp"},{"src":"ctc-yf05-3.webp","thumb":"ctc-yf05-3.webp"},{"src":"ctc-yf05-4.webp","thumb":"ctc-yf05-4.webp"}]}];
+const IMG = "img/";
+const P = (p) => /^(\/|https?:)/.test(p) ? p : IMG + p;
+const cover = (c) => c.gallery[0] || { src: "", thumb: "" };
+
+const eur = (n) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " €";
+const kmf = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " km";
+const gain = (c) => c.market - c.price;
+const esc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+const STATUS = { venduta: "Venduta", disponibile: "Disponibile", trattativa: "In trattativa" };
+const badgeText = (c) => c.status === "venduta" ? `Venduta in ${c.days} gg` : STATUS[c.status];
+const byCode = Object.fromEntries(CARS.map((c) => [c.code, c]));
+
+/* stats from the cars on the page */
+const sold = CARS.filter((c) => c.status === "venduta");
+const avgMargin = CARS.reduce((s, c) => s + gain(c) / c.price, 0) / CARS.length * 100;
+const avgDays = sold.reduce((s, c) => s + c.days, 0) / sold.length;
+document.getElementById("statMargin").textContent = "+" + avgMargin.toFixed(1).replace(".", ",") + "%";
+document.getElementById("statDays").textContent = Math.round(avgDays) + " giorni";
+
+/* featured deal card */
+const feat = (byCode["CTC-6VE4"] && byCode["CTC-6VE4"].status === "disponibile" && byCode["CTC-6VE4"])
+  || CARS.find((c) => c.status === "disponibile") || CARS[0];
+document.getElementById("featured").innerHTML = `
+  <div class="deal__head"><span class="live"><span class="dot" aria-hidden="true"></span>Opportunità disponibile</span><span class="where">${esc(feat.city)}</span></div>
+  <img class="deal__img" src="${P(cover(feat).src)}" alt="${esc(feat.make + " " + feat.model)}" width="1024" height="768">
+  <div class="deal__body">
+    <p class="deal__title">${esc(feat.make + " " + feat.model)}</p>
+    <div class="deal__meta"><span class="pill-ink">${feat.year}</span><span class="pill-ink num">${kmf(feat.km)}</span><span class="pill-ink">${esc(feat.fuel)}</span></div>
+    <div class="deal__price">
+      <div><small>Prezzo concordato</small><strong class="num">${eur(feat.price)}</strong></div>
+      <div class="gain"><small>Margine stimato</small><strong class="num">+${eur(gain(feat))}</strong></div>
+    </div>
+  </div>`;
+document.getElementById("featured").addEventListener("click", () => openCar(feat.code));
+
+/* ticker of sold cars */
+const tickCars = sold.slice().sort((a, b) => a.added - b.added).slice(0, 18);
+const tickHTML = tickCars.map((c) => `
+  <button class="tick" type="button" data-code="${c.code}">
+    <img src="${P(cover(c).thumb)}" alt="" loading="lazy" width="76" height="56">
+    <span><b>${esc(c.make + " " + c.model)}</b><span>${c.year} · ${esc(c.city)} · <em>venduta in ${c.days} gg</em></span></span>
+  </button>`).join("");
+const ticker = document.getElementById("ticker");
+ticker.innerHTML = tickHTML + tickHTML.replace(/<button /g, '<button tabindex="-1" aria-hidden="true" ');
+ticker.addEventListener("click", (e) => { const b = e.target.closest(".tick"); if (b) openCar(b.dataset.code); });
+
+/* filters */
+const state = { s: "all", make: "", fuel: "", sort: "recent", shown: 24 };
+const fill = (id, values) => {
+  const sel = document.getElementById(id);
+  values.forEach((v) => sel.insertAdjacentHTML("beforeend", `<option value="${esc(v)}">${esc(v)}</option>`));
+};
+fill("fMake", [...new Set(CARS.map((c) => c.make))].sort((a, b) => a.localeCompare(b, "it")));
+fill("fFuel", [...new Set(CARS.map((c) => c.fuel))].sort());
+const counts = { all: CARS.length };
+CARS.forEach((c) => { counts[c.status] = (counts[c.status] || 0) + 1; });
+document.querySelectorAll("[data-c]").forEach((el) => { el.textContent = counts[el.dataset.c] || 0; });
+
+const RANK = { disponibile: 0, trattativa: 1, venduta: 2 };
+const byStatus = (f) => (a, b) => (RANK[a.status] - RANK[b.status]) || f(a, b);
+const SORTS = {
+  recent: (a, b) => a.added - b.added,
+  margin: (a, b) => gain(b) / b.price - gain(a) / a.price,
+  priceAsc: (a, b) => a.price - b.price,
+  priceDesc: (a, b) => b.price - a.price,
+  year: (a, b) => b.year - a.year,
+};
+
+function cardHTML(c) {
+  return `
+  <button class="card" type="button" data-code="${c.code}">
+    <div class="card__ph">
+      <img src="${P(cover(c).thumb)}" alt="${esc(c.make + " " + c.model + " " + c.year)}" loading="lazy" width="560" height="420">
+      <span class="badge badge--${c.status}">${badgeText(c)}</span>
+      <span class="ph-count num">${c.gallery.length} foto</span>
+    </div>
+    <div class="card__body">
+      <div class="card__where"><span>${esc(c.city)}</span><span class="code">${c.code}</span></div>
+      <p class="card__title">${esc(c.make + " " + c.model)}</p>
+      <div class="card__ver">${esc(c.version)}</div>
+      <div class="card__facts"><span class="chip">${c.year}</span><span class="chip">${kmf(c.km)}</span><span class="chip">${esc(c.fuel)}</span></div>
+      <div class="card__price">
+        <div><small>Prezzo concordato</small><strong>${eur(c.price)}</strong></div>
+        <span class="gain-pill">+${eur(gain(c))} margine</span>
+      </div>
+    </div>
+  </button>`;
+}
+
+function render() {
+  const list = CARS
+    .filter((c) => (state.s === "all" || c.status === state.s) && (!state.make || c.make === state.make) && (!state.fuel || c.fuel === state.fuel))
+    .sort(byStatus(SORTS[state.sort]));
+  const grid = document.getElementById("grid");
+  grid.innerHTML = list.length
+    ? list.slice(0, state.shown).map(cardHTML).join("")
+    : `<div class="empty">Nessuna auto con questi filtri. Prova a togliere la marca o l'alimentazione.</div>`;
+  const moreBtn = document.getElementById("more");
+  moreBtn.hidden = list.length <= state.shown;
+  moreBtn.textContent = `Mostra altre ${Math.min(24, list.length - state.shown)} auto`;
+  const totalValue = list.reduce((s, c) => s + c.market, 0);
+  document.getElementById("count").textContent = list.length
+    ? `${list.length} auto · ${eur(totalValue)} di valore di mercato`
+    : "0 auto";
+}
+
+document.getElementById("seg").addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  state.s = b.dataset.s; state.shown = 24;
+  document.querySelectorAll("#seg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+  render();
+});
+[["fMake", "make"], ["fFuel", "fuel"], ["fSort", "sort"]].forEach(([id, key]) => {
+  document.getElementById(id).addEventListener("change", (e) => { state[key] = e.target.value; state.shown = 24; render(); });
+});
+document.getElementById("more").addEventListener("click", () => { state.shown += 24; render(); });
+document.getElementById("grid").addEventListener("click", (e) => { const b = e.target.closest(".card"); if (b) openCar(b.dataset.code); });
+
+/* dialog */
+const dlg = document.getElementById("dlg");
+let cur = null, idx = 0;
+function showPhoto(i) {
+  if (!cur.gallery.length) { document.getElementById("gMain").removeAttribute("src"); document.getElementById("gMain").alt = ""; document.getElementById("gIdx").textContent = "No photos yet"; return; }
+  idx = (i + cur.gallery.length) % cur.gallery.length;
+  const main = document.getElementById("gMain");
+  main.src = P(cur.gallery[idx].src);
+  main.alt = `${cur.make} ${cur.model}, foto ${idx + 1} di ${cur.gallery.length}`;
+  document.getElementById("gIdx").textContent = `${idx + 1} / ${cur.gallery.length}`;
+  document.querySelectorAll("#gThumbs button").forEach((b, j) => b.setAttribute("aria-current", String(j === idx)));
+}
+function openCar(code) {
+  cur = byCode[code]; if (!cur) return;
+  document.getElementById("gThumbs").innerHTML = cur.gallery.map((g, j) =>
+    `<button type="button" data-i="${j}" aria-label="Foto ${j + 1}"><img src="${P(g.thumb)}" alt="" loading="lazy"></button>`).join("");
+  const multi = cur.gallery.length > 1;
+  document.getElementById("gPrev").hidden = !multi;
+  document.getElementById("gNext").hidden = !multi;
+  document.getElementById("gThumbs").hidden = !multi;
+  showPhoto(0);
+  document.getElementById("dEyebrow").textContent = `${cur.code} · ${cur.city}`;
+  document.getElementById("dTitle").textContent = `${cur.make} ${cur.model}`;
+  document.getElementById("dVer").textContent = cur.version;
+  const facts = [["Anno", cur.year], ["Chilometri", kmf(cur.km)], ["Alimentazione", cur.fuel],
+                 ["Zona", cur.city], ["Stato", STATUS[cur.status]], ["Foto", cur.gallery.length + " foto"]];
+  document.getElementById("dFacts").innerHTML = facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("");
+  document.getElementById("dPrice").textContent = eur(cur.price);
+  document.getElementById("dMarket").textContent = eur(cur.market);
+  document.getElementById("dGain").textContent = `+${eur(gain(cur))} (+${cur.price ? Math.round(gain(cur) / cur.price * 100) : 0}%)`;
+  const line = {
+    venduta: `Venduta a un concessionario del network in ${cur.days} giorni.`,
+    disponibile: `Disponibile ora per i concessionari della zona di ${cur.city}.`,
+    trattativa: `In trattativa con un concessionario del network.`,
+  }[cur.status];
+  document.getElementById("dStatus").textContent = line;
+  edReset();
+  if (!dlg.open) dlg.showModal();
+  dlg.scrollTop = 0;
+}
+document.getElementById("gThumbs").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) showPhoto(+b.dataset.i); });
+document.getElementById("gPrev").addEventListener("click", () => showPhoto(idx - 1));
+document.getElementById("gNext").addEventListener("click", () => showPhoto(idx + 1));
+document.getElementById("dClose").addEventListener("click", () => { if (ed.isNew) edReset(); dlg.close(); });
+document.getElementById("dCta").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+dlg.addEventListener("keydown", (e) => {
+  if (e.target.closest("input, textarea, select")) return;
+  if (e.key === "ArrowRight") showPhoto(idx + 1);
+  if (e.key === "ArrowLeft") showPhoto(idx - 1);
+});
+let touchX = null;
+document.getElementById("gMain").addEventListener("touchstart", (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+document.getElementById("gMain").addEventListener("touchend", (e) => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX; touchX = null;
+  if (Math.abs(dx) > 40) showPhoto(idx + (dx < 0 ? 1 : -1));
+});
+
+/* copy email */
+document.getElementById("copyMail").addEventListener("click", async (e) => {
+  const addr = document.getElementById("mailAddr").textContent;
+  try { await navigator.clipboard.writeText(addr); e.target.textContent = "Copiata"; }
+  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById("mailAddr")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); e.target.textContent = "Selezionata"; }
+  setTimeout(() => { e.target.textContent = "Copia"; }, 1800);
+});
+
+render();
+
+/* —— Editor: only for people with edit access to this artifact (staff tooling, English).
+   Saving rebuilds this whole page from #pageSrc with the edited CARS and publishes it as a new version. —— */
+const CARS_MARK = "/*__CA" + "RS__*/[]";
+const PAGE_MARK = "__PAGE" + "_SRC__";
+const SKELETON = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>';
+const MAX_PHOTOS = 12;
+const ed = { on: false, open: false, draft: null, uploading: 0, artifact: null, assets: null };
+const $ = (id) => document.getElementById(id);
+
+function flash(msg, ms = 3600) {
+  const t = document.createElement("div");
+  t.className = "toast"; t.setAttribute("role", "status"); t.textContent = msg;
+  (dlg.open ? dlg : document.body).appendChild(t);
+  setTimeout(() => t.remove(), ms);
+}
+
+function buildPage(cars) {
+  const src = JSON.parse($("pageSrc").textContent);
+  const safe = (v) => JSON.stringify(v).replace(/</g, "\\u003c");
+  const put = (s, mark, val) => {
+    const i = s.indexOf(mark);
+    if (i < 0) throw new Error("template marker missing: " + mark);
+    return s.slice(0, i) + val + s.slice(i + mark.length);
+  };
+  return SKELETON + put(put(src, CARS_MARK, safe(cars)), PAGE_MARK, safe(src)) + "</body></html>";
+}
+
+function edReset() {
+  if (ed.newCode && byCode[ed.newCode] && !CARS.includes(byCode[ed.newCode])) delete byCode[ed.newCode];
+  ed.open = false; ed.draft = null; ed.isNew = false; ed.newCode = null;
+  $("edDelete").dataset.armed = "false"; $("edDelete").textContent = "Delete this car from the page";
+  $("ed").hidden = true;
+  $("edOpen").hidden = !ed.on;
+  $("dCta").hidden = false;
+}
+
+function edStart() {
+  ed.open = true;
+  ed.draft = { gallery: cur.gallery.map((g) => ({ ...g })) };
+  $("edMake").value = cur.make; $("edModel").value = cur.model; $("edVersion").value = cur.version;
+  $("edYear").value = cur.year; $("edKm").value = cur.km; $("edFuel").value = cur.fuel; $("edCity").value = cur.city;
+  $("edPrice").value = cur.price || "";
+  $("edMarket").value = cur.market || "";
+  $("edTitle").firstChild.textContent = ed.isNew ? "Add a new car" : "Edit this car";
+  $("edDelete").hidden = ed.isNew;
+  $("edStatus").value = cur.status;
+  $("edDays").value = cur.days || 7;
+  edDaysToggle();
+  $("edErr").textContent = "";
+  $("edAdd").setAttribute("aria-disabled", String(!ed.assets));
+  $("edAdd").title = ed.assets ? "" : "Uploading photos needs Editor access";
+  $("ed").hidden = false; $("edOpen").hidden = true; $("dCta").hidden = true;
+  edCalc(); edPhotos();
+  $("ed").scrollIntoView({ block: "nearest", behavior: "smooth" });
+}
+
+function edNums() {
+  return { price: Math.round(Number($("edPrice").value)), market: Math.round(Number($("edMarket").value)) };
+}
+function edCalc() {
+  const { price, market } = edNums();
+  $("edCalc").textContent = price > 0 && market > 0
+    ? `Margin shown to dealers: ${market >= price ? "+" : ""}${eur(market - price)} (${Math.round((market - price) / price * 100)}%)`
+    : "";
+}
+
+function edPhotos() {
+  const g = ed.draft.gallery;
+  const items = g.map((p, i) => `
+    <li class="${i === 0 ? "is-cover" : ""}">
+      ${i === 0 ? '<span class="tag">Cover</span>' : ""}
+      <img src="${esc(P(p.thumb))}" alt="Photo ${i + 1}">
+      <div class="ctl">
+        <button type="button" data-act="left" data-i="${i}" aria-label="Move photo ${i + 1} earlier" ${i === 0 ? "disabled" : ""}>←</button>
+        <button type="button" data-act="right" data-i="${i}" aria-label="Move photo ${i + 1} later" ${i === g.length - 1 ? "disabled" : ""}>→</button>
+        <button type="button" data-act="del" data-i="${i}" aria-label="Remove photo ${i + 1}">✕</button>
+      </div>
+    </li>`);
+  for (let k = 0; k < ed.uploading; k++) items.push('<li><div class="wait">Uploading…</div></li>');
+  $("edPhotos").innerHTML = items.join("");
+}
+
+$("edPhotos").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-act]"); if (!b) return;
+  const g = ed.draft.gallery, i = +b.dataset.i;
+  if (b.dataset.act === "left" && i > 0) [g[i - 1], g[i]] = [g[i], g[i - 1]];
+  if (b.dataset.act === "right" && i < g.length - 1) [g[i + 1], g[i]] = [g[i], g[i + 1]];
+  if (b.dataset.act === "del") g.splice(i, 1);
+  edPhotos();
+});
+
+async function shrink(file, maxSide, quality) {
+  const bmp = await createImageBitmap(file, { imageOrientation: "from-image" });
+  const k = Math.min(1, maxSide / Math.max(bmp.width, bmp.height));
+  const cv = document.createElement("canvas");
+  cv.width = Math.round(bmp.width * k); cv.height = Math.round(bmp.height * k);
+  cv.getContext("2d").drawImage(bmp, 0, 0, cv.width, cv.height);
+  bmp.close?.();
+  const toBlob = (type) => new Promise((res) => cv.toBlob(res, type, quality));
+  let blob = await toBlob("image/webp");
+  if (!blob || blob.type !== "image/webp") blob = await toBlob("image/jpeg");
+  if (!blob) throw new Error("encode");
+  return blob;
+}
+
+async function uploadPhoto(file, draft) {
+  const full = await shrink(file, 1280, 0.8);
+  const small = await shrink(file, 640, 0.72);
+  const a = await ed.assets.upload(full, { type: full.type });
+  const b = await ed.assets.upload(small, { type: small.type });
+  draft.gallery.push({ src: "/_blob/" + a.id, thumb: "/_blob/" + b.id });
+}
+
+$("edFile").addEventListener("change", async (e) => {
+  const files = [...e.target.files]; e.target.value = "";
+  if (!files.length || !ed.assets) return;
+  const draft = ed.draft;
+  const room = MAX_PHOTOS - draft.gallery.length - ed.uploading;
+  if (files.length > room) $("edErr").textContent = `Up to ${MAX_PHOTOS} photos per car: added the first ${Math.max(room, 0)}.`;
+  else $("edErr").textContent = "";
+  const take = files.slice(0, Math.max(room, 0));
+  ed.uploading += take.length; edPhotos();
+  for (const f of take) {
+    try { await uploadPhoto(f, draft); }
+    catch (err) {
+      const code = err && err.code;
+      $("edErr").textContent = code === "quota_exceeded" ? "Photo storage is full."
+        : code === "too_large" ? `${f.name} is too large.`
+        : code ? `Upload failed (${code}). Try again.`
+        : `Couldn't read ${f.name}. Use a JPG or PNG.`;
+    }
+    ed.uploading--;
+    if (ed.draft === draft) edPhotos();
+  }
+});
+
+$("edOpen").addEventListener("click", edStart);
+dlg.addEventListener("close", () => { if (ed.isNew && !dlg.open) edReset(); });
+$("edCancel").addEventListener("click", () => { if (ed.isNew) { edReset(); dlg.close(); return; } edReset(); $("dInfoTop").scrollIntoView({ block: "nearest" }); });
+$("edPrice").addEventListener("input", edCalc);
+function edDaysToggle() { $("edDaysWrap").hidden = $("edStatus").value !== "venduta"; }
+$("edStatus").addEventListener("change", edDaysToggle);
+$("edMarket").addEventListener("input", edCalc);
+
+const SAVE_ERRORS = {
+  conflict: "Someone else saved first. The page is reloading: make your change again.",
+  not_writer: "You don't have edit access to this page.",
+  not_granted: "Saving isn't available in this view. Open the page in claude.ai with edit access.",
+  capability_disabled: "Saving isn't available in this view. Open the page in claude.ai with edit access.",
+  rate_limited: "Too many saves in a row. Wait a minute and save again.",
+  too_large: "The page got too large to save.",
+};
+
+async function savePage(html) {
+  try { return await ed.artifact.publish(html); }
+  catch (e) {
+    const code = e && e.code;
+    if (["conflict", "rate_limited", "not_writer"].includes(code)) throw e;
+    console.warn("[editor] page publish failed, trying the files form", e);
+    return await ed.artifact.publish({ "index.html": { content: html, contentType: "text/html" } });
+  }
+}
+
+function newCode() {
+  const A = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ";
+  let code;
+  do { code = "CTC-" + Array.from({ length: 4 }, () => A[Math.floor(Math.random() * A.length)]).join(""); } while (byCode[code]);
+  return code;
+}
+
+$("edAddCar").addEventListener("click", () => {
+  const car = {
+    code: newCode(), make: "", model: "", version: "", year: new Date().getFullYear() - 3, km: 50000, fuel: "Diesel", city: "Milano",
+    price: 0, market: 0, status: "disponibile", days: null,
+    added: Math.min(0, ...CARS.map((c) => c.added)) - 1, gallery: [],
+  };
+  byCode[car.code] = car;
+  openCar(car.code);
+  ed.isNew = true; ed.newCode = car.code;
+  edStart();
+});
+
+$("edDelete").addEventListener("click", async () => {
+  const b = $("edDelete");
+  if (b.dataset.armed !== "true") { b.dataset.armed = "true"; b.textContent = `Click again to delete ${cur.make} ${cur.model} for everyone`; return; }
+  const gone = cur;
+  b.disabled = true; b.textContent = "Deleting…";
+  try {
+    await savePage(buildPage(CARS.filter((c) => c.code !== gone.code)));
+    CARS.splice(CARS.indexOf(gone), 1); delete byCode[gone.code];
+    dlg.close(); render();
+    flash(`Deleted ${gone.make} ${gone.model}.`);
+  } catch (e) {
+    const code = (e && e.code) || (e && e.message) || "unknown";
+    $("edErr").textContent = (SAVE_ERRORS[code] || "Delete failed. Try again.") + ` [${code}]`;
+  } finally { b.disabled = false; }
+});
+
+$("edSave").addEventListener("click", async () => {
+  const { price, market } = edNums();
+  const err = (m) => { $("edErr").textContent = m; };
+  if (ed.uploading) return err("Wait for the photos to finish uploading.");
+  if (!(price > 0) || !(market > 0)) return err("Enter both prices.");
+  if (market < price) return err("Market value must be at least the agreed price, or the margin shows negative.");
+  const make = $("edMake").value.trim(), model = $("edModel").value.trim(), version = $("edVersion").value.trim();
+  const year = Math.round(Number($("edYear").value)), km = Math.round(Number($("edKm").value));
+  const fuel = $("edFuel").value, city = $("edCity").value.trim();
+  if (!make || !model) return err("Enter make and model.");
+  if (!(year >= 1950 && year <= new Date().getFullYear() + 1)) return err("Enter a valid year.");
+  if (!(km >= 0) || $("edKm").value === "") return err("Enter the km.");
+  if (!city) return err("Enter the city.");
+  if (!ed.draft.gallery.length) return err(ed.isNew ? "Add at least one photo." : "Keep at least one photo.");
+  const status = $("edStatus").value;
+  const days = Math.round(Number($("edDays").value));
+  if (status === "venduta" && !(days >= 1 && days <= 90)) return err("Enter how many days it took to sell (1 to 90).");
+  const edited = { ...cur, make, model, version, year, km, fuel, city, price, market, status, days: status === "venduta" ? days : null, gallery: ed.draft.gallery };
+  const isNew = ed.isNew;
+  const cars = isNew ? [edited, ...CARS] : CARS.map((c) => (c.code === cur.code ? edited : c));
+  const btn = $("edSave");
+  btn.disabled = true; btn.textContent = "Saving…"; err("");
+  try { sessionStorage.setItem("ctc-reopen", JSON.stringify({ code: cur.code, at: Date.now() })); } catch {}
+  try {
+    await savePage(buildPage(cars));
+    Object.assign(cur, edited);
+    if (isNew) { CARS.unshift(cur); ed.isNew = false; ed.newCode = null; }
+    render(); openCar(cur.code);
+    flash("Saved. Everyone with the link now sees the new version.");
+  } catch (e) {
+    try { sessionStorage.removeItem("ctc-reopen"); } catch {}
+    const code = (e && e.code) || (e && e.message) || "unknown";
+    err((SAVE_ERRORS[code] || "Save failed. Try again.") + ` [${code}]`);
+    console.warn("[editor] save failed", e);
+  } finally {
+    btn.disabled = false; btn.textContent = "Save to page";
+  }
+});
+
+(async () => {
+  const diag = /edit|modifica/i.test(location.hash);
+  const report = (steps, ok) => {
+    console.info("[editor]", steps.join(" · "));
+    if (!ok && !diag) return;
+    const bar = document.createElement("div");
+    bar.className = "ed-bar";
+    bar.innerHTML = ok
+      ? "<b>Editor view.</b> Open any car and tap ✎ Edit to change it, or use + Add a car. Dealers don't see this."
+      : "<b>Editing is off in this view.</b> " + steps.map(esc).join(" · ");
+    document.body.appendChild(bar);
+  };
+  const steps = [];
+  if (!window.claude || typeof window.claude.use !== "function") return report(["no claude.ai viewer: open the page from claude.ai, signed in"], false);
+  const user = await claude.use("user").catch(() => null);
+  steps.push("user: " + (user ? "ok" : "none (signed out or not in a claude.ai viewer)"));
+  if (!user) return report(steps, false);
+  let canEdit = false;
+  try { canEdit = (await user.canEdit()) || (await user.can("files.write")) === true; } catch (e) { steps.push("canEdit error"); }
+  steps.push("edit access: " + (canEdit ? "yes" : "no"));
+  if (!canEdit) return report(steps, false);
+  ed.artifact = await claude.use("artifact").catch(() => null);
+  steps.push("saving: " + (ed.artifact ? "ok" : "unavailable"));
+  if (!ed.artifact) return report(steps, false);
+  ed.assets = await claude.use("assets").catch(() => null);
+  steps.push("photo upload: " + (ed.assets ? "ok" : "unavailable"));
+  ed.on = true;
+  report(steps, true);
+  $("edAddCar").hidden = false;
+  if (dlg.open && !ed.open) $("edOpen").hidden = false;
+  let reopen = null;
+  try { reopen = JSON.parse(sessionStorage.getItem("ctc-reopen")); sessionStorage.removeItem("ctc-reopen"); } catch {}
+  if (reopen && Date.now() - reopen.at < 120000 && byCode[reopen.code]) { openCar(reopen.code); flash("Saved. Everyone with the link now sees this version."); }
+})();
+</script>
+<script type="application/json" id="pageSrc">"\u003ctitle>Parco Auto Car Trade Club\u003c/title>\n\u003cmeta name=\"claude:viewport-fit-sides\" content=\"cover\">\n\u003cmeta name=\"description\" content=\"Le auto negoziate dal network Car Trade Club: foto, prezzo concordato con il privato e margine.\">\n\u003clink rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n\u003clink rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n\u003clink rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Manrope:wght@600;700;800&display=swap\">\n\u003cstyle>\n/* Layout: cream marketing page like cartradeclub.com — hero + ink deal card, stats, ink \"ultime chiusure\" strip,\n   lime statement band, filterable photo grid of the network's cars, ink closing CTA. Light only (CTC design system). */\n:root {\n  color-scheme: light;\n  --ctc-ink: #11151b;\n  --ctc-ink-2: #2a313b;\n  --ctc-charcoal: #282e37;\n  --ctc-cream: #f5f2e9;\n  --ctc-paper: #fcfaf4;\n  --ctc-white: #ffffff;\n  --ctc-surface: #ebe8df;\n  --ctc-lime: #c8ff45;\n  --ctc-lime-hover: #b7ed36;\n  --ctc-text: var(--ctc-ink);\n  --ctc-muted: #59636e;\n  --ctc-lede: #3c444d;\n  --ctc-line: #d9d9d2;\n  --ctc-line-soft: #e3e0d6;\n  --ctc-on-ink: #f5f2e9;\n  --ctc-on-ink-soft: #c9ccd2;\n  --ctc-on-ink-mute: #8d929b;\n  --ctc-on-ink-rule: #343b46;\n  --ctc-on-ink-edge: #4a525e;\n  --ctc-good: #1d7a4c;\n  --ctc-good-bg: #e8f4ec;\n  --ctc-warn: #705119;\n  --ctc-warn-bg: #f2ead8;\n  --ctc-focus: #3d4cff;\n  --ctc-scrim: rgba(17, 21, 27, 0.74);\n  --ctc-display: \"Manrope\", \"Helvetica Neue\", Arial, sans-serif;\n  --ctc-body: \"DM Sans\", \"Helvetica Neue\", Arial, sans-serif;\n  --ctc-radius-xs: 3px;\n  --ctc-radius-sm: 4px;\n  --ctc-radius-md: 6px;\n  --ctc-radius-lg: 8px;\n  --ctc-radius-xl: 10px;\n  --ctc-shadow-pop: 0 6px 25px rgba(17, 17, 17, 0.2);\n  --ctc-shadow-card: 0 24px 60px -24px rgba(17, 21, 27, 0.45);\n  --wrap: 1180px;\n  --gutter-l: max(16px, env(safe-area-inset-left, 0px));\n  --gutter-r: max(16px, env(safe-area-inset-right, 0px));\n}\n\n* { box-sizing: border-box; }\n[hidden] { display: none !important; }\nhtml { scroll-behavior: smooth; scroll-padding-top: 84px; }\nbody {\n  margin: 0;\n  background: var(--ctc-cream);\n  color: var(--ctc-text);\n  font: 400 15px/1.5 var(--ctc-body);\n  -webkit-font-smoothing: antialiased;\n}\nbody::before {\n  content: \"\"; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);\n  z-index: 30; background: var(--ctc-cream);\n}\na { color: inherit; }\nimg { max-width: 100%; display: block; }\nbutton, select, input { font: inherit; color: inherit; }\n:focus-visible { outline: 2px solid var(--ctc-focus); outline-offset: 2px; }\n\n.wrap {\n  max-width: calc(var(--wrap) + 64px);\n  margin: 0 auto;\n  padding-left: var(--gutter-l);\n  padding-right: var(--gutter-r);\n}\n@media (min-width: 768px) {\n  .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); }\n}\n\n.eyebrow {\n  font: 700 11px/1.2 var(--ctc-body);\n  letter-spacing: 0.16em;\n  text-transform: uppercase;\n  color: var(--ctc-muted);\n  margin: 0;\n}\n.num { font-variant-numeric: tabular-nums; }\n\n/* —— Logo (tokens.css) —— */\n.ctc-brand {\n  display: inline-flex; align-items: center; gap: 0.72em;\n  font: 800 15px var(--ctc-display); letter-spacing: -0.01em;\n  color: var(--ctc-ink); text-decoration: none; white-space: nowrap;\n}\n.ctc-mark {\n  flex: none; width: 1.57em; height: 1.57em; border-radius: 0.36em;\n  background: var(--ctc-ink); position: relative; overflow: hidden;\n}\n.ctc-mark::after {\n  content: \"\"; position: absolute; inset: 27.3% 18.2% 27.3% 40.9%;\n  background: var(--ctc-lime); transform: skewX(-18deg);\n}\n.ctc-brand--on-ink { color: var(--ctc-on-ink); }\n.ctc-brand--on-ink .ctc-mark { box-shadow: inset 0 0 0 1px var(--ctc-on-ink-edge); }\n\n/* —— Buttons —— */\n.btn {\n  display: inline-flex; align-items: center; justify-content: center; gap: 8px;\n  min-height: 48px; padding: 0 22px;\n  border-radius: var(--ctc-radius-sm); border: 1px solid transparent;\n  font: 800 15px var(--ctc-display); text-decoration: none; cursor: pointer;\n  transition: background-color 180ms, color 180ms, border-color 180ms;\n}\n.btn--lime { background: var(--ctc-lime); color: var(--ctc-ink); }\n.btn--lime:hover { background: var(--ctc-lime-hover); }\n.btn--ink { background: var(--ctc-ink); color: var(--ctc-on-ink); }\n.btn--ink:hover { background: var(--ctc-ink-2); }\n.btn--ghost-ink { background: transparent; color: var(--ctc-on-ink); border-color: var(--ctc-on-ink-edge); }\n.btn--ghost-ink:hover { border-color: var(--ctc-on-ink-soft); }\n.link-u {\n  font: 700 15px var(--ctc-display); text-decoration: none;\n  border-bottom: 1.5px solid var(--ctc-ink); padding-bottom: 2px;\n}\n\n/* —— Header —— */\n.top {\n  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;\n  background: color-mix(in srgb, var(--ctc-cream) 92%, transparent);\n  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);\n  border-bottom: 1px solid var(--ctc-line);\n}\n.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }\n.top nav { display: flex; align-items: center; gap: 28px; }\n.top nav a:not(.btn) { text-decoration: none; font-size: 14px; font-weight: 500; }\n.top nav a:not(.btn):hover { text-decoration: underline; text-underline-offset: 4px; }\n.top .btn { min-height: 44px; padding: 0 18px; font-size: 14px; }\n@media (max-width: 760px) { .top nav a:not(.btn) { display: none; } }\n@media (max-width: 400px) { .top .btn { padding: 0 12px; font-size: 13px; } .ctc-brand { font-size: 14px; } }\n\n/* —— Hero —— */\n.hero { padding-block: 64px 48px; }\n.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 56px; align-items: center; }\n.hero h1 {\n  font: 800 clamp(42px, 6.4vw, 76px)/0.98 var(--ctc-display);\n  letter-spacing: -0.055em; margin: 18px 0 22px; text-wrap: balance;\n}\n.hero h1 span { color: var(--ctc-muted); display: block; }\n.hero .lede { font-size: clamp(17px, 1.6vw, 20px); line-height: 1.55; color: var(--ctc-lede); max-width: 34em; margin: 0 0 30px; }\n.hero .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }\n.checks { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 26px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--ctc-muted); }\n.checks li::before { content: \"✓ \"; color: var(--ctc-ink); font-weight: 700; }\n\n.deal {\n  background: var(--ctc-ink); color: var(--ctc-on-ink);\n  border-radius: var(--ctc-radius-xl); overflow: hidden;\n  box-shadow: var(--ctc-shadow-card);\n  transform: rotate(1.2deg);\n  cursor: pointer; border: 0; padding: 0; text-align: left; width: 100%;\n  transition: transform 300ms;\n}\n.deal:hover { transform: rotate(0deg) translateY(-2px); }\n.deal__head { display: flex; justify-content: space-between; gap: 12px; padding: 14px 18px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }\n.deal__head .live { color: var(--ctc-lime); font-weight: 700; display: inline-flex; align-items: center; gap: 8px; }\n.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ctc-lime); box-shadow: 0 0 0 0 rgba(200, 255, 69, 0.6); animation: pulse 2.4s infinite; }\n@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(200, 255, 69, 0.55); } 70% { box-shadow: 0 0 0 9px rgba(200, 255, 69, 0); } 100% { box-shadow: 0 0 0 0 rgba(200, 255, 69, 0); } }\n.deal__head .where { color: var(--ctc-on-ink-soft); }\n.deal__img { aspect-ratio: 4 / 3; width: 100%; height: auto; object-fit: cover; background: var(--ctc-charcoal); }\n.deal__body { padding: 18px 20px 20px; display: grid; gap: 14px; }\n.deal__title { font: 800 23px/1.15 var(--ctc-display); letter-spacing: -0.02em; margin: 0; }\n.deal__meta { display: flex; flex-wrap: wrap; gap: 6px; }\n.pill-ink { font-size: 12px; padding: 4px 9px; border-radius: var(--ctc-radius-sm); background: var(--ctc-charcoal); color: var(--ctc-on-ink-soft); }\n.deal__price { display: flex; justify-content: space-between; align-items: end; gap: 12px; border-top: 1px solid var(--ctc-on-ink-rule); padding-top: 14px; }\n.deal__price small { display: block; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ctc-on-ink-mute); margin-bottom: 4px; }\n.deal__price strong { font: 800 32px/1 var(--ctc-display); letter-spacing: -0.03em; }\n.deal__price .gain { text-align: right; }\n.deal__price .gain strong { font-size: 20px; color: var(--ctc-lime); }\n\n@media (max-width: 900px) {\n  .hero { padding-block: 40px 32px; }\n  .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 40px; }\n  .deal { transform: none; max-width: 460px; }\n}\n\n/* —— Stats —— */\n.stats { border-top: 1px solid var(--ctc-line); border-bottom: 1px solid var(--ctc-line); }\n.stats .wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }\n.stat { padding: 26px 20px 24px 0; }\n.stat + .stat { padding-left: 24px; border-left: 1px solid var(--ctc-line); }\n.stat b { display: block; font: 800 clamp(28px, 3.4vw, 40px)/1 var(--ctc-display); letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }\n.stat span { display: block; margin-top: 8px; font-size: 13px; color: var(--ctc-muted); max-width: 18em; }\n@media (max-width: 760px) {\n  .stats .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); }\n  .stat:nth-child(3) { padding-left: 0; border-left: 0; }\n  .stat:nth-child(n + 3) { border-top: 1px solid var(--ctc-line); }\n}\n\n/* —— Ultime chiusure strip —— */\n.ticker { background: var(--ctc-ink); color: var(--ctc-on-ink); padding-block: 22px; overflow: hidden; }\n.ticker__label { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }\n.ticker__label .eyebrow { color: var(--ctc-on-ink-soft); }\n.ticker__track { display: flex; gap: 14px; width: max-content; animation: slide 90s linear infinite; }\n.ticker:hover .ticker__track { animation-play-state: paused; }\n@keyframes slide { to { transform: translateX(-50%); } }\n.tick {\n  display: flex; align-items: center; gap: 12px; flex: none;\n  background: var(--ctc-charcoal); border-radius: var(--ctc-radius-md); padding: 6px 16px 6px 6px;\n  border: 0; color: inherit; text-align: left; cursor: pointer;\n}\n.tick img { width: 76px; height: 56px; object-fit: cover; border-radius: var(--ctc-radius-sm); }\n.tick b { display: block; font: 700 14px var(--ctc-display); white-space: nowrap; }\n.tick span { display: block; font-size: 12px; color: var(--ctc-on-ink-mute); white-space: nowrap; }\n.tick span em { font-style: normal; color: var(--ctc-lime); font-weight: 700; }\n\n/* —— Statement band —— */\n.band { background: var(--ctc-lime); color: var(--ctc-ink); padding-block: 56px; }\n.band .eyebrow { color: var(--ctc-ink); font-size: 12px; letter-spacing: 0.04em; text-transform: none; font-weight: 700; }\n.band h2 { font: 800 clamp(28px, 4vw, 46px)/1.05 var(--ctc-display); letter-spacing: -0.045em; margin: 12px 0 0; max-width: 22em; text-wrap: balance; }\n\n/* —— Inventory —— */\n.inv { padding-block: 72px 80px; }\n.inv__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 28px; }\n.inv__head h2 { font: 800 clamp(32px, 4.4vw, 52px)/1.02 var(--ctc-display); letter-spacing: -0.05em; margin: 12px 0 10px; }\n.inv__head p { margin: 0; color: var(--ctc-muted); max-width: 40em; }\n.note { font-size: 12px; color: var(--ctc-muted); }\n\n.toolbar {\n  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 68px); z-index: 10;\n  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;\n  padding-block: 12px; margin-bottom: 22px;\n  background: var(--ctc-cream); border-bottom: 1px solid var(--ctc-line);\n}\n.seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--ctc-surface); border-radius: var(--ctc-radius-md); }\n.seg button {\n  min-height: 38px; padding: 0 14px; border: 0; border-radius: var(--ctc-radius-sm);\n  background: transparent; font-size: 14px; font-weight: 500; cursor: pointer;\n  transition: background-color 180ms, color 180ms;\n}\n.seg button:hover { background: var(--ctc-paper); }\n.seg button[aria-pressed=\"true\"] { background: var(--ctc-ink); color: var(--ctc-on-ink); }\n.seg button .c { font-variant-numeric: tabular-nums; opacity: 0.7; margin-left: 4px; font-size: 12px; }\n.selects { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }\n.select {\n  min-height: 46px; padding: 0 34px 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm);\n  background: var(--ctc-paper) url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2311151b' stroke-width='1.6'/%3E%3C/svg%3E\") no-repeat right 12px center;\n  appearance: none; -webkit-appearance: none; font-size: 14px; cursor: pointer;\n}\n.count { font-size: 13px; color: var(--ctc-muted); width: 100%; }\n@media (max-width: 760px) {\n  .toolbar { position: static; }\n  .selects { margin-left: 0; width: 100%; }\n  .select { flex: 1 1 140px; font-size: 16px; }\n}\n\n.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 22px; }\n.card {\n  display: flex; flex-direction: column; text-align: left; padding: 0; cursor: pointer;\n  background: var(--ctc-paper); border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-lg);\n  overflow: hidden; color: inherit;\n  transition: border-color 180ms;\n}\n.card:hover { border-color: var(--ctc-ink); }\n.card__ph { position: relative; aspect-ratio: 4 / 3; background: var(--ctc-surface); overflow: hidden; }\n.card__ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 300ms; }\n.card:hover .card__ph img { transform: scale(1.025); }\n.badge {\n  position: absolute; top: 10px; left: 10px;\n  display: inline-flex; align-items: center; gap: 6px;\n  font: 700 11px/1 var(--ctc-body); letter-spacing: 0.04em;\n  padding: 7px 9px; border-radius: var(--ctc-radius-xs);\n}\n.badge--venduta { background: var(--ctc-ink); color: var(--ctc-on-ink); }\n.badge--disponibile { background: var(--ctc-good-bg); color: var(--ctc-good); }\n.badge--disponibile::before { content: \"\"; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }\n.badge--trattativa { background: var(--ctc-warn-bg); color: var(--ctc-warn); }\n.ph-count {\n  position: absolute; right: 10px; bottom: 10px; font-size: 11px; padding: 4px 7px;\n  border-radius: var(--ctc-radius-xs); background: var(--ctc-scrim); color: var(--ctc-on-ink);\n}\n.card__body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 4px; flex: 1; }\n.card__where { font-size: 12px; color: var(--ctc-muted); display: flex; justify-content: space-between; gap: 8px; }\n.card__where .code { font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }\n.card__title { font: 800 19px/1.2 var(--ctc-display); letter-spacing: -0.02em; margin: 4px 0 0; }\n.card__ver { font-size: 13px; color: var(--ctc-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }\n.card__facts { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }\n.chip { font-size: 12px; padding: 4px 8px; border-radius: var(--ctc-radius-sm); background: var(--ctc-surface); white-space: nowrap; font-variant-numeric: tabular-nums; }\n.card__price { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 10px; padding-top: 14px; border-top: 1px solid var(--ctc-line-soft); }\n.card__price small { display: block; font-size: 11px; color: var(--ctc-muted); margin-bottom: 3px; }\n.card__price strong { font: 800 22px/1 var(--ctc-display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }\n.gain-pill { font: 700 12px/1 var(--ctc-body); padding: 6px 8px; border-radius: var(--ctc-radius-sm); background: var(--ctc-good-bg); color: var(--ctc-good); white-space: nowrap; font-variant-numeric: tabular-nums; }\n.empty { padding: 48px 20px; text-align: center; color: var(--ctc-muted); border: 1px dashed var(--ctc-line); border-radius: var(--ctc-radius-lg); }\n.more { display: flex; justify-content: center; margin-top: 30px; }\n.btn--outline { background: transparent; border-color: var(--ctc-ink); color: var(--ctc-ink); }\n.btn--outline:hover { background: var(--ctc-ink); color: var(--ctc-on-ink); }\n\n/* —— How it works —— */\n.how { padding-block: 72px; background: var(--ctc-paper); border-top: 1px solid var(--ctc-line); }\n.how h2 { font: 800 clamp(30px, 4vw, 46px)/1.05 var(--ctc-display); letter-spacing: -0.045em; margin: 12px 0 36px; max-width: 18em; text-wrap: balance; }\n.how h2 span { color: var(--ctc-muted); }\n.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; list-style: none; margin: 0; padding: 0; counter-reset: s; }\n.steps li { border-top: 2px solid var(--ctc-ink); padding-top: 16px; counter-increment: s; }\n.steps li::before { content: \"0\" counter(s); font: 800 13px var(--ctc-display); color: var(--ctc-muted); }\n.steps h3 { font: 800 18px/1.25 var(--ctc-display); letter-spacing: -0.02em; margin: 10px 0 8px; }\n.steps p { margin: 0; color: var(--ctc-lede); font-size: 14px; }\n@media (max-width: 900px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }\n@media (max-width: 520px) { .steps { grid-template-columns: minmax(0, 1fr); } }\n\n/* —— Closing CTA —— */\n.close { background: var(--ctc-ink); color: var(--ctc-on-ink); padding-block: 80px; }\n.close .wrap { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: end; }\n.close h2 { font: 800 clamp(34px, 5vw, 60px)/1 var(--ctc-display); letter-spacing: -0.05em; margin: 22px 0 18px; text-wrap: balance; }\n.close h2 span { color: var(--ctc-on-ink-mute); }\n.close p { color: var(--ctc-on-ink-soft); font-size: 17px; margin: 0; max-width: 32em; }\n.contact { display: grid; gap: 14px; }\n.contact .btn { width: 100%; }\n.mail {\n  display: flex; align-items: center; justify-content: space-between; gap: 10px;\n  border: 1px solid var(--ctc-on-ink-edge); border-radius: var(--ctc-radius-sm); padding: 8px 8px 8px 16px;\n}\n.mail small { display: block; font-size: 11px; color: var(--ctc-on-ink-mute); }\n.mail span { font: 700 15px var(--ctc-display); user-select: all; word-break: break-all; }\n.mail button { min-height: 40px; padding: 0 14px; background: var(--ctc-charcoal); color: var(--ctc-on-ink); border: 0; border-radius: var(--ctc-radius-sm); cursor: pointer; font-size: 13px; flex: none; }\n.mail button:hover { background: var(--ctc-ink-2); }\n@media (max-width: 860px) { .close .wrap { grid-template-columns: minmax(0, 1fr); } }\n\nfooter { background: var(--ctc-ink); color: var(--ctc-on-ink-mute); border-top: 1px solid var(--ctc-on-ink-rule); padding-block: 28px; font-size: 12px; }\nfooter .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 24px; align-items: center; }\n\n/* —— Car dialog —— */\ndialog {\n  width: min(1080px, calc(100vw - 32px)); max-height: calc(100dvh - 32px);\n  padding: 0; border: 0; border-radius: var(--ctc-radius-xl);\n  background: var(--ctc-white); color: var(--ctc-text); box-shadow: var(--ctc-shadow-pop);\n  overflow: auto;\n}\ndialog::backdrop { background: var(--ctc-scrim); }\n.dlg { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }\n.gal { background: var(--ctc-ink); display: flex; flex-direction: column; }\n.gal__main { position: relative; aspect-ratio: 4 / 3; background: var(--ctc-charcoal); }\n.gal__main img { width: 100%; height: 100%; object-fit: cover; }\n.gal__nav {\n  position: absolute; top: 50%; transform: translateY(-50%);\n  width: 44px; height: 44px; border-radius: 50%; border: 0; cursor: pointer;\n  background: var(--ctc-scrim); color: var(--ctc-on-ink); font-size: 20px; line-height: 1;\n}\n.gal__nav:hover { background: var(--ctc-ink); }\n.gal__nav--prev { left: 12px; }\n.gal__nav--next { right: 12px; }\n.gal__idx { position: absolute; left: 12px; bottom: 12px; font-size: 12px; padding: 4px 8px; border-radius: var(--ctc-radius-xs); background: var(--ctc-scrim); color: var(--ctc-on-ink); }\n.gal__thumbs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; padding: 6px; }\n.gal__thumbs button { padding: 0; border: 2px solid transparent; border-radius: var(--ctc-radius-sm); overflow: hidden; cursor: pointer; background: var(--ctc-charcoal); aspect-ratio: 4 / 3; }\n.gal__thumbs button[aria-current=\"true\"] { border-color: var(--ctc-lime); }\n.gal__thumbs img { width: 100%; height: 100%; object-fit: cover; }\n.info { padding: 26px 26px 24px; display: flex; flex-direction: column; gap: 18px; min-width: 0; }\n.info__top { display: flex; justify-content: space-between; align-items: start; gap: 12px; }\n.x { width: 44px; height: 44px; flex: none; border: 1px solid var(--ctc-line); background: var(--ctc-white); border-radius: 50%; cursor: pointer; font-size: 18px; }\n.x:hover { border-color: var(--ctc-ink); }\n.info h3 { font: 800 27px/1.08 var(--ctc-display); letter-spacing: -0.03em; margin: 8px 0 4px; }\n.info .ver { color: var(--ctc-muted); font-size: 14px; margin: 0; }\n.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--ctc-line-soft); border: 1px solid var(--ctc-line-soft); border-radius: var(--ctc-radius-md); overflow: hidden; margin: 0; }\n.facts div { background: var(--ctc-white); padding: 10px 12px; }\n.facts dt { font-size: 11px; color: var(--ctc-muted); }\n.facts dd { margin: 2px 0 0; font: 700 14px var(--ctc-display); font-variant-numeric: tabular-nums; }\n.panel { background: var(--ctc-ink); color: var(--ctc-on-ink); border-radius: var(--ctc-radius-xl); padding: 20px; }\n.panel small { display: block; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ctc-on-ink-soft); }\n.panel .big { font: 800 42px/1 var(--ctc-display); letter-spacing: -0.03em; margin: 8px 0 16px; font-variant-numeric: tabular-nums; }\n.panel .row { display: flex; justify-content: space-between; gap: 12px; padding-block: 9px; border-top: 1px solid var(--ctc-on-ink-rule); font-size: 14px; color: var(--ctc-on-ink-soft); }\n.panel .row b { font: 700 15px var(--ctc-display); color: var(--ctc-on-ink); font-variant-numeric: tabular-nums; }\n.panel .row b.lime { color: var(--ctc-lime); }\n.panel .foot { font-size: 11px; color: var(--ctc-on-ink-mute); margin: 8px 0 0; }\n.sold-line { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ctc-lede); margin: 0; }\n@media (max-width: 820px) {\n  dialog { width: 100vw; max-width: 100vw; max-height: 100dvh; height: 100dvh; border-radius: 0; margin: 0; }\n  .dlg { grid-template-columns: minmax(0, 1fr); }\n  .info { padding: 20px max(16px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }\n  .gal { position: relative; }\n  .x-mobile { display: flex; }\n  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }\n}\n\n.toast {\n  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);\n  background: var(--ctc-ink); color: var(--ctc-on-ink); padding: 10px 16px; border-radius: var(--ctc-radius-md);\n  box-shadow: var(--ctc-shadow-pop); font-size: 14px; z-index: 50;\n}\n\n/* —— Editor (only people with edit access see it; staff tooling, English) —— */\n.ed-open { align-self: stretch; min-height: 44px; padding: 0 16px; border: 1px dashed var(--ctc-ink); border-radius: var(--ctc-radius-sm); background: var(--ctc-paper); font: 700 14px var(--ctc-display); cursor: pointer; }\n.ed-open:hover { background: var(--ctc-surface); }\n.ed { display: grid; gap: 14px; padding: 16px; background: var(--ctc-cream); border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-lg); }\n.ed__title { margin: 0; font: 800 16px var(--ctc-display); }\n.ed__title span { display: block; font: 400 12px var(--ctc-body); color: var(--ctc-muted); margin-top: 2px; }\n.ed__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }\n.ed label { display: grid; gap: 4px; font-size: 12px; color: var(--ctc-muted); }\n.ed select { min-height: 46px; padding: 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); font: 700 15px var(--ctc-display); color: var(--ctc-ink); cursor: pointer; }\n.ed__wide { grid-column: 1 / -1; }\n.ed input[type=\"text\"] { min-height: 46px; padding: 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); font: 700 15px var(--ctc-display); color: var(--ctc-ink); }\n.ed input[type=\"text\"]:focus { border-color: var(--ctc-ink); outline: none; }\n.ed__del { justify-self: start; min-height: 44px; padding: 0; border: 0; background: none; color: var(--ctc-warn); font-size: 13px; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }\n.ed__del[data-armed=\"true\"] { font-weight: 700; }\n.ed-add-car { min-height: 46px; padding: 0 16px; border: 1px dashed var(--ctc-ink); border-radius: var(--ctc-radius-sm); background: var(--ctc-paper); font: 700 14px var(--ctc-display); cursor: pointer; }\n.ed-add-car:hover { background: var(--ctc-surface); }\n.ed input[type=\"number\"] { min-height: 46px; padding: 0 12px; border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); font: 700 16px var(--ctc-display); color: var(--ctc-ink); font-variant-numeric: tabular-nums; }\n.ed input[type=\"number\"]:focus { border-color: var(--ctc-ink); outline: none; }\n.ed__calc { margin: -4px 0 0; font-size: 13px; color: var(--ctc-lede); font-variant-numeric: tabular-nums; }\n.ed__ph-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }\n.ed__ph-head b { font: 700 14px var(--ctc-display); }\n.ed__ph-head small { display: block; font-size: 12px; color: var(--ctc-muted); }\n.ed__add { position: relative; display: inline-flex !important; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--ctc-ink); border-radius: var(--ctc-radius-sm); background: var(--ctc-white); color: var(--ctc-ink) !important; font: 700 14px var(--ctc-display) !important; cursor: pointer; white-space: nowrap; }\n.ed__add:hover { background: var(--ctc-surface); }\n.ed__add input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }\n.ed__add[aria-disabled=\"true\"] { opacity: 0.5; pointer-events: none; }\n.ed__photos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; }\n.ed__photos li { position: relative; background: var(--ctc-white); border: 1px solid var(--ctc-line); border-radius: var(--ctc-radius-md); overflow: hidden; }\n.ed__photos li.is-cover { border-color: var(--ctc-ink); }\n.ed__photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ctc-surface); }\n.ed__photos .tag { position: absolute; top: 6px; left: 6px; font: 700 10px/1 var(--ctc-body); letter-spacing: 0.04em; padding: 5px 6px; border-radius: var(--ctc-radius-xs); background: var(--ctc-ink); color: var(--ctc-on-ink); }\n.ed__photos .ctl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ctc-line-soft); }\n.ed__photos .ctl button { min-height: 44px; border: 0; background: transparent; cursor: pointer; font-size: 16px; }\n.ed__photos .ctl button + button { border-left: 1px solid var(--ctc-line-soft); }\n.ed__photos .ctl button:hover:not(:disabled) { background: var(--ctc-surface); }\n.ed__photos .ctl button:disabled { opacity: 0.3; cursor: default; }\n.ed__photos .wait { display: grid; place-items: center; aspect-ratio: 4 / 3; font-size: 12px; color: var(--ctc-muted); }\n.ed__err { margin: 0; font-size: 13px; color: var(--ctc-warn); min-height: 0; }\n.ed__err:empty { display: none; }\n.ed__actions { display: flex; flex-wrap: wrap; gap: 10px; }\n.ed__actions .btn { flex: 1 1 140px; }\n.ed__actions .btn:disabled { opacity: 0.6; cursor: wait; }\n.ed-bar {\n  position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 40;\n  max-width: calc(100vw - 32px); padding: 10px 14px; border-radius: var(--ctc-radius-md);\n  background: var(--ctc-ink); color: var(--ctc-on-ink-soft); font-size: 13px; box-shadow: var(--ctc-shadow-pop);\n}\n.ed-bar b { color: var(--ctc-on-ink); }\n@media (max-width: 520px) { .ed__row { grid-template-columns: minmax(0, 1fr); } }\n\n@media (prefers-reduced-motion: reduce) {\n  *, *::before, *::after { animation: none !important; transition: none !important; }\n  html { scroll-behavior: auto; }\n  .ticker { overflow-x: auto; }\n  .ticker__track { width: max-content; }\n}\n\u003c/style>\n\n\u003cheader class=\"top\">\n  \u003cdiv class=\"wrap\">\n    \u003ca class=\"ctc-brand\" href=\"#inizio\" aria-label=\"Car Trade Club, inizio pagina\">\u003cspan class=\"ctc-mark\" aria-hidden=\"true\">\u003c/span>Car Trade Club\u003c/a>\n    \u003cnav aria-label=\"Sezioni\">\n      \u003ca href=\"#auto\">Le auto\u003c/a>\n      \u003ca href=\"#come\">Come funziona\u003c/a>\n      \u003ca class=\"btn btn--ink\" href=\"#contatti\">Entra nel network\u003c/a>\n    \u003c/nav>\n  \u003c/div>\n\u003c/header>\n\n\u003cmain id=\"inizio\">\n  \u003csection class=\"hero\">\n    \u003cdiv class=\"wrap\">\n      \u003cdiv>\n        \u003cp class=\"eyebrow\">Il network · Auto da privati per concessionari\u003c/p>\n        \u003ch1>234 auto trattate.\u003cspan>Tutte già negoziate.\u003c/span>\u003c/h1>\n        \u003cp class=\"lede\">Questo è il parco auto passato dal network Car Trade Club: foto vere, prezzo concordato con il privato e margine visibile prima di comprare. Entra nel network e ricevi le prossime nella tua zona.\u003c/p>\n        \u003cdiv class=\"cta-row\">\n          \u003ca class=\"btn btn--lime\" href=\"#contatti\">Entra nel network →\u003c/a>\n          \u003ca class=\"link-u\" href=\"#auto\">Guarda le auto\u003c/a>\n        \u003c/div>\n        \u003cul class=\"checks\">\n          \u003cli>Prezzo già concordato\u003c/li>\n          \u003cli>Foto e dati completi\u003c/li>\n          \u003cli>Paghi solo se compri\u003c/li>\n        \u003c/ul>\n      \u003c/div>\n      \u003cbutton class=\"deal\" id=\"featured\" type=\"button\" aria-label=\"Apri la scheda dell'auto in evidenza\">\u003c/button>\n    \u003c/div>\n  \u003c/section>\n\n  \u003csection class=\"stats\" aria-label=\"Il network in numeri\">\n    \u003cdiv class=\"wrap\">\n      \u003cdiv class=\"stat\">\u003cb class=\"num\">234\u003c/b>\u003cspan>auto negoziate con privati\u003c/span>\u003c/div>\n      \u003cdiv class=\"stat\">\u003cb class=\"num\">2,7 mln €\u003c/b>\u003cspan>valore di mercato trattato\u003c/span>\u003c/div>\n      \u003cdiv class=\"stat\">\u003cb class=\"num\" id=\"statMargin\">+24%\u003c/b>\u003cspan>margine lordo medio sul prezzo d'acquisto\u003c/span>\u003c/div>\n      \u003cdiv class=\"stat\">\u003cb class=\"num\" id=\"statDays\">8 giorni\u003c/b>\u003cspan>tempo medio dall'offerta alla vendita\u003c/span>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n\n  \u003csection class=\"ticker\" aria-label=\"Ultime chiusure\">\n    \u003cdiv class=\"wrap ticker__label\">\u003cspan class=\"dot\" aria-hidden=\"true\">\u003c/span>\u003cp class=\"eyebrow\">Ultime chiusure nel network\u003c/p>\u003c/div>\n    \u003cdiv class=\"ticker__track\" id=\"ticker\">\u003c/div>\n  \u003c/section>\n\n  \u003csection class=\"band\">\n    \u003cdiv class=\"wrap\">\n      \u003cp class=\"eyebrow\">Non semplici lead.\u003c/p>\n      \u003ch2>Auto vere, con foto vere e un prezzo già concordato con il privato.\u003c/h2>\n    \u003c/div>\n  \u003c/section>\n\n  \u003csection class=\"inv\" id=\"auto\">\n    \u003cdiv class=\"wrap\">\n      \u003cdiv class=\"inv__head\">\n        \u003cdiv>\n          \u003cp class=\"eyebrow\">Parco auto del network\u003c/p>\n          \u003ch2>Le auto passate da noi.\u003c/h2>\n          \u003cp>Citycar, SUV, cabrio e youngtimer da privati in tutta la Lombardia. Apri una scheda per vedere foto, prezzo concordato e margine.\u003c/p>\n        \u003c/div>\n        \u003cp class=\"note\">Selezione illustrativa di auto trattate dal network.\u003cbr>Prezzi, margini e disponibilità sono indicativi.\u003c/p>\n      \u003c/div>\n\n      \u003cdiv class=\"toolbar\" role=\"group\" aria-label=\"Filtra le auto\">\n        \u003cdiv class=\"seg\" id=\"seg\">\n          \u003cbutton type=\"button\" data-s=\"all\" aria-pressed=\"true\">Tutte\u003cspan class=\"c\" data-c=\"all\">\u003c/span>\u003c/button>\n          \u003cbutton type=\"button\" data-s=\"disponibile\" aria-pressed=\"false\">Disponibili\u003cspan class=\"c\" data-c=\"disponibile\">\u003c/span>\u003c/button>\n          \u003cbutton type=\"button\" data-s=\"trattativa\" aria-pressed=\"false\">In trattativa\u003cspan class=\"c\" data-c=\"trattativa\">\u003c/span>\u003c/button>\n          \u003cbutton type=\"button\" data-s=\"venduta\" aria-pressed=\"false\">Vendute\u003cspan class=\"c\" data-c=\"venduta\">\u003c/span>\u003c/button>\n        \u003c/div>\n        \u003cdiv class=\"selects\">\n          \u003cselect class=\"select\" id=\"fMake\" aria-label=\"Marca\">\u003coption value=\"\">Tutte le marche\u003c/option>\u003c/select>\n          \u003cselect class=\"select\" id=\"fFuel\" aria-label=\"Alimentazione\">\u003coption value=\"\">Ogni alimentazione\u003c/option>\u003c/select>\n          \u003cselect class=\"select\" id=\"fSort\" aria-label=\"Ordina\">\n            \u003coption value=\"recent\">Più recenti\u003c/option>\n            \u003coption value=\"margin\">Margine più alto\u003c/option>\n            \u003coption value=\"priceAsc\">Prezzo crescente\u003c/option>\n            \u003coption value=\"priceDesc\">Prezzo decrescente\u003c/option>\n            \u003coption value=\"year\">Anno più recente\u003c/option>\n          \u003c/select>\n        \u003c/div>\n        \u003cbutton class=\"ed-add-car\" id=\"edAddCar\" type=\"button\" hidden>+ Add a car\u003c/button>\n        \u003cp class=\"count\" id=\"count\" aria-live=\"polite\">\u003c/p>\n      \u003c/div>\n\n      \u003cdiv class=\"grid\" id=\"grid\">\u003c/div>\n      \u003cdiv class=\"more\">\u003cbutton class=\"btn btn--outline\" id=\"more\" type=\"button\" hidden>Mostra altre auto\u003c/button>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n\n  \u003csection class=\"how\" id=\"come\">\n    \u003cdiv class=\"wrap\">\n      \u003cp class=\"eyebrow\">Come funziona\u003c/p>\n      \u003ch2>Il lavoro pesante lo facciamo noi. \u003cspan>La decisione resta tua.\u003c/span>\u003c/h2>\n      \u003col class=\"steps\">\n        \u003cli>\u003ch3>Definiamo il tuo stock ideale\u003c/h3>\u003cp>Zona, marchi, modelli, anzianità, chilometraggio e fascia di acquisto.\u003c/p>\u003c/li>\n        \u003cli>\u003ch3>Troviamo e qualifichiamo i privati\u003c/h3>\u003cp>Venditori realmente intenzionati, con foto e dati dell'auto già raccolti.\u003c/p>\u003c/li>\n        \u003cli>\u003ch3>Concordiamo il prezzo\u003c/h3>\u003cp>Il nostro team gestisce la prima trattativa e prepara un'opportunità concreta.\u003c/p>\u003c/li>\n        \u003cli>\u003ch3>Tu valuti e acquisti\u003c/h3>\u003cp>Ricevi il deal su WhatsApp, scegli se procedere e organizzi verifica e ritiro.\u003c/p>\u003c/li>\n      \u003c/ol>\n    \u003c/div>\n  \u003c/section>\n\n  \u003csection class=\"close\" id=\"contatti\">\n    \u003cdiv class=\"wrap\">\n      \u003cdiv>\n        \u003cspan class=\"ctc-brand ctc-brand--on-ink\">\u003cspan class=\"ctc-mark\" aria-hidden=\"true\">\u003c/span>Car Trade Club\u003c/span>\n        \u003ch2>Il prossimo acquisto \u003cspan>potrebbe essere già negoziato.\u003c/span>\u003c/h2>\n        \u003cp>Dicci che auto cerchi e in quale zona operi. Ti ricontattiamo entro un giorno lavorativo per parlare di stock e volumi.\u003c/p>\n      \u003c/div>\n      \u003cdiv class=\"contact\">\n        \u003ca class=\"btn btn--lime\" href=\"https://cartradeclub.com/\" target=\"_blank\" rel=\"noopener\">Attiva la tua zona →\u003c/a>\n        \u003cdiv class=\"mail\">\n          \u003cdiv>\u003csmall>Oppure scrivici\u003c/small>\u003cspan id=\"mailAddr\">mattia@cartradeclub.com\u003c/span>\u003c/div>\n          \u003cbutton type=\"button\" id=\"copyMail\">Copia\u003c/button>\n        \u003c/div>\n      \u003c/div>\n    \u003c/div>\n  \u003c/section>\n\u003c/main>\n\n\u003cfooter>\n  \u003cdiv class=\"wrap\">\n    \u003cspan>© 2026 CAR TRADE CLUB LIMITED · Company No. 17413707 · London, United Kingdom\u003c/span>\n    \u003cspan>Selezione illustrativa: prezzi, margini e disponibilità indicativi.\u003c/span>\n  \u003c/div>\n\u003c/footer>\n\n\u003cdialog id=\"dlg\" aria-labelledby=\"dTitle\">\n  \u003cdiv class=\"dlg\">\n    \u003cdiv class=\"gal\">\n      \u003cdiv class=\"gal__main\">\n        \u003cimg id=\"gMain\" alt=\"\">\n        \u003cbutton class=\"gal__nav gal__nav--prev\" id=\"gPrev\" type=\"button\" aria-label=\"Foto precedente\">‹\u003c/button>\n        \u003cbutton class=\"gal__nav gal__nav--next\" id=\"gNext\" type=\"button\" aria-label=\"Foto successiva\">›\u003c/button>\n        \u003cspan class=\"gal__idx num\" id=\"gIdx\">\u003c/span>\n      \u003c/div>\n      \u003cdiv class=\"gal__thumbs\" id=\"gThumbs\">\u003c/div>\n    \u003c/div>\n    \u003cdiv class=\"info\">\n      \u003cdiv class=\"info__top\" id=\"dInfoTop\">\n        \u003cdiv>\n          \u003cp class=\"eyebrow\" id=\"dEyebrow\">\u003c/p>\n          \u003ch3 id=\"dTitle\">\u003c/h3>\n          \u003cp class=\"ver\" id=\"dVer\">\u003c/p>\n        \u003c/div>\n        \u003cbutton class=\"x\" id=\"dClose\" type=\"button\" aria-label=\"Chiudi\">✕\u003c/button>\n      \u003c/div>\n      \u003cbutton class=\"ed-open\" id=\"edOpen\" type=\"button\" hidden>✎ Edit this car\u003c/button>\n      \u003cdl class=\"facts\" id=\"dFacts\">\u003c/dl>\n      \u003cdiv class=\"panel\">\n        \u003csmall>Prezzo concordato con il privato\u003c/small>\n        \u003cdiv class=\"big\" id=\"dPrice\">\u003c/div>\n        \u003cdiv class=\"row\">\u003cspan>Valore di mercato stimato\u003c/span>\u003cb id=\"dMarket\">\u003c/b>\u003c/div>\n        \u003cdiv class=\"row\">\u003cspan>Margine lordo stimato\u003c/span>\u003cb class=\"lime\" id=\"dGain\">\u003c/b>\u003c/div>\n        \u003cp class=\"foot\">Margine lordo: valore di mercato meno prezzo d'acquisto. Esclusi trasporto, passaggio e ricondizionamento.\u003c/p>\n      \u003c/div>\n      \u003cp class=\"sold-line\" id=\"dStatus\">\u003c/p>\n      \u003ca class=\"btn btn--lime\" id=\"dCta\" href=\"#contatti\">Voglio auto come questa →\u003c/a>\n      \u003csection class=\"ed\" id=\"ed\" hidden aria-label=\"Edit this car\">\n        \u003cp class=\"ed__title\" id=\"edTitle\">Edit this car\u003cspan>Only people with edit access see this. Saving updates the page for everyone, dealers included.\u003c/span>\u003c/p>\n        \u003cdiv class=\"ed__row\">\n          \u003clabel>Make\u003cinput id=\"edMake\" type=\"text\" autocomplete=\"off\" placeholder=\"e.g. BMW\">\u003c/label>\n          \u003clabel>Model\u003cinput id=\"edModel\" type=\"text\" autocomplete=\"off\" placeholder=\"e.g. X3\">\u003c/label>\n          \u003clabel class=\"ed__wide\">Version\u003cinput id=\"edVersion\" type=\"text\" autocomplete=\"off\" placeholder=\"e.g. xDrive20d Msport\">\u003c/label>\n          \u003clabel>Year\u003cinput id=\"edYear\" type=\"number\" inputmode=\"numeric\" min=\"1950\" max=\"2030\" step=\"1\">\u003c/label>\n          \u003clabel>Km\u003cinput id=\"edKm\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1000\">\u003c/label>\n          \u003clabel>Fuel\u003cselect id=\"edFuel\">\u003coption>Diesel\u003c/option>\u003coption>Benzina\u003c/option>\u003coption>Ibrida\u003c/option>\u003coption>GPL\u003c/option>\u003coption>Metano\u003c/option>\u003coption>Elettrica\u003c/option>\u003c/select>\u003c/label>\n          \u003clabel>City\u003cinput id=\"edCity\" type=\"text\" list=\"edCities\" autocomplete=\"off\">\u003c/label>\n        \u003c/div>\n        \u003cdatalist id=\"edCities\">\u003coption value=\"Milano\">\u003coption value=\"Monza\">\u003coption value=\"Bergamo\">\u003coption value=\"Brescia\">\u003coption value=\"Como\">\u003coption value=\"Varese\">\u003coption value=\"Lecco\">\u003coption value=\"Lodi\">\u003coption value=\"Cremona\">\u003coption value=\"Mantova\">\u003coption value=\"Pavia\">\u003coption value=\"Sondrio\">\u003coption value=\"Busto Arsizio\">\u003coption value=\"Legnano\">\u003coption value=\"Gallarate\">\u003coption value=\"Saronno\">\u003coption value=\"Seregno\">\u003coption value=\"Vigevano\">\u003coption value=\"Treviglio\">\u003coption value=\"Desenzano del Garda\">\u003coption value=\"Rho\">\u003coption value=\"Cantù\">\u003coption value=\"Crema\">\u003c/datalist>\n        \u003cdiv class=\"ed__row\">\n          \u003clabel>Agreed price (€)\u003cinput id=\"edPrice\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"100\">\u003c/label>\n          \u003clabel>Market value (€)\u003cinput id=\"edMarket\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"100\">\u003c/label>\n        \u003c/div>\n        \u003cp class=\"ed__calc\" id=\"edCalc\">\u003c/p>\n        \u003cdiv class=\"ed__row\">\n          \u003clabel>Availability\u003cselect id=\"edStatus\">\u003coption value=\"disponibile\">Available\u003c/option>\u003coption value=\"trattativa\">Under negotiation\u003c/option>\u003coption value=\"venduta\">Sold\u003c/option>\u003c/select>\u003c/label>\n          \u003clabel id=\"edDaysWrap\">Sold in (days)\u003cinput id=\"edDays\" type=\"number\" inputmode=\"numeric\" min=\"1\" max=\"90\" step=\"1\">\u003c/label>\n        \u003c/div>\n        \u003cdiv class=\"ed__ph-head\">\n          \u003cdiv>\u003cb>Photos\u003c/b>\u003csmall>The first one is the cover on the card.\u003c/small>\u003c/div>\n          \u003clabel class=\"ed__add\" id=\"edAdd\">Add photos\u003cinput id=\"edFile\" type=\"file\" accept=\"image/*\" multiple>\u003c/label>\n        \u003c/div>\n        \u003col class=\"ed__photos\" id=\"edPhotos\">\u003c/ol>\n        \u003cp class=\"ed__err\" id=\"edErr\" role=\"alert\">\u003c/p>\n        \u003cdiv class=\"ed__actions\">\n          \u003cbutton class=\"btn btn--lime\" id=\"edSave\" type=\"button\">Save to page\u003c/button>\n          \u003cbutton class=\"btn btn--outline\" id=\"edCancel\" type=\"button\">Cancel\u003c/button>\n        \u003c/div>\n        \u003cbutton class=\"ed__del\" id=\"edDelete\" type=\"button\">Delete this car from the page\u003c/button>\n      \u003c/section>\n    \u003c/div>\n  \u003c/div>\n\u003c/dialog>\n\n\u003cscript>\nconst CARS = /*__CARS__*/[];\nconst IMG = \"img/\";\nconst P = (p) => /^(\\/|https?:)/.test(p) ? p : IMG + p;\nconst cover = (c) => c.gallery[0] || { src: \"\", thumb: \"\" };\n\nconst eur = (n) => String(Math.round(n)).replace(/\\B(?=(\\d{3})+(?!\\d))/g, \".\") + \" €\";\nconst kmf = (n) => String(n).replace(/\\B(?=(\\d{3})+(?!\\d))/g, \".\") + \" km\";\nconst gain = (c) => c.market - c.price;\nconst esc = (s) => String(s).replace(/[&\u003c>\"]/g, (ch) => ({ \"&\": \"&amp;\", \"\u003c\": \"&lt;\", \">\": \"&gt;\", '\"': \"&quot;\" }[ch]));\nconst STATUS = { venduta: \"Venduta\", disponibile: \"Disponibile\", trattativa: \"In trattativa\" };\nconst badgeText = (c) => c.status === \"venduta\" ? `Venduta in ${c.days} gg` : STATUS[c.status];\nconst byCode = Object.fromEntries(CARS.map((c) => [c.code, c]));\n\n/* stats from the cars on the page */\nconst sold = CARS.filter((c) => c.status === \"venduta\");\nconst avgMargin = CARS.reduce((s, c) => s + gain(c) / c.price, 0) / CARS.length * 100;\nconst avgDays = sold.reduce((s, c) => s + c.days, 0) / sold.length;\ndocument.getElementById(\"statMargin\").textContent = \"+\" + avgMargin.toFixed(1).replace(\".\", \",\") + \"%\";\ndocument.getElementById(\"statDays\").textContent = Math.round(avgDays) + \" giorni\";\n\n/* featured deal card */\nconst feat = (byCode[\"CTC-6VE4\"] && byCode[\"CTC-6VE4\"].status === \"disponibile\" && byCode[\"CTC-6VE4\"])\n  || CARS.find((c) => c.status === \"disponibile\") || CARS[0];\ndocument.getElementById(\"featured\").innerHTML = `\n  \u003cdiv class=\"deal__head\">\u003cspan class=\"live\">\u003cspan class=\"dot\" aria-hidden=\"true\">\u003c/span>Opportunità disponibile\u003c/span>\u003cspan class=\"where\">${esc(feat.city)}\u003c/span>\u003c/div>\n  \u003cimg class=\"deal__img\" src=\"${P(cover(feat).src)}\" alt=\"${esc(feat.make + \" \" + feat.model)}\" width=\"1024\" height=\"768\">\n  \u003cdiv class=\"deal__body\">\n    \u003cp class=\"deal__title\">${esc(feat.make + \" \" + feat.model)}\u003c/p>\n    \u003cdiv class=\"deal__meta\">\u003cspan class=\"pill-ink\">${feat.year}\u003c/span>\u003cspan class=\"pill-ink num\">${kmf(feat.km)}\u003c/span>\u003cspan class=\"pill-ink\">${esc(feat.fuel)}\u003c/span>\u003c/div>\n    \u003cdiv class=\"deal__price\">\n      \u003cdiv>\u003csmall>Prezzo concordato\u003c/small>\u003cstrong class=\"num\">${eur(feat.price)}\u003c/strong>\u003c/div>\n      \u003cdiv class=\"gain\">\u003csmall>Margine stimato\u003c/small>\u003cstrong class=\"num\">+${eur(gain(feat))}\u003c/strong>\u003c/div>\n    \u003c/div>\n  \u003c/div>`;\ndocument.getElementById(\"featured\").addEventListener(\"click\", () => openCar(feat.code));\n\n/* ticker of sold cars */\nconst tickCars = sold.slice().sort((a, b) => a.added - b.added).slice(0, 18);\nconst tickHTML = tickCars.map((c) => `\n  \u003cbutton class=\"tick\" type=\"button\" data-code=\"${c.code}\">\n    \u003cimg src=\"${P(cover(c).thumb)}\" alt=\"\" loading=\"lazy\" width=\"76\" height=\"56\">\n    \u003cspan>\u003cb>${esc(c.make + \" \" + c.model)}\u003c/b>\u003cspan>${c.year} · ${esc(c.city)} · \u003cem>venduta in ${c.days} gg\u003c/em>\u003c/span>\u003c/span>\n  \u003c/button>`).join(\"\");\nconst ticker = document.getElementById(\"ticker\");\nticker.innerHTML = tickHTML + tickHTML.replace(/\u003cbutton /g, '\u003cbutton tabindex=\"-1\" aria-hidden=\"true\" ');\nticker.addEventListener(\"click\", (e) => { const b = e.target.closest(\".tick\"); if (b) openCar(b.dataset.code); });\n\n/* filters */\nconst state = { s: \"all\", make: \"\", fuel: \"\", sort: \"recent\", shown: 24 };\nconst fill = (id, values) => {\n  const sel = document.getElementById(id);\n  values.forEach((v) => sel.insertAdjacentHTML(\"beforeend\", `\u003coption value=\"${esc(v)}\">${esc(v)}\u003c/option>`));\n};\nfill(\"fMake\", [...new Set(CARS.map((c) => c.make))].sort((a, b) => a.localeCompare(b, \"it\")));\nfill(\"fFuel\", [...new Set(CARS.map((c) => c.fuel))].sort());\nconst counts = { all: CARS.length };\nCARS.forEach((c) => { counts[c.status] = (counts[c.status] || 0) + 1; });\ndocument.querySelectorAll(\"[data-c]\").forEach((el) => { el.textContent = counts[el.dataset.c] || 0; });\n\nconst RANK = { disponibile: 0, trattativa: 1, venduta: 2 };\nconst byStatus = (f) => (a, b) => (RANK[a.status] - RANK[b.status]) || f(a, b);\nconst SORTS = {\n  recent: (a, b) => a.added - b.added,\n  margin: (a, b) => gain(b) / b.price - gain(a) / a.price,\n  priceAsc: (a, b) => a.price - b.price,\n  priceDesc: (a, b) => b.price - a.price,\n  year: (a, b) => b.year - a.year,\n};\n\nfunction cardHTML(c) {\n  return `\n  \u003cbutton class=\"card\" type=\"button\" data-code=\"${c.code}\">\n    \u003cdiv class=\"card__ph\">\n      \u003cimg src=\"${P(cover(c).thumb)}\" alt=\"${esc(c.make + \" \" + c.model + \" \" + c.year)}\" loading=\"lazy\" width=\"560\" height=\"420\">\n      \u003cspan class=\"badge badge--${c.status}\">${badgeText(c)}\u003c/span>\n      \u003cspan class=\"ph-count num\">${c.gallery.length} foto\u003c/span>\n    \u003c/div>\n    \u003cdiv class=\"card__body\">\n      \u003cdiv class=\"card__where\">\u003cspan>${esc(c.city)}\u003c/span>\u003cspan class=\"code\">${c.code}\u003c/span>\u003c/div>\n      \u003cp class=\"card__title\">${esc(c.make + \" \" + c.model)}\u003c/p>\n      \u003cdiv class=\"card__ver\">${esc(c.version)}\u003c/div>\n      \u003cdiv class=\"card__facts\">\u003cspan class=\"chip\">${c.year}\u003c/span>\u003cspan class=\"chip\">${kmf(c.km)}\u003c/span>\u003cspan class=\"chip\">${esc(c.fuel)}\u003c/span>\u003c/div>\n      \u003cdiv class=\"card__price\">\n        \u003cdiv>\u003csmall>Prezzo concordato\u003c/small>\u003cstrong>${eur(c.price)}\u003c/strong>\u003c/div>\n        \u003cspan class=\"gain-pill\">+${eur(gain(c))} margine\u003c/span>\n      \u003c/div>\n    \u003c/div>\n  \u003c/button>`;\n}\n\nfunction render() {\n  const list = CARS\n    .filter((c) => (state.s === \"all\" || c.status === state.s) && (!state.make || c.make === state.make) && (!state.fuel || c.fuel === state.fuel))\n    .sort(byStatus(SORTS[state.sort]));\n  const grid = document.getElementById(\"grid\");\n  grid.innerHTML = list.length\n    ? list.slice(0, state.shown).map(cardHTML).join(\"\")\n    : `\u003cdiv class=\"empty\">Nessuna auto con questi filtri. Prova a togliere la marca o l'alimentazione.\u003c/div>`;\n  const moreBtn = document.getElementById(\"more\");\n  moreBtn.hidden = list.length \u003c= state.shown;\n  moreBtn.textContent = `Mostra altre ${Math.min(24, list.length - state.shown)} auto`;\n  const totalValue = list.reduce((s, c) => s + c.market, 0);\n  document.getElementById(\"count\").textContent = list.length\n    ? `${list.length} auto · ${eur(totalValue)} di valore di mercato`\n    : \"0 auto\";\n}\n\ndocument.getElementById(\"seg\").addEventListener(\"click\", (e) => {\n  const b = e.target.closest(\"button\"); if (!b) return;\n  state.s = b.dataset.s; state.shown = 24;\n  document.querySelectorAll(\"#seg button\").forEach((x) => x.setAttribute(\"aria-pressed\", String(x === b)));\n  render();\n});\n[[\"fMake\", \"make\"], [\"fFuel\", \"fuel\"], [\"fSort\", \"sort\"]].forEach(([id, key]) => {\n  document.getElementById(id).addEventListener(\"change\", (e) => { state[key] = e.target.value; state.shown = 24; render(); });\n});\ndocument.getElementById(\"more\").addEventListener(\"click\", () => { state.shown += 24; render(); });\ndocument.getElementById(\"grid\").addEventListener(\"click\", (e) => { const b = e.target.closest(\".card\"); if (b) openCar(b.dataset.code); });\n\n/* dialog */\nconst dlg = document.getElementById(\"dlg\");\nlet cur = null, idx = 0;\nfunction showPhoto(i) {\n  if (!cur.gallery.length) { document.getElementById(\"gMain\").removeAttribute(\"src\"); document.getElementById(\"gMain\").alt = \"\"; document.getElementById(\"gIdx\").textContent = \"No photos yet\"; return; }\n  idx = (i + cur.gallery.length) % cur.gallery.length;\n  const main = document.getElementById(\"gMain\");\n  main.src = P(cur.gallery[idx].src);\n  main.alt = `${cur.make} ${cur.model}, foto ${idx + 1} di ${cur.gallery.length}`;\n  document.getElementById(\"gIdx\").textContent = `${idx + 1} / ${cur.gallery.length}`;\n  document.querySelectorAll(\"#gThumbs button\").forEach((b, j) => b.setAttribute(\"aria-current\", String(j === idx)));\n}\nfunction openCar(code) {\n  cur = byCode[code]; if (!cur) return;\n  document.getElementById(\"gThumbs\").innerHTML = cur.gallery.map((g, j) =>\n    `\u003cbutton type=\"button\" data-i=\"${j}\" aria-label=\"Foto ${j + 1}\">\u003cimg src=\"${P(g.thumb)}\" alt=\"\" loading=\"lazy\">\u003c/button>`).join(\"\");\n  const multi = cur.gallery.length > 1;\n  document.getElementById(\"gPrev\").hidden = !multi;\n  document.getElementById(\"gNext\").hidden = !multi;\n  document.getElementById(\"gThumbs\").hidden = !multi;\n  showPhoto(0);\n  document.getElementById(\"dEyebrow\").textContent = `${cur.code} · ${cur.city}`;\n  document.getElementById(\"dTitle\").textContent = `${cur.make} ${cur.model}`;\n  document.getElementById(\"dVer\").textContent = cur.version;\n  const facts = [[\"Anno\", cur.year], [\"Chilometri\", kmf(cur.km)], [\"Alimentazione\", cur.fuel],\n                 [\"Zona\", cur.city], [\"Stato\", STATUS[cur.status]], [\"Foto\", cur.gallery.length + \" foto\"]];\n  document.getElementById(\"dFacts\").innerHTML = facts.map(([k, v]) => `\u003cdiv>\u003cdt>${k}\u003c/dt>\u003cdd>${esc(v)}\u003c/dd>\u003c/div>`).join(\"\");\n  document.getElementById(\"dPrice\").textContent = eur(cur.price);\n  document.getElementById(\"dMarket\").textContent = eur(cur.market);\n  document.getElementById(\"dGain\").textContent = `+${eur(gain(cur))} (+${cur.price ? Math.round(gain(cur) / cur.price * 100) : 0}%)`;\n  const line = {\n    venduta: `Venduta a un concessionario del network in ${cur.days} giorni.`,\n    disponibile: `Disponibile ora per i concessionari della zona di ${cur.city}.`,\n    trattativa: `In trattativa con un concessionario del network.`,\n  }[cur.status];\n  document.getElementById(\"dStatus\").textContent = line;\n  edReset();\n  if (!dlg.open) dlg.showModal();\n  dlg.scrollTop = 0;\n}\ndocument.getElementById(\"gThumbs\").addEventListener(\"click\", (e) => { const b = e.target.closest(\"button\"); if (b) showPhoto(+b.dataset.i); });\ndocument.getElementById(\"gPrev\").addEventListener(\"click\", () => showPhoto(idx - 1));\ndocument.getElementById(\"gNext\").addEventListener(\"click\", () => showPhoto(idx + 1));\ndocument.getElementById(\"dClose\").addEventListener(\"click\", () => { if (ed.isNew) edReset(); dlg.close(); });\ndocument.getElementById(\"dCta\").addEventListener(\"click\", () => dlg.close());\ndlg.addEventListener(\"click\", (e) => { if (e.target === dlg) dlg.close(); });\ndlg.addEventListener(\"keydown\", (e) => {\n  if (e.target.closest(\"input, textarea, select\")) return;\n  if (e.key === \"ArrowRight\") showPhoto(idx + 1);\n  if (e.key === \"ArrowLeft\") showPhoto(idx - 1);\n});\nlet touchX = null;\ndocument.getElementById(\"gMain\").addEventListener(\"touchstart\", (e) => { touchX = e.touches[0].clientX; }, { passive: true });\ndocument.getElementById(\"gMain\").addEventListener(\"touchend\", (e) => {\n  if (touchX === null) return;\n  const dx = e.changedTouches[0].clientX - touchX; touchX = null;\n  if (Math.abs(dx) > 40) showPhoto(idx + (dx \u003c 0 ? 1 : -1));\n});\n\n/* copy email */\ndocument.getElementById(\"copyMail\").addEventListener(\"click\", async (e) => {\n  const addr = document.getElementById(\"mailAddr\").textContent;\n  try { await navigator.clipboard.writeText(addr); e.target.textContent = \"Copiata\"; }\n  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById(\"mailAddr\")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); e.target.textContent = \"Selezionata\"; }\n  setTimeout(() => { e.target.textContent = \"Copia\"; }, 1800);\n});\n\nrender();\n\n/* —— Editor: only for people with edit access to this artifact (staff tooling, English).\n   Saving rebuilds this whole page from #pageSrc with the edited CARS and publishes it as a new version. —— */\nconst CARS_MARK = \"/*__CA\" + \"RS__*/[]\";\nconst PAGE_MARK = \"__PAGE\" + \"_SRC__\";\nconst SKELETON = '\u003c!doctype html>\u003chtml>\u003chead>\u003cmeta charset=utf8>\u003cmeta name=viewport content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\u003cstyle>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}\u003c/style>\u003c/head>\u003cbody>';\nconst MAX_PHOTOS = 12;\nconst ed = { on: false, open: false, draft: null, uploading: 0, artifact: null, assets: null };\nconst $ = (id) => document.getElementById(id);\n\nfunction flash(msg, ms = 3600) {\n  const t = document.createElement(\"div\");\n  t.className = \"toast\"; t.setAttribute(\"role\", \"status\"); t.textContent = msg;\n  (dlg.open ? dlg : document.body).appendChild(t);\n  setTimeout(() => t.remove(), ms);\n}\n\nfunction buildPage(cars) {\n  const src = JSON.parse($(\"pageSrc\").textContent);\n  const safe = (v) => JSON.stringify(v).replace(/\u003c/g, \"\\\\u003c\");\n  const put = (s, mark, val) => {\n    const i = s.indexOf(mark);\n    if (i \u003c 0) throw new Error(\"template marker missing: \" + mark);\n    return s.slice(0, i) + val + s.slice(i + mark.length);\n  };\n  return SKELETON + put(put(src, CARS_MARK, safe(cars)), PAGE_MARK, safe(src)) + \"\u003c/body>\u003c/html>\";\n}\n\nfunction edReset() {\n  if (ed.newCode && byCode[ed.newCode] && !CARS.includes(byCode[ed.newCode])) delete byCode[ed.newCode];\n  ed.open = false; ed.draft = null; ed.isNew = false; ed.newCode = null;\n  $(\"edDelete\").dataset.armed = \"false\"; $(\"edDelete\").textContent = \"Delete this car from the page\";\n  $(\"ed\").hidden = true;\n  $(\"edOpen\").hidden = !ed.on;\n  $(\"dCta\").hidden = false;\n}\n\nfunction edStart() {\n  ed.open = true;\n  ed.draft = { gallery: cur.gallery.map((g) => ({ ...g })) };\n  $(\"edMake\").value = cur.make; $(\"edModel\").value = cur.model; $(\"edVersion\").value = cur.version;\n  $(\"edYear\").value = cur.year; $(\"edKm\").value = cur.km; $(\"edFuel\").value = cur.fuel; $(\"edCity\").value = cur.city;\n  $(\"edPrice\").value = cur.price || \"\";\n  $(\"edMarket\").value = cur.market || \"\";\n  $(\"edTitle\").firstChild.textContent = ed.isNew ? \"Add a new car\" : \"Edit this car\";\n  $(\"edDelete\").hidden = ed.isNew;\n  $(\"edStatus\").value = cur.status;\n  $(\"edDays\").value = cur.days || 7;\n  edDaysToggle();\n  $(\"edErr\").textContent = \"\";\n  $(\"edAdd\").setAttribute(\"aria-disabled\", String(!ed.assets));\n  $(\"edAdd\").title = ed.assets ? \"\" : \"Uploading photos needs Editor access\";\n  $(\"ed\").hidden = false; $(\"edOpen\").hidden = true; $(\"dCta\").hidden = true;\n  edCalc(); edPhotos();\n  $(\"ed\").scrollIntoView({ block: \"nearest\", behavior: \"smooth\" });\n}\n\nfunction edNums() {\n  return { price: Math.round(Number($(\"edPrice\").value)), market: Math.round(Number($(\"edMarket\").value)) };\n}\nfunction edCalc() {\n  const { price, market } = edNums();\n  $(\"edCalc\").textContent = price > 0 && market > 0\n    ? `Margin shown to dealers: ${market >= price ? \"+\" : \"\"}${eur(market - price)} (${Math.round((market - price) / price * 100)}%)`\n    : \"\";\n}\n\nfunction edPhotos() {\n  const g = ed.draft.gallery;\n  const items = g.map((p, i) => `\n    \u003cli class=\"${i === 0 ? \"is-cover\" : \"\"}\">\n      ${i === 0 ? '\u003cspan class=\"tag\">Cover\u003c/span>' : \"\"}\n      \u003cimg src=\"${esc(P(p.thumb))}\" alt=\"Photo ${i + 1}\">\n      \u003cdiv class=\"ctl\">\n        \u003cbutton type=\"button\" data-act=\"left\" data-i=\"${i}\" aria-label=\"Move photo ${i + 1} earlier\" ${i === 0 ? \"disabled\" : \"\"}>←\u003c/button>\n        \u003cbutton type=\"button\" data-act=\"right\" data-i=\"${i}\" aria-label=\"Move photo ${i + 1} later\" ${i === g.length - 1 ? \"disabled\" : \"\"}>→\u003c/button>\n        \u003cbutton type=\"button\" data-act=\"del\" data-i=\"${i}\" aria-label=\"Remove photo ${i + 1}\">✕\u003c/button>\n      \u003c/div>\n    \u003c/li>`);\n  for (let k = 0; k \u003c ed.uploading; k++) items.push('\u003cli>\u003cdiv class=\"wait\">Uploading…\u003c/div>\u003c/li>');\n  $(\"edPhotos\").innerHTML = items.join(\"\");\n}\n\n$(\"edPhotos\").addEventListener(\"click\", (e) => {\n  const b = e.target.closest(\"button[data-act]\"); if (!b) return;\n  const g = ed.draft.gallery, i = +b.dataset.i;\n  if (b.dataset.act === \"left\" && i > 0) [g[i - 1], g[i]] = [g[i], g[i - 1]];\n  if (b.dataset.act === \"right\" && i \u003c g.length - 1) [g[i + 1], g[i]] = [g[i], g[i + 1]];\n  if (b.dataset.act === \"del\") g.splice(i, 1);\n  edPhotos();\n});\n\nasync function shrink(file, maxSide, quality) {\n  const bmp = await createImageBitmap(file, { imageOrientation: \"from-image\" });\n  const k = Math.min(1, maxSide / Math.max(bmp.width, bmp.height));\n  const cv = document.createElement(\"canvas\");\n  cv.width = Math.round(bmp.width * k); cv.height = Math.round(bmp.height * k);\n  cv.getContext(\"2d\").drawImage(bmp, 0, 0, cv.width, cv.height);\n  bmp.close?.();\n  const toBlob = (type) => new Promise((res) => cv.toBlob(res, type, quality));\n  let blob = await toBlob(\"image/webp\");\n  if (!blob || blob.type !== \"image/webp\") blob = await toBlob(\"image/jpeg\");\n  if (!blob) throw new Error(\"encode\");\n  return blob;\n}\n\nasync function uploadPhoto(file, draft) {\n  const full = await shrink(file, 1280, 0.8);\n  const small = await shrink(file, 640, 0.72);\n  const a = await ed.assets.upload(full, { type: full.type });\n  const b = await ed.assets.upload(small, { type: small.type });\n  draft.gallery.push({ src: \"/_blob/\" + a.id, thumb: \"/_blob/\" + b.id });\n}\n\n$(\"edFile\").addEventListener(\"change\", async (e) => {\n  const files = [...e.target.files]; e.target.value = \"\";\n  if (!files.length || !ed.assets) return;\n  const draft = ed.draft;\n  const room = MAX_PHOTOS - draft.gallery.length - ed.uploading;\n  if (files.length > room) $(\"edErr\").textContent = `Up to ${MAX_PHOTOS} photos per car: added the first ${Math.max(room, 0)}.`;\n  else $(\"edErr\").textContent = \"\";\n  const take = files.slice(0, Math.max(room, 0));\n  ed.uploading += take.length; edPhotos();\n  for (const f of take) {\n    try { await uploadPhoto(f, draft); }\n    catch (err) {\n      const code = err && err.code;\n      $(\"edErr\").textContent = code === \"quota_exceeded\" ? \"Photo storage is full.\"\n        : code === \"too_large\" ? `${f.name} is too large.`\n        : code ? `Upload failed (${code}). Try again.`\n        : `Couldn't read ${f.name}. Use a JPG or PNG.`;\n    }\n    ed.uploading--;\n    if (ed.draft === draft) edPhotos();\n  }\n});\n\n$(\"edOpen\").addEventListener(\"click\", edStart);\ndlg.addEventListener(\"close\", () => { if (ed.isNew && !dlg.open) edReset(); });\n$(\"edCancel\").addEventListener(\"click\", () => { if (ed.isNew) { edReset(); dlg.close(); return; } edReset(); $(\"dInfoTop\").scrollIntoView({ block: \"nearest\" }); });\n$(\"edPrice\").addEventListener(\"input\", edCalc);\nfunction edDaysToggle() { $(\"edDaysWrap\").hidden = $(\"edStatus\").value !== \"venduta\"; }\n$(\"edStatus\").addEventListener(\"change\", edDaysToggle);\n$(\"edMarket\").addEventListener(\"input\", edCalc);\n\nconst SAVE_ERRORS = {\n  conflict: \"Someone else saved first. The page is reloading: make your change again.\",\n  not_writer: \"You don't have edit access to this page.\",\n  not_granted: \"Saving isn't available in this view. Open the page in claude.ai with edit access.\",\n  capability_disabled: \"Saving isn't available in this view. Open the page in claude.ai with edit access.\",\n  rate_limited: \"Too many saves in a row. Wait a minute and save again.\",\n  too_large: \"The page got too large to save.\",\n};\n\nasync function savePage(html) {\n  try { return await ed.artifact.publish(html); }\n  catch (e) {\n    const code = e && e.code;\n    if ([\"conflict\", \"rate_limited\", \"not_writer\"].includes(code)) throw e;\n    console.warn(\"[editor] page publish failed, trying the files form\", e);\n    return await ed.artifact.publish({ \"index.html\": { content: html, contentType: \"text/html\" } });\n  }\n}\n\nfunction newCode() {\n  const A = \"0123456789ABCDEFGHJKLMNPQRSTUVWXYZ\";\n  let code;\n  do { code = \"CTC-\" + Array.from({ length: 4 }, () => A[Math.floor(Math.random() * A.length)]).join(\"\"); } while (byCode[code]);\n  return code;\n}\n\n$(\"edAddCar\").addEventListener(\"click\", () => {\n  const car = {\n    code: newCode(), make: \"\", model: \"\", version: \"\", year: new Date().getFullYear() - 3, km: 50000, fuel: \"Diesel\", city: \"Milano\",\n    price: 0, market: 0, status: \"disponibile\", days: null,\n    added: Math.min(0, ...CARS.map((c) => c.added)) - 1, gallery: [],\n  };\n  byCode[car.code] = car;\n  openCar(car.code);\n  ed.isNew = true; ed.newCode = car.code;\n  edStart();\n});\n\n$(\"edDelete\").addEventListener(\"click\", async () => {\n  const b = $(\"edDelete\");\n  if (b.dataset.armed !== \"true\") { b.dataset.armed = \"true\"; b.textContent = `Click again to delete ${cur.make} ${cur.model} for everyone`; return; }\n  const gone = cur;\n  b.disabled = true; b.textContent = \"Deleting…\";\n  try {\n    await savePage(buildPage(CARS.filter((c) => c.code !== gone.code)));\n    CARS.splice(CARS.indexOf(gone), 1); delete byCode[gone.code];\n    dlg.close(); render();\n    flash(`Deleted ${gone.make} ${gone.model}.`);\n  } catch (e) {\n    const code = (e && e.code) || (e && e.message) || \"unknown\";\n    $(\"edErr\").textContent = (SAVE_ERRORS[code] || \"Delete failed. Try again.\") + ` [${code}]`;\n  } finally { b.disabled = false; }\n});\n\n$(\"edSave\").addEventListener(\"click\", async () => {\n  const { price, market } = edNums();\n  const err = (m) => { $(\"edErr\").textContent = m; };\n  if (ed.uploading) return err(\"Wait for the photos to finish uploading.\");\n  if (!(price > 0) || !(market > 0)) return err(\"Enter both prices.\");\n  if (market \u003c price) return err(\"Market value must be at least the agreed price, or the margin shows negative.\");\n  const make = $(\"edMake\").value.trim(), model = $(\"edModel\").value.trim(), version = $(\"edVersion\").value.trim();\n  const year = Math.round(Number($(\"edYear\").value)), km = Math.round(Number($(\"edKm\").value));\n  const fuel = $(\"edFuel\").value, city = $(\"edCity\").value.trim();\n  if (!make || !model) return err(\"Enter make and model.\");\n  if (!(year >= 1950 && year \u003c= new Date().getFullYear() + 1)) return err(\"Enter a valid year.\");\n  if (!(km >= 0) || $(\"edKm\").value === \"\") return err(\"Enter the km.\");\n  if (!city) return err(\"Enter the city.\");\n  if (!ed.draft.gallery.length) return err(ed.isNew ? \"Add at least one photo.\" : \"Keep at least one photo.\");\n  const status = $(\"edStatus\").value;\n  const days = Math.round(Number($(\"edDays\").value));\n  if (status === \"venduta\" && !(days >= 1 && days \u003c= 90)) return err(\"Enter how many days it took to sell (1 to 90).\");\n  const edited = { ...cur, make, model, version, year, km, fuel, city, price, market, status, days: status === \"venduta\" ? days : null, gallery: ed.draft.gallery };\n  const isNew = ed.isNew;\n  const cars = isNew ? [edited, ...CARS] : CARS.map((c) => (c.code === cur.code ? edited : c));\n  const btn = $(\"edSave\");\n  btn.disabled = true; btn.textContent = \"Saving…\"; err(\"\");\n  try { sessionStorage.setItem(\"ctc-reopen\", JSON.stringify({ code: cur.code, at: Date.now() })); } catch {}\n  try {\n    await savePage(buildPage(cars));\n    Object.assign(cur, edited);\n    if (isNew) { CARS.unshift(cur); ed.isNew = false; ed.newCode = null; }\n    render(); openCar(cur.code);\n    flash(\"Saved. Everyone with the link now sees the new version.\");\n  } catch (e) {\n    try { sessionStorage.removeItem(\"ctc-reopen\"); } catch {}\n    const code = (e && e.code) || (e && e.message) || \"unknown\";\n    err((SAVE_ERRORS[code] || \"Save failed. Try again.\") + ` [${code}]`);\n    console.warn(\"[editor] save failed\", e);\n  } finally {\n    btn.disabled = false; btn.textContent = \"Save to page\";\n  }\n});\n\n(async () => {\n  const diag = /edit|modifica/i.test(location.hash);\n  const report = (steps, ok) => {\n    console.info(\"[editor]\", steps.join(\" · \"));\n    if (!ok && !diag) return;\n    const bar = document.createElement(\"div\");\n    bar.className = \"ed-bar\";\n    bar.innerHTML = ok\n      ? \"\u003cb>Editor view.\u003c/b> Open any car and tap ✎ Edit to change it, or use + Add a car. Dealers don't see this.\"\n      : \"\u003cb>Editing is off in this view.\u003c/b> \" + steps.map(esc).join(\" · \");\n    document.body.appendChild(bar);\n  };\n  const steps = [];\n  if (!window.claude || typeof window.claude.use !== \"function\") return report([\"no claude.ai viewer: open the page from claude.ai, signed in\"], false);\n  const user = await claude.use(\"user\").catch(() => null);\n  steps.push(\"user: \" + (user ? \"ok\" : \"none (signed out or not in a claude.ai viewer)\"));\n  if (!user) return report(steps, false);\n  let canEdit = false;\n  try { canEdit = (await user.canEdit()) || (await user.can(\"files.write\")) === true; } catch (e) { steps.push(\"canEdit error\"); }\n  steps.push(\"edit access: \" + (canEdit ? \"yes\" : \"no\"));\n  if (!canEdit) return report(steps, false);\n  ed.artifact = await claude.use(\"artifact\").catch(() => null);\n  steps.push(\"saving: \" + (ed.artifact ? \"ok\" : \"unavailable\"));\n  if (!ed.artifact) return report(steps, false);\n  ed.assets = await claude.use(\"assets\").catch(() => null);\n  steps.push(\"photo upload: \" + (ed.assets ? \"ok\" : \"unavailable\"));\n  ed.on = true;\n  report(steps, true);\n  $(\"edAddCar\").hidden = false;\n  if (dlg.open && !ed.open) $(\"edOpen\").hidden = false;\n  let reopen = null;\n  try { reopen = JSON.parse(sessionStorage.getItem(\"ctc-reopen\")); sessionStorage.removeItem(\"ctc-reopen\"); } catch {}\n  if (reopen && Date.now() - reopen.at \u003c 120000 && byCode[reopen.code]) { openCar(reopen.code); flash(\"Saved. Everyone with the link now sees this version.\"); }\n})();\n\u003c/script>\n\u003cscript type=\"application/json\" id=\"pageSrc\">__PAGE_SRC__\u003c/script>\n"</script>
+</body></html>

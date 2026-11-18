@@ -1,0 +1,2895 @@
+{
+  "_note": "Illustrative set from the Parco Auto artifact (claude.ai/artifact/WbZF3wz1DotNbkFRfDhzEy, version 1794927818-41ed). Prices, market values, statuses, cities and days are illustrative, not CRM data. `ref` links each car to data/cars.json.",
+  "cars": [
+    {
+      "code": "CTC-ZEY6",
+      "ref": "CAR-002",
+      "make": "Citroën",
+      "model": "C5 Aircross",
+      "version": "1.5 BlueHDi 130 Shine",
+      "year": 2019,
+      "km": 66450,
+      "fuel": "Diesel",
+      "price": 15400,
+      "market": 19300,
+      "status": "venduta",
+      "city": "Brescia",
+      "days": 3,
+      "added": 18,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-zey6-1.webp",
+          "thumb": "/parco-auto/img/ctc-zey6-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-zey6-2.webp",
+          "thumb": "/parco-auto/img/ctc-zey6-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-zey6-3.webp",
+          "thumb": "/parco-auto/img/ctc-zey6-3.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-P3FD",
+      "ref": "CAR-005",
+      "make": "Suzuki",
+      "model": "Swift",
+      "version": "1.2 Cool GPL",
+      "year": 2019,
+      "km": 135000,
+      "fuel": "GPL",
+      "price": 5900,
+      "market": 7650,
+      "status": "venduta",
+      "city": "Brescia",
+      "days": 14,
+      "added": 33,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-p3fd-1.webp",
+          "thumb": "/parco-auto/img/ctc-p3fd-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-p3fd-2.webp",
+          "thumb": "/parco-auto/img/ctc-p3fd-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-p3fd-3.webp",
+          "thumb": "/parco-auto/img/ctc-p3fd-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-p3fd-4.webp",
+          "thumb": "/parco-auto/img/ctc-p3fd-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-PED1",
+      "ref": "CAR-008",
+      "make": "BMW",
+      "model": "X3",
+      "version": "xDrive20d Msport Pro",
+      "year": 2025,
+      "km": 11000,
+      "fuel": "Diesel",
+      "price": 46500,
+      "market": 54900,
+      "status": "disponibile",
+      "city": "Como",
+      "days": null,
+      "added": 15,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-ped1-1.webp",
+          "thumb": "/parco-auto/img/ctc-ped1-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ped1-2.webp",
+          "thumb": "/parco-auto/img/ctc-ped1-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ped1-3.webp",
+          "thumb": "/parco-auto/img/ctc-ped1-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ped1-4.webp",
+          "thumb": "/parco-auto/img/ctc-ped1-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-F6CZ",
+      "ref": "CAR-009",
+      "make": "Toyota",
+      "model": "Proace Verso",
+      "version": "Electric 75 kWh L1",
+      "year": 2025,
+      "km": 40000,
+      "fuel": "Elettrica",
+      "price": 31500,
+      "market": 38900,
+      "status": "venduta",
+      "city": "Pavia",
+      "days": 9,
+      "added": 34,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-f6cz-1.webp",
+          "thumb": "/parco-auto/img/ctc-f6cz-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-f6cz-2.webp",
+          "thumb": "/parco-auto/img/ctc-f6cz-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-f6cz-3.webp",
+          "thumb": "/parco-auto/img/ctc-f6cz-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-f6cz-4.webp",
+          "thumb": "/parco-auto/img/ctc-f6cz-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-DWAJ",
+      "ref": "CAR-011",
+      "make": "Land Rover",
+      "model": "Range Rover Evoque",
+      "version": "2.0 TD4 150 CV SE",
+      "year": 2018,
+      "km": 130000,
+      "fuel": "Diesel",
+      "price": 17200,
+      "market": 21500,
+      "status": "venduta",
+      "city": "Pavia",
+      "days": 11,
+      "added": 22,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-dwaj-1.webp",
+          "thumb": "/parco-auto/img/ctc-dwaj-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-dwaj-2.webp",
+          "thumb": "/parco-auto/img/ctc-dwaj-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-dwaj-3.webp",
+          "thumb": "/parco-auto/img/ctc-dwaj-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-dwaj-4.webp",
+          "thumb": "/parco-auto/img/ctc-dwaj-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-ZDYP",
+      "ref": null,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "version": "1.5 TGI Business",
+      "year": 2018,
+      "km": 220000,
+      "fuel": "Metano",
+      "price": 7300,
+      "market": 9600,
+      "status": "trattativa",
+      "city": "Lodi",
+      "days": null,
+      "added": 10,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-zdyp-1.webp",
+          "thumb": "/parco-auto/img/ctc-zdyp-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-zdyp-2.webp",
+          "thumb": "/parco-auto/img/ctc-zdyp-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-zdyp-3.webp",
+          "thumb": "/parco-auto/img/ctc-zdyp-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-zdyp-4.webp",
+          "thumb": "/parco-auto/img/ctc-zdyp-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-CM2B",
+      "ref": "CAR-015",
+      "make": "Dacia",
+      "model": "Sandero Stepway",
+      "version": "TCe 100 GPL Comfort",
+      "year": 2021,
+      "km": 68000,
+      "fuel": "GPL",
+      "price": 9600,
+      "market": 11900,
+      "status": "venduta",
+      "city": "Lecco",
+      "days": 6,
+      "added": 19,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-cm2b-1.webp",
+          "thumb": "/parco-auto/img/ctc-cm2b-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cm2b-2.webp",
+          "thumb": "/parco-auto/img/ctc-cm2b-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cm2b-3.webp",
+          "thumb": "/parco-auto/img/ctc-cm2b-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cm2b-4.webp",
+          "thumb": "/parco-auto/img/ctc-cm2b-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-G64P",
+      "ref": "CAR-025",
+      "make": "Mini",
+      "model": "Cooper Cabrio",
+      "version": "1.5 136 CV",
+      "year": 2021,
+      "km": 39600,
+      "fuel": "Benzina",
+      "price": 17900,
+      "market": 21600,
+      "status": "venduta",
+      "city": "Busto Arsizio",
+      "days": 5,
+      "added": 8,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-g64p-1.webp",
+          "thumb": "/parco-auto/img/ctc-g64p-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-g64p-2.webp",
+          "thumb": "/parco-auto/img/ctc-g64p-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-g64p-3.webp",
+          "thumb": "/parco-auto/img/ctc-g64p-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-g64p-4.webp",
+          "thumb": "/parco-auto/img/ctc-g64p-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-8G9A",
+      "ref": "CAR-028",
+      "make": "Fiat",
+      "model": "Doblò",
+      "version": "1.4 Natural Power",
+      "year": 2020,
+      "km": 56000,
+      "fuel": "Metano",
+      "price": 9800,
+      "market": 12400,
+      "status": "venduta",
+      "city": "Brescia",
+      "days": 3,
+      "added": 27,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-8g9a-1.webp",
+          "thumb": "/parco-auto/img/ctc-8g9a-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-8g9a-2.webp",
+          "thumb": "/parco-auto/img/ctc-8g9a-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-8g9a-3.webp",
+          "thumb": "/parco-auto/img/ctc-8g9a-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-8g9a-4.webp",
+          "thumb": "/parco-auto/img/ctc-8g9a-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-ENJZ",
+      "ref": "CAR-029",
+      "make": "Toyota",
+      "model": "C-HR",
+      "version": "1.8 Hybrid Trend",
+      "year": 2024,
+      "km": 29000,
+      "fuel": "Ibrida",
+      "price": 24900,
+      "market": 29500,
+      "status": "venduta",
+      "city": "Treviglio",
+      "days": 6,
+      "added": 4,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-enjz-1.webp",
+          "thumb": "/parco-auto/img/ctc-enjz-t.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-JHVS",
+      "ref": "CAR-030",
+      "make": "Mini",
+      "model": "Paceman",
+      "version": "Cooper SD",
+      "year": 2015,
+      "km": 200000,
+      "fuel": "Diesel",
+      "price": 6200,
+      "market": 8500,
+      "status": "disponibile",
+      "city": "Legnano",
+      "days": null,
+      "added": 19,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-jhvs-1.webp",
+          "thumb": "/parco-auto/img/ctc-jhvs-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-jhvs-2.webp",
+          "thumb": "/parco-auto/img/ctc-jhvs-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-jhvs-3.webp",
+          "thumb": "/parco-auto/img/ctc-jhvs-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-jhvs-4.webp",
+          "thumb": "/parco-auto/img/ctc-jhvs-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-Z53P",
+      "ref": "CAR-032",
+      "make": "DR",
+      "model": "6.0",
+      "version": "1.5 Bi-Fuel GPL",
+      "year": 2025,
+      "km": 26500,
+      "fuel": "GPL",
+      "price": 19400,
+      "market": 23500,
+      "status": "venduta",
+      "city": "Busto Arsizio",
+      "days": 12,
+      "added": 4,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-z53p-1.webp",
+          "thumb": "/parco-auto/img/ctc-z53p-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-z53p-2.webp",
+          "thumb": "/parco-auto/img/ctc-z53p-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-z53p-3.webp",
+          "thumb": "/parco-auto/img/ctc-z53p-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-z53p-4.webp",
+          "thumb": "/parco-auto/img/ctc-z53p-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-P1EJ",
+      "ref": "CAR-038",
+      "make": "Maserati",
+      "model": "Ghibli",
+      "version": "3.0 V6 Diesel 275 CV",
+      "year": 2019,
+      "km": 115000,
+      "fuel": "Diesel",
+      "price": 29800,
+      "market": 36500,
+      "status": "venduta",
+      "city": "Legnano",
+      "days": 10,
+      "added": 19,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-p1ej-1.webp",
+          "thumb": "/parco-auto/img/ctc-p1ej-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-p1ej-2.webp",
+          "thumb": "/parco-auto/img/ctc-p1ej-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-p1ej-3.webp",
+          "thumb": "/parco-auto/img/ctc-p1ej-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-p1ej-4.webp",
+          "thumb": "/parco-auto/img/ctc-p1ej-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-W3V6",
+      "ref": "CAR-039",
+      "make": "Land Rover",
+      "model": "Range Rover Evoque",
+      "version": "D165 R-Dynamic",
+      "year": 2021,
+      "km": 113500,
+      "fuel": "Diesel",
+      "price": 26400,
+      "market": 31800,
+      "status": "venduta",
+      "city": "Varese",
+      "days": 9,
+      "added": 25,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-w3v6-1.webp",
+          "thumb": "/parco-auto/img/ctc-w3v6-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-w3v6-2.webp",
+          "thumb": "/parco-auto/img/ctc-w3v6-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-w3v6-3.webp",
+          "thumb": "/parco-auto/img/ctc-w3v6-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-w3v6-4.webp",
+          "thumb": "/parco-auto/img/ctc-w3v6-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-E4FK",
+      "ref": "CAR-041",
+      "make": "Mercedes-Benz",
+      "model": "Classe A",
+      "version": "220 d 4MATIC AMG Line",
+      "year": 2022,
+      "km": 85000,
+      "fuel": "Diesel",
+      "price": 24400,
+      "market": 28900,
+      "status": "venduta",
+      "city": "Milano",
+      "days": 6,
+      "added": 17,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-e4fk-1.webp",
+          "thumb": "/parco-auto/img/ctc-e4fk-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-e4fk-2.webp",
+          "thumb": "/parco-auto/img/ctc-e4fk-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-e4fk-3.webp",
+          "thumb": "/parco-auto/img/ctc-e4fk-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-e4fk-4.webp",
+          "thumb": "/parco-auto/img/ctc-e4fk-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-XJ8A",
+      "ref": "CAR-045",
+      "make": "Cupra",
+      "model": "Formentor",
+      "version": "1.4 e-Hybrid 204 CV",
+      "year": 2023,
+      "km": 25000,
+      "fuel": "Ibrida",
+      "price": 27200,
+      "market": 32900,
+      "status": "venduta",
+      "city": "Legnano",
+      "days": 10,
+      "added": 37,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-xj8a-1.webp",
+          "thumb": "/parco-auto/img/ctc-xj8a-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xj8a-2.webp",
+          "thumb": "/parco-auto/img/ctc-xj8a-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xj8a-3.webp",
+          "thumb": "/parco-auto/img/ctc-xj8a-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xj8a-4.webp",
+          "thumb": "/parco-auto/img/ctc-xj8a-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-A64A",
+      "ref": "CAR-047",
+      "make": "Kia",
+      "model": "Sportage",
+      "version": "1.6 CRDi MHEV Energy",
+      "year": 2019,
+      "km": 165000,
+      "fuel": "Ibrida",
+      "price": 11900,
+      "market": 14800,
+      "status": "venduta",
+      "city": "Crema",
+      "days": 10,
+      "added": 17,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-a64a-1.webp",
+          "thumb": "/parco-auto/img/ctc-a64a-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-a64a-2.webp",
+          "thumb": "/parco-auto/img/ctc-a64a-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-a64a-3.webp",
+          "thumb": "/parco-auto/img/ctc-a64a-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-a64a-4.webp",
+          "thumb": "/parco-auto/img/ctc-a64a-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-6CWS",
+      "ref": "CAR-049",
+      "make": "BMW",
+      "model": "X1",
+      "version": "sDrive18d xLine",
+      "year": 2022,
+      "km": 80000,
+      "fuel": "Diesel",
+      "price": 24800,
+      "market": 29700,
+      "status": "trattativa",
+      "city": "Bergamo",
+      "days": null,
+      "added": 11,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-6cws-1.webp",
+          "thumb": "/parco-auto/img/ctc-6cws-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6cws-2.webp",
+          "thumb": "/parco-auto/img/ctc-6cws-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6cws-3.webp",
+          "thumb": "/parco-auto/img/ctc-6cws-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6cws-4.webp",
+          "thumb": "/parco-auto/img/ctc-6cws-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-DF8Z",
+      "ref": "CAR-054",
+      "make": "Fiat",
+      "model": "500X",
+      "version": "1.0 T3 Cross",
+      "year": 2018,
+      "km": 80000,
+      "fuel": "Benzina",
+      "price": 9800,
+      "market": 12400,
+      "status": "disponibile",
+      "city": "Legnano",
+      "days": null,
+      "added": 29,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-df8z-1.webp",
+          "thumb": "/parco-auto/img/ctc-df8z-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-df8z-2.webp",
+          "thumb": "/parco-auto/img/ctc-df8z-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-df8z-3.webp",
+          "thumb": "/parco-auto/img/ctc-df8z-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-df8z-4.webp",
+          "thumb": "/parco-auto/img/ctc-df8z-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-6XH5",
+      "ref": "CAR-055",
+      "make": "Jeep",
+      "model": "Renegade",
+      "version": "1.0 T3 Limited",
+      "year": 2019,
+      "km": 112000,
+      "fuel": "Benzina",
+      "price": 11400,
+      "market": 14200,
+      "status": "trattativa",
+      "city": "Como",
+      "days": null,
+      "added": 7,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-6xh5-1.webp",
+          "thumb": "/parco-auto/img/ctc-6xh5-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6xh5-2.webp",
+          "thumb": "/parco-auto/img/ctc-6xh5-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6xh5-3.webp",
+          "thumb": "/parco-auto/img/ctc-6xh5-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6xh5-4.webp",
+          "thumb": "/parco-auto/img/ctc-6xh5-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-7271",
+      "ref": "CAR-062",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "version": "3.0 CRD Limited",
+      "year": 2014,
+      "km": 210000,
+      "fuel": "Diesel",
+      "price": 11800,
+      "market": 15500,
+      "status": "venduta",
+      "city": "Cremona",
+      "days": 3,
+      "added": 10,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-7271-1.webp",
+          "thumb": "/parco-auto/img/ctc-7271-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7271-2.webp",
+          "thumb": "/parco-auto/img/ctc-7271-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7271-3.webp",
+          "thumb": "/parco-auto/img/ctc-7271-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7271-4.webp",
+          "thumb": "/parco-auto/img/ctc-7271-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-S8XV",
+      "ref": "CAR-065",
+      "make": "Audi",
+      "model": "A5 Sportback",
+      "version": "2.0 TDI quattro",
+      "year": 2012,
+      "km": 168000,
+      "fuel": "Diesel",
+      "price": 8900,
+      "market": 11900,
+      "status": "trattativa",
+      "city": "Pavia",
+      "days": null,
+      "added": 31,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-s8xv-1.webp",
+          "thumb": "/parco-auto/img/ctc-s8xv-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-s8xv-2.webp",
+          "thumb": "/parco-auto/img/ctc-s8xv-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-s8xv-3.webp",
+          "thumb": "/parco-auto/img/ctc-s8xv-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-s8xv-4.webp",
+          "thumb": "/parco-auto/img/ctc-s8xv-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-K9E4",
+      "ref": "CAR-069",
+      "make": "Fiat",
+      "model": "500",
+      "version": "1.0 Hybrid Dolcevita",
+      "year": 2024,
+      "km": 14000,
+      "fuel": "Ibrida",
+      "price": 12900,
+      "market": 15600,
+      "status": "venduta",
+      "city": "Desenzano del Garda",
+      "days": 11,
+      "added": 20,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-k9e4-1.webp",
+          "thumb": "/parco-auto/img/ctc-k9e4-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-k9e4-2.webp",
+          "thumb": "/parco-auto/img/ctc-k9e4-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-k9e4-3.webp",
+          "thumb": "/parco-auto/img/ctc-k9e4-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-k9e4-4.webp",
+          "thumb": "/parco-auto/img/ctc-k9e4-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-H5AN",
+      "ref": "CAR-080",
+      "make": "Mini",
+      "model": "Cooper Coupé",
+      "version": "1.6 122 CV",
+      "year": 2012,
+      "km": 109000,
+      "fuel": "Benzina",
+      "price": 7400,
+      "market": 9600,
+      "status": "trattativa",
+      "city": "Brescia",
+      "days": null,
+      "added": 34,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-h5an-1.webp",
+          "thumb": "/parco-auto/img/ctc-h5an-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-h5an-2.webp",
+          "thumb": "/parco-auto/img/ctc-h5an-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-h5an-3.webp",
+          "thumb": "/parco-auto/img/ctc-h5an-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-h5an-4.webp",
+          "thumb": "/parco-auto/img/ctc-h5an-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-05H2",
+      "ref": "CTC-05H2",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "version": "4.0 Sahara",
+      "year": 2004,
+      "km": 200000,
+      "fuel": "GPL",
+      "price": 13900,
+      "market": 18500,
+      "status": "disponibile",
+      "city": "Milano",
+      "days": null,
+      "added": 22,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-05h2-1.webp",
+          "thumb": "/parco-auto/img/ctc-05h2-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-05h2-2.webp",
+          "thumb": "/parco-auto/img/ctc-05h2-2.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-0B8S",
+      "ref": "CTC-0B8S",
+      "make": "Audi",
+      "model": "A3 Sportback",
+      "version": "35 TDI S line edition",
+      "year": 2024,
+      "km": 31000,
+      "fuel": "Diesel",
+      "price": 28900,
+      "market": 33900,
+      "status": "venduta",
+      "city": "Gallarate",
+      "days": 8,
+      "added": 14,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-0b8s-1.webp",
+          "thumb": "/parco-auto/img/ctc-0b8s-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0b8s-2.webp",
+          "thumb": "/parco-auto/img/ctc-0b8s-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0b8s-3.webp",
+          "thumb": "/parco-auto/img/ctc-0b8s-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0b8s-4.webp",
+          "thumb": "/parco-auto/img/ctc-0b8s-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-0DKF",
+      "ref": "CTC-0DKF",
+      "make": "BMW",
+      "model": "216d Active Tourer",
+      "version": "Advantage",
+      "year": 2016,
+      "km": 122000,
+      "fuel": "Diesel",
+      "price": 8400,
+      "market": 10600,
+      "status": "venduta",
+      "city": "Como",
+      "days": 13,
+      "added": 34,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-0dkf-1.webp",
+          "thumb": "/parco-auto/img/ctc-0dkf-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0dkf-2.webp",
+          "thumb": "/parco-auto/img/ctc-0dkf-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0dkf-3.webp",
+          "thumb": "/parco-auto/img/ctc-0dkf-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-0dkf-4.webp",
+          "thumb": "/parco-auto/img/ctc-0dkf-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-22J5",
+      "ref": "CTC-22J5",
+      "make": "Peugeot",
+      "model": "3008",
+      "version": "1.5 BlueHDi Allure",
+      "year": 2018,
+      "km": 170000,
+      "fuel": "Diesel",
+      "price": 10400,
+      "market": 13200,
+      "status": "venduta",
+      "city": "Bergamo",
+      "days": 10,
+      "added": 11,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-22j5-1.webp",
+          "thumb": "/parco-auto/img/ctc-22j5-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-22j5-2.webp",
+          "thumb": "/parco-auto/img/ctc-22j5-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-22j5-3.webp",
+          "thumb": "/parco-auto/img/ctc-22j5-3.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-2EWX",
+      "ref": "CTC-2EWX",
+      "make": "BMW",
+      "model": "420d Coupé",
+      "version": "Msport",
+      "year": 2014,
+      "km": 250000,
+      "fuel": "Diesel",
+      "price": 9800,
+      "market": 12900,
+      "status": "disponibile",
+      "city": "Bergamo",
+      "days": null,
+      "added": 6,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-2ewx-1.webp",
+          "thumb": "/parco-auto/img/ctc-2ewx-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-2ewx-2.webp",
+          "thumb": "/parco-auto/img/ctc-2ewx-2.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-2HJR",
+      "ref": "CTC-2HJR",
+      "make": "BMW",
+      "model": "630i Cabrio",
+      "version": "3.0 258 CV",
+      "year": 2005,
+      "km": 240000,
+      "fuel": "Benzina",
+      "price": 9500,
+      "market": 13400,
+      "status": "disponibile",
+      "city": "Legnano",
+      "days": null,
+      "added": 30,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-2hjr-1.webp",
+          "thumb": "/parco-auto/img/ctc-2hjr-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-2hjr-2.webp",
+          "thumb": "/parco-auto/img/ctc-2hjr-2.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-2RSZ",
+      "ref": "CTC-2RSZ",
+      "make": "Peugeot",
+      "model": "308",
+      "version": "1.5 BlueHDi Allure",
+      "year": 2020,
+      "km": 150000,
+      "fuel": "Diesel",
+      "price": 9200,
+      "market": 11500,
+      "status": "venduta",
+      "city": "Varese",
+      "days": 3,
+      "added": 38,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-2rsz-1.webp",
+          "thumb": "/parco-auto/img/ctc-2rsz-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-2rsz-2.webp",
+          "thumb": "/parco-auto/img/ctc-2rsz-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-2rsz-3.webp",
+          "thumb": "/parco-auto/img/ctc-2rsz-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-2rsz-4.webp",
+          "thumb": "/parco-auto/img/ctc-2rsz-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-4268",
+      "ref": "CTC-4268",
+      "make": "DS",
+      "model": "DS 3",
+      "version": "1.6 BlueHDi So Chic",
+      "year": 2016,
+      "km": 159000,
+      "fuel": "Diesel",
+      "price": 6300,
+      "market": 8200,
+      "status": "venduta",
+      "city": "Milano",
+      "days": 6,
+      "added": 37,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-4268-1.webp",
+          "thumb": "/parco-auto/img/ctc-4268-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-4268-2.webp",
+          "thumb": "/parco-auto/img/ctc-4268-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-4268-3.webp",
+          "thumb": "/parco-auto/img/ctc-4268-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-4268-4.webp",
+          "thumb": "/parco-auto/img/ctc-4268-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-46CD",
+      "ref": "CTC-46CD",
+      "make": "Alfa Romeo",
+      "model": "Stelvio",
+      "version": "2.2 Turbo 190 CV Q4 Executive",
+      "year": 2018,
+      "km": 168000,
+      "fuel": "Diesel",
+      "price": 17400,
+      "market": 21900,
+      "status": "venduta",
+      "city": "Desenzano del Garda",
+      "days": 7,
+      "added": 16,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-46cd-1.webp",
+          "thumb": "/parco-auto/img/ctc-46cd-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-46cd-2.webp",
+          "thumb": "/parco-auto/img/ctc-46cd-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-46cd-3.webp",
+          "thumb": "/parco-auto/img/ctc-46cd-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-46cd-4.webp",
+          "thumb": "/parco-auto/img/ctc-46cd-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-4B12",
+      "ref": "CTC-4B12",
+      "make": "Fiat",
+      "model": "Panda",
+      "version": "1.2 Dynamic",
+      "year": 2008,
+      "km": 58500,
+      "fuel": "Benzina",
+      "price": 3200,
+      "market": 4300,
+      "status": "disponibile",
+      "city": "Busto Arsizio",
+      "days": null,
+      "added": 7,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-4b12-1.webp",
+          "thumb": "/parco-auto/img/ctc-4b12-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-4b12-2.webp",
+          "thumb": "/parco-auto/img/ctc-4b12-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-4b12-3.webp",
+          "thumb": "/parco-auto/img/ctc-4b12-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-4b12-4.webp",
+          "thumb": "/parco-auto/img/ctc-4b12-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-58MP",
+      "ref": "CTC-58MP",
+      "make": "Fiat",
+      "model": "Punto",
+      "version": "1.2 Street",
+      "year": 2017,
+      "km": 92000,
+      "fuel": "Benzina",
+      "price": 6100,
+      "market": 7900,
+      "status": "disponibile",
+      "city": "Gallarate",
+      "days": null,
+      "added": 4,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-58mp-1.webp",
+          "thumb": "/parco-auto/img/ctc-58mp-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-58mp-2.webp",
+          "thumb": "/parco-auto/img/ctc-58mp-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-58mp-3.webp",
+          "thumb": "/parco-auto/img/ctc-58mp-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-58mp-4.webp",
+          "thumb": "/parco-auto/img/ctc-58mp-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-5H2J",
+      "ref": "CTC-5H2J",
+      "make": "Mercedes-Benz",
+      "model": "Classe A",
+      "version": "180 CDI Executive",
+      "year": 2014,
+      "km": 165000,
+      "fuel": "Diesel",
+      "price": 8400,
+      "market": 10600,
+      "status": "venduta",
+      "city": "Brescia",
+      "days": 9,
+      "added": 16,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-5h2j-1.webp",
+          "thumb": "/parco-auto/img/ctc-5h2j-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-5h2j-2.webp",
+          "thumb": "/parco-auto/img/ctc-5h2j-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-5h2j-3.webp",
+          "thumb": "/parco-auto/img/ctc-5h2j-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-5h2j-4.webp",
+          "thumb": "/parco-auto/img/ctc-5h2j-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-5VSX",
+      "ref": "CTC-5VSX",
+      "make": "Land Rover",
+      "model": "Discovery 4",
+      "version": "3.0 SDV6 HSE 7 posti",
+      "year": 2015,
+      "km": 224000,
+      "fuel": "Diesel",
+      "price": 17900,
+      "market": 22900,
+      "status": "venduta",
+      "city": "Varese",
+      "days": 10,
+      "added": 3,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-5vsx-1.webp",
+          "thumb": "/parco-auto/img/ctc-5vsx-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-5vsx-2.webp",
+          "thumb": "/parco-auto/img/ctc-5vsx-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-5vsx-3.webp",
+          "thumb": "/parco-auto/img/ctc-5vsx-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-5vsx-4.webp",
+          "thumb": "/parco-auto/img/ctc-5vsx-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-6BD0",
+      "ref": "CTC-6BD0",
+      "make": "Jeep",
+      "model": "Compass 4xe",
+      "version": "1.3 PHEV Limited",
+      "year": 2021,
+      "km": 25000,
+      "fuel": "Ibrida",
+      "price": 22900,
+      "market": 27400,
+      "status": "venduta",
+      "city": "Milano",
+      "days": 8,
+      "added": 21,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-6bd0-1.webp",
+          "thumb": "/parco-auto/img/ctc-6bd0-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6bd0-2.webp",
+          "thumb": "/parco-auto/img/ctc-6bd0-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6bd0-3.webp",
+          "thumb": "/parco-auto/img/ctc-6bd0-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6bd0-4.webp",
+          "thumb": "/parco-auto/img/ctc-6bd0-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-6MQR",
+      "ref": "CTC-6MQR",
+      "make": "Peugeot",
+      "model": "308 SW",
+      "version": "1.5 BlueHDi 120 EAT6 Business",
+      "year": 2017,
+      "km": 146000,
+      "fuel": "Diesel",
+      "price": 8100,
+      "market": 10300,
+      "status": "venduta",
+      "city": "Lecco",
+      "days": 10,
+      "added": 38,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-6mqr-1.webp",
+          "thumb": "/parco-auto/img/ctc-6mqr-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6mqr-2.webp",
+          "thumb": "/parco-auto/img/ctc-6mqr-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6mqr-3.webp",
+          "thumb": "/parco-auto/img/ctc-6mqr-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6mqr-4.webp",
+          "thumb": "/parco-auto/img/ctc-6mqr-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-6VE4",
+      "ref": "CTC-6VE4",
+      "make": "Mercedes-Benz",
+      "model": "GLC",
+      "version": "300 de 4MATIC AMG Line",
+      "year": 2023,
+      "km": 85000,
+      "fuel": "Diesel",
+      "price": 42900,
+      "market": 50500,
+      "status": "disponibile",
+      "city": "Desenzano del Garda",
+      "days": null,
+      "added": 18,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-6ve4-1.webp",
+          "thumb": "/parco-auto/img/ctc-6ve4-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6ve4-2.webp",
+          "thumb": "/parco-auto/img/ctc-6ve4-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6ve4-3.webp",
+          "thumb": "/parco-auto/img/ctc-6ve4-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-6ve4-4.webp",
+          "thumb": "/parco-auto/img/ctc-6ve4-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-749X",
+      "ref": "CTC-749X",
+      "make": "Alfa Romeo",
+      "model": "Stelvio",
+      "version": "2.2 Turbo 210 CV Q4 Veloce",
+      "year": 2018,
+      "km": 159000,
+      "fuel": "Diesel",
+      "price": 18600,
+      "market": 22900,
+      "status": "venduta",
+      "city": "Gallarate",
+      "days": 2,
+      "added": 7,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-749x-1.webp",
+          "thumb": "/parco-auto/img/ctc-749x-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-749x-2.webp",
+          "thumb": "/parco-auto/img/ctc-749x-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-749x-3.webp",
+          "thumb": "/parco-auto/img/ctc-749x-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-749x-4.webp",
+          "thumb": "/parco-auto/img/ctc-749x-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-7GJX",
+      "ref": "CTC-7GJX",
+      "make": "Peugeot",
+      "model": "308 SW",
+      "version": "1.5 BlueHDi GT Line",
+      "year": 2019,
+      "km": 127000,
+      "fuel": "Diesel",
+      "price": 10900,
+      "market": 13600,
+      "status": "trattativa",
+      "city": "Legnano",
+      "days": null,
+      "added": 26,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-7gjx-1.webp",
+          "thumb": "/parco-auto/img/ctc-7gjx-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7gjx-2.webp",
+          "thumb": "/parco-auto/img/ctc-7gjx-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7gjx-3.webp",
+          "thumb": "/parco-auto/img/ctc-7gjx-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7gjx-4.webp",
+          "thumb": "/parco-auto/img/ctc-7gjx-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-7GXE",
+      "ref": "CTC-7GXE",
+      "make": "BMW",
+      "model": "X6",
+      "version": "xDrive30d Msport",
+      "year": 2018,
+      "km": 145500,
+      "fuel": "Diesel",
+      "price": 31500,
+      "market": 37900,
+      "status": "venduta",
+      "city": "Bergamo",
+      "days": 10,
+      "added": 9,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-7gxe-1.webp",
+          "thumb": "/parco-auto/img/ctc-7gxe-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7gxe-2.webp",
+          "thumb": "/parco-auto/img/ctc-7gxe-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7gxe-3.webp",
+          "thumb": "/parco-auto/img/ctc-7gxe-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7gxe-4.webp",
+          "thumb": "/parco-auto/img/ctc-7gxe-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-7XEN",
+      "ref": "CTC-7XEN",
+      "make": "Audi",
+      "model": "A1 Sportback",
+      "version": "1.2 TFSI S line edition",
+      "year": 2014,
+      "km": 98000,
+      "fuel": "Benzina",
+      "price": 9300,
+      "market": 11600,
+      "status": "disponibile",
+      "city": "Lodi",
+      "days": null,
+      "added": 33,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-7xen-1.webp",
+          "thumb": "/parco-auto/img/ctc-7xen-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7xen-2.webp",
+          "thumb": "/parco-auto/img/ctc-7xen-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-7xen-3.webp",
+          "thumb": "/parco-auto/img/ctc-7xen-3.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-8RVJ",
+      "ref": "CTC-8RVJ",
+      "make": "Dacia",
+      "model": "Duster",
+      "version": "1.6 GPL Black Shadow",
+      "year": 2017,
+      "km": 120000,
+      "fuel": "GPL",
+      "price": 7600,
+      "market": 9700,
+      "status": "disponibile",
+      "city": "Cantù",
+      "days": null,
+      "added": 10,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-8rvj-1.webp",
+          "thumb": "/parco-auto/img/ctc-8rvj-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-8rvj-2.webp",
+          "thumb": "/parco-auto/img/ctc-8rvj-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-8rvj-3.webp",
+          "thumb": "/parco-auto/img/ctc-8rvj-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-8rvj-4.webp",
+          "thumb": "/parco-auto/img/ctc-8rvj-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-8YVW",
+      "ref": "CTC-8YVW",
+      "make": "Mercedes-Benz",
+      "model": "GLA",
+      "version": "200 d Automatic AMG Line Premium Plus",
+      "year": 2023,
+      "km": 56000,
+      "fuel": "Diesel",
+      "price": 31400,
+      "market": 36900,
+      "status": "venduta",
+      "city": "Legnano",
+      "days": 7,
+      "added": 2,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-8yvw-1.webp",
+          "thumb": "/parco-auto/img/ctc-8yvw-t.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-90K7",
+      "ref": "CTC-90K7",
+      "make": "Mercedes-Benz",
+      "model": "Classe C",
+      "version": "220 d Sport Plus Auto",
+      "year": 2016,
+      "km": 150000,
+      "fuel": "Diesel",
+      "price": 14200,
+      "market": 17900,
+      "status": "venduta",
+      "city": "Milano",
+      "days": 14,
+      "added": 14,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-90k7-1.webp",
+          "thumb": "/parco-auto/img/ctc-90k7-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-90k7-2.webp",
+          "thumb": "/parco-auto/img/ctc-90k7-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-90k7-3.webp",
+          "thumb": "/parco-auto/img/ctc-90k7-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-90k7-4.webp",
+          "thumb": "/parco-auto/img/ctc-90k7-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-A859",
+      "ref": "CTC-A859",
+      "make": "Audi",
+      "model": "Q3",
+      "version": "45 TFSI e S line",
+      "year": 2022,
+      "km": 87000,
+      "fuel": "Ibrida",
+      "price": 29400,
+      "market": 34500,
+      "status": "venduta",
+      "city": "Brescia",
+      "days": 14,
+      "added": 16,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-a859-1.webp",
+          "thumb": "/parco-auto/img/ctc-a859-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-a859-2.webp",
+          "thumb": "/parco-auto/img/ctc-a859-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-a859-3.webp",
+          "thumb": "/parco-auto/img/ctc-a859-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-a859-4.webp",
+          "thumb": "/parco-auto/img/ctc-a859-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-AH5T",
+      "ref": "CTC-AH5T",
+      "make": "DR",
+      "model": "Evo 4",
+      "version": "1.5 Bi-Fuel GPL",
+      "year": 2022,
+      "km": 45000,
+      "fuel": "GPL",
+      "price": 11900,
+      "market": 14500,
+      "status": "venduta",
+      "city": "Lodi",
+      "days": 7,
+      "added": 28,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-ah5t-1.webp",
+          "thumb": "/parco-auto/img/ctc-ah5t-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ah5t-2.webp",
+          "thumb": "/parco-auto/img/ctc-ah5t-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ah5t-3.webp",
+          "thumb": "/parco-auto/img/ctc-ah5t-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ah5t-4.webp",
+          "thumb": "/parco-auto/img/ctc-ah5t-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-AJKA",
+      "ref": "CTC-AJKA",
+      "make": "SWM",
+      "model": "G05 Pro",
+      "version": "1.5T 177 CV",
+      "year": 2025,
+      "km": 19000,
+      "fuel": "Benzina",
+      "price": 18500,
+      "market": 22400,
+      "status": "venduta",
+      "city": "Brescia",
+      "days": 9,
+      "added": 10,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-ajka-1.webp",
+          "thumb": "/parco-auto/img/ctc-ajka-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ajka-2.webp",
+          "thumb": "/parco-auto/img/ctc-ajka-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ajka-3.webp",
+          "thumb": "/parco-auto/img/ctc-ajka-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ajka-4.webp",
+          "thumb": "/parco-auto/img/ctc-ajka-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-BKDQ",
+      "ref": "CTC-BKDQ",
+      "make": "Renault",
+      "model": "Clio",
+      "version": "1.0 TCe Eco-G Techno",
+      "year": 2025,
+      "km": 10600,
+      "fuel": "GPL",
+      "price": 15400,
+      "market": 17900,
+      "status": "venduta",
+      "city": "Cremona",
+      "days": 12,
+      "added": 34,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-bkdq-1.webp",
+          "thumb": "/parco-auto/img/ctc-bkdq-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-bkdq-2.webp",
+          "thumb": "/parco-auto/img/ctc-bkdq-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-bkdq-3.webp",
+          "thumb": "/parco-auto/img/ctc-bkdq-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-bkdq-4.webp",
+          "thumb": "/parco-auto/img/ctc-bkdq-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-BRYD",
+      "ref": "CTC-BRYD",
+      "make": "MG",
+      "model": "EHS",
+      "version": "1.5 PHEV Luxury",
+      "year": 2022,
+      "km": 126000,
+      "fuel": "Ibrida",
+      "price": 17900,
+      "market": 21900,
+      "status": "venduta",
+      "city": "Crema",
+      "days": 3,
+      "added": 25,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-bryd-1.webp",
+          "thumb": "/parco-auto/img/ctc-bryd-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-bryd-2.webp",
+          "thumb": "/parco-auto/img/ctc-bryd-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-bryd-3.webp",
+          "thumb": "/parco-auto/img/ctc-bryd-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-bryd-4.webp",
+          "thumb": "/parco-auto/img/ctc-bryd-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-CBN6",
+      "ref": "CTC-CBN6",
+      "make": "Mercedes-Benz",
+      "model": "GLA",
+      "version": "200 d AMG Line",
+      "year": 2023,
+      "km": 101000,
+      "fuel": "Diesel",
+      "price": 27900,
+      "market": 32900,
+      "status": "venduta",
+      "city": "Varese",
+      "days": 10,
+      "added": 4,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-cbn6-1.webp",
+          "thumb": "/parco-auto/img/ctc-cbn6-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cbn6-2.webp",
+          "thumb": "/parco-auto/img/ctc-cbn6-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cbn6-3.webp",
+          "thumb": "/parco-auto/img/ctc-cbn6-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cbn6-4.webp",
+          "thumb": "/parco-auto/img/ctc-cbn6-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-CP3Y",
+      "ref": "CTC-CP3Y",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "version": "3.0 CRD Overland",
+      "year": 2013,
+      "km": 178000,
+      "fuel": "Diesel",
+      "price": 12400,
+      "market": 15900,
+      "status": "disponibile",
+      "city": "Lodi",
+      "days": null,
+      "added": 17,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-cp3y-1.webp",
+          "thumb": "/parco-auto/img/ctc-cp3y-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cp3y-2.webp",
+          "thumb": "/parco-auto/img/ctc-cp3y-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cp3y-3.webp",
+          "thumb": "/parco-auto/img/ctc-cp3y-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cp3y-4.webp",
+          "thumb": "/parco-auto/img/ctc-cp3y-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-CQNR",
+      "ref": "CTC-CQNR",
+      "make": "Renault",
+      "model": "Captur",
+      "version": "1.5 dCi Intens",
+      "year": 2015,
+      "km": 241000,
+      "fuel": "Diesel",
+      "price": 5400,
+      "market": 7200,
+      "status": "venduta",
+      "city": "Pavia",
+      "days": 7,
+      "added": 23,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-cqnr-1.webp",
+          "thumb": "/parco-auto/img/ctc-cqnr-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cqnr-2.webp",
+          "thumb": "/parco-auto/img/ctc-cqnr-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cqnr-3.webp",
+          "thumb": "/parco-auto/img/ctc-cqnr-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-cqnr-4.webp",
+          "thumb": "/parco-auto/img/ctc-cqnr-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-CTZW",
+      "ref": "CTC-CTZW",
+      "make": "Kia",
+      "model": "Sportage",
+      "version": "1.6 T-GDi HEV GT-Line",
+      "year": 2023,
+      "km": 33000,
+      "fuel": "Ibrida",
+      "price": 26400,
+      "market": 31200,
+      "status": "venduta",
+      "city": "Bergamo",
+      "days": 10,
+      "added": 8,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-ctzw-1.webp",
+          "thumb": "/parco-auto/img/ctc-ctzw-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ctzw-2.webp",
+          "thumb": "/parco-auto/img/ctc-ctzw-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ctzw-3.webp",
+          "thumb": "/parco-auto/img/ctc-ctzw-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ctzw-4.webp",
+          "thumb": "/parco-auto/img/ctc-ctzw-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-D4Y6",
+      "ref": "CTC-D4Y6",
+      "make": "Porsche",
+      "model": "Boxster",
+      "version": "3.2 S",
+      "year": 2000,
+      "km": 90000,
+      "fuel": "Benzina",
+      "price": 18900,
+      "market": 24500,
+      "status": "disponibile",
+      "city": "Milano",
+      "days": null,
+      "added": 10,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-d4y6-1.webp",
+          "thumb": "/parco-auto/img/ctc-d4y6-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-d4y6-2.webp",
+          "thumb": "/parco-auto/img/ctc-d4y6-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-d4y6-3.webp",
+          "thumb": "/parco-auto/img/ctc-d4y6-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-d4y6-4.webp",
+          "thumb": "/parco-auto/img/ctc-d4y6-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-D9WJ",
+      "ref": "CTC-D9WJ",
+      "make": "Škoda",
+      "model": "Octavia Wagon",
+      "version": "1.4 G-TEC Executive",
+      "year": 2016,
+      "km": 150000,
+      "fuel": "Metano",
+      "price": 8400,
+      "market": 10900,
+      "status": "venduta",
+      "city": "Varese",
+      "days": 14,
+      "added": 14,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-d9wj-1.webp",
+          "thumb": "/parco-auto/img/ctc-d9wj-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-d9wj-2.webp",
+          "thumb": "/parco-auto/img/ctc-d9wj-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-d9wj-3.webp",
+          "thumb": "/parco-auto/img/ctc-d9wj-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-d9wj-4.webp",
+          "thumb": "/parco-auto/img/ctc-d9wj-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-DEBY",
+      "ref": "CTC-DEBY",
+      "make": "Opel",
+      "model": "Karl Rocks",
+      "version": "1.0 75 CV",
+      "year": 2019,
+      "km": 57860,
+      "fuel": "Benzina",
+      "price": 7400,
+      "market": 9200,
+      "status": "venduta",
+      "city": "Monza",
+      "days": 8,
+      "added": 25,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-deby-1.webp",
+          "thumb": "/parco-auto/img/ctc-deby-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-deby-2.webp",
+          "thumb": "/parco-auto/img/ctc-deby-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-deby-3.webp",
+          "thumb": "/parco-auto/img/ctc-deby-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-deby-4.webp",
+          "thumb": "/parco-auto/img/ctc-deby-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-EHTK",
+      "ref": "CTC-EHTK",
+      "make": "Ford",
+      "model": "Ranger Raptor",
+      "version": "2.0 EcoBlue 213 CV",
+      "year": 2020,
+      "km": 28000,
+      "fuel": "Diesel",
+      "price": 39500,
+      "market": 46900,
+      "status": "venduta",
+      "city": "Cremona",
+      "days": 12,
+      "added": 29,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-ehtk-1.webp",
+          "thumb": "/parco-auto/img/ctc-ehtk-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ehtk-2.webp",
+          "thumb": "/parco-auto/img/ctc-ehtk-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ehtk-3.webp",
+          "thumb": "/parco-auto/img/ctc-ehtk-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ehtk-4.webp",
+          "thumb": "/parco-auto/img/ctc-ehtk-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-EWPR",
+      "ref": "CTC-EWPR",
+      "make": "Volkswagen",
+      "model": "Maggiolino",
+      "version": "1.2 TSI Design",
+      "year": 2012,
+      "km": 106000,
+      "fuel": "Benzina",
+      "price": 7900,
+      "market": 9900,
+      "status": "venduta",
+      "city": "Varese",
+      "days": 7,
+      "added": 28,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-ewpr-1.webp",
+          "thumb": "/parco-auto/img/ctc-ewpr-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ewpr-2.webp",
+          "thumb": "/parco-auto/img/ctc-ewpr-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ewpr-3.webp",
+          "thumb": "/parco-auto/img/ctc-ewpr-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ewpr-4.webp",
+          "thumb": "/parco-auto/img/ctc-ewpr-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-F441",
+      "ref": "CTC-F441",
+      "make": "Opel",
+      "model": "Corsa",
+      "version": "1.2 Edition",
+      "year": 2024,
+      "km": 27000,
+      "fuel": "Benzina",
+      "price": 13200,
+      "market": 15500,
+      "status": "venduta",
+      "city": "Milano",
+      "days": 7,
+      "added": 24,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-f441-1.webp",
+          "thumb": "/parco-auto/img/ctc-f441-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-f441-2.webp",
+          "thumb": "/parco-auto/img/ctc-f441-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-f441-3.webp",
+          "thumb": "/parco-auto/img/ctc-f441-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-f441-4.webp",
+          "thumb": "/parco-auto/img/ctc-f441-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-G6G3",
+      "ref": "CTC-G6G3",
+      "make": "BMW",
+      "model": "320d Touring",
+      "version": "Advantage",
+      "year": 2016,
+      "km": 164400,
+      "fuel": "Diesel",
+      "price": 11400,
+      "market": 14300,
+      "status": "venduta",
+      "city": "Busto Arsizio",
+      "days": 5,
+      "added": 19,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-g6g3-1.webp",
+          "thumb": "/parco-auto/img/ctc-g6g3-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-g6g3-2.webp",
+          "thumb": "/parco-auto/img/ctc-g6g3-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-g6g3-3.webp",
+          "thumb": "/parco-auto/img/ctc-g6g3-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-g6g3-4.webp",
+          "thumb": "/parco-auto/img/ctc-g6g3-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-GCFJ",
+      "ref": "CTC-GCFJ",
+      "make": "DR",
+      "model": "3.0",
+      "version": "1.5 Bi-Fuel GPL",
+      "year": 2024,
+      "km": 5400,
+      "fuel": "GPL",
+      "price": 15900,
+      "market": 18900,
+      "status": "venduta",
+      "city": "Como",
+      "days": 9,
+      "added": 10,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-gcfj-1.webp",
+          "thumb": "/parco-auto/img/ctc-gcfj-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-gcfj-2.webp",
+          "thumb": "/parco-auto/img/ctc-gcfj-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-gcfj-3.webp",
+          "thumb": "/parco-auto/img/ctc-gcfj-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-gcfj-4.webp",
+          "thumb": "/parco-auto/img/ctc-gcfj-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-HNGF",
+      "ref": "CTC-HNGF",
+      "make": "Lancia",
+      "model": "Thema",
+      "version": "2.0 16v i.e.",
+      "year": 1993,
+      "km": 197000,
+      "fuel": "Benzina",
+      "price": 4900,
+      "market": 7400,
+      "status": "disponibile",
+      "city": "Brescia",
+      "days": null,
+      "added": 3,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-hngf-1.webp",
+          "thumb": "/parco-auto/img/ctc-hngf-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-hngf-2.webp",
+          "thumb": "/parco-auto/img/ctc-hngf-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-hngf-3.webp",
+          "thumb": "/parco-auto/img/ctc-hngf-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-hngf-4.webp",
+          "thumb": "/parco-auto/img/ctc-hngf-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-K1WY",
+      "ref": "CTC-K1WY",
+      "make": "Mini",
+      "model": "Countryman",
+      "version": "Cooper SD ALL4",
+      "year": 2017,
+      "km": 158000,
+      "fuel": "Diesel",
+      "price": 13300,
+      "market": 16700,
+      "status": "venduta",
+      "city": "Pavia",
+      "days": 4,
+      "added": 36,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-k1wy-1.webp",
+          "thumb": "/parco-auto/img/ctc-k1wy-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-k1wy-2.webp",
+          "thumb": "/parco-auto/img/ctc-k1wy-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-k1wy-3.webp",
+          "thumb": "/parco-auto/img/ctc-k1wy-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-k1wy-4.webp",
+          "thumb": "/parco-auto/img/ctc-k1wy-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-KWZT",
+      "ref": "CTC-KWZT",
+      "make": "Hyundai",
+      "model": "Tucson",
+      "version": "1.6 CRDi 48V XLine",
+      "year": 2023,
+      "km": 48000,
+      "fuel": "Diesel",
+      "price": 24900,
+      "market": 28900,
+      "status": "venduta",
+      "city": "Legnano",
+      "days": 14,
+      "added": 19,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-kwzt-1.webp",
+          "thumb": "/parco-auto/img/ctc-kwzt-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-kwzt-2.webp",
+          "thumb": "/parco-auto/img/ctc-kwzt-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-kwzt-3.webp",
+          "thumb": "/parco-auto/img/ctc-kwzt-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-kwzt-4.webp",
+          "thumb": "/parco-auto/img/ctc-kwzt-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-M296",
+      "ref": "CTC-M296",
+      "make": "BMW",
+      "model": "X1",
+      "version": "xDrive18d xLine",
+      "year": 2020,
+      "km": 156000,
+      "fuel": "Diesel",
+      "price": 18400,
+      "market": 22500,
+      "status": "venduta",
+      "city": "Pavia",
+      "days": 6,
+      "added": 36,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-m296-1.webp",
+          "thumb": "/parco-auto/img/ctc-m296-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-m296-2.webp",
+          "thumb": "/parco-auto/img/ctc-m296-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-m296-3.webp",
+          "thumb": "/parco-auto/img/ctc-m296-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-m296-4.webp",
+          "thumb": "/parco-auto/img/ctc-m296-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-M76D",
+      "ref": "CTC-M76D",
+      "make": "Volkswagen",
+      "model": "Golf R",
+      "version": "2.0 TSI 4Motion DSG 20 Years",
+      "year": 2023,
+      "km": 35000,
+      "fuel": "Benzina",
+      "price": 38900,
+      "market": 45900,
+      "status": "venduta",
+      "city": "Crema",
+      "days": 10,
+      "added": 31,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-m76d-1.webp",
+          "thumb": "/parco-auto/img/ctc-m76d-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-m76d-2.webp",
+          "thumb": "/parco-auto/img/ctc-m76d-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-m76d-3.webp",
+          "thumb": "/parco-auto/img/ctc-m76d-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-m76d-4.webp",
+          "thumb": "/parco-auto/img/ctc-m76d-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-MXZN",
+      "ref": "CTC-MXZN",
+      "make": "Nissan",
+      "model": "Qashqai",
+      "version": "1.5 dCi N-Connecta",
+      "year": 2017,
+      "km": 153000,
+      "fuel": "Diesel",
+      "price": 10400,
+      "market": 13200,
+      "status": "venduta",
+      "city": "Lecco",
+      "days": 2,
+      "added": 35,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-mxzn-1.webp",
+          "thumb": "/parco-auto/img/ctc-mxzn-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-mxzn-2.webp",
+          "thumb": "/parco-auto/img/ctc-mxzn-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-mxzn-3.webp",
+          "thumb": "/parco-auto/img/ctc-mxzn-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-mxzn-4.webp",
+          "thumb": "/parco-auto/img/ctc-mxzn-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-N3E2",
+      "ref": "CTC-N3E2",
+      "make": "Land Rover",
+      "model": "Range Rover Velar",
+      "version": "D204 Dynamic SE",
+      "year": 2024,
+      "km": 37000,
+      "fuel": "Diesel",
+      "price": 52900,
+      "market": 61500,
+      "status": "trattativa",
+      "city": "Pavia",
+      "days": null,
+      "added": 37,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-n3e2-1.webp",
+          "thumb": "/parco-auto/img/ctc-n3e2-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-n3e2-2.webp",
+          "thumb": "/parco-auto/img/ctc-n3e2-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-n3e2-3.webp",
+          "thumb": "/parco-auto/img/ctc-n3e2-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-n3e2-4.webp",
+          "thumb": "/parco-auto/img/ctc-n3e2-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-NKY5",
+      "ref": "CTC-NKY5",
+      "make": "Peugeot",
+      "model": "208",
+      "version": "PureTech 100 GT",
+      "year": 2024,
+      "km": 13700,
+      "fuel": "Benzina",
+      "price": 17900,
+      "market": 21300,
+      "status": "disponibile",
+      "city": "Gallarate",
+      "days": null,
+      "added": 4,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-nky5-1.webp",
+          "thumb": "/parco-auto/img/ctc-nky5-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-nky5-2.webp",
+          "thumb": "/parco-auto/img/ctc-nky5-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-nky5-3.webp",
+          "thumb": "/parco-auto/img/ctc-nky5-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-nky5-4.webp",
+          "thumb": "/parco-auto/img/ctc-nky5-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-Q0GA",
+      "ref": "CTC-Q0GA",
+      "make": "Fiat",
+      "model": "500X",
+      "version": "1.6 MultiJet Cross",
+      "year": 2016,
+      "km": 160000,
+      "fuel": "Diesel",
+      "price": 8100,
+      "market": 10400,
+      "status": "venduta",
+      "city": "Cantù",
+      "days": 11,
+      "added": 20,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-q0ga-1.webp",
+          "thumb": "/parco-auto/img/ctc-q0ga-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-q0ga-2.webp",
+          "thumb": "/parco-auto/img/ctc-q0ga-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-q0ga-3.webp",
+          "thumb": "/parco-auto/img/ctc-q0ga-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-q0ga-4.webp",
+          "thumb": "/parco-auto/img/ctc-q0ga-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-RNT2",
+      "ref": "CTC-RNT2",
+      "make": "Smart",
+      "model": "Fortwo Coupé",
+      "version": "1.0 mhd Passion",
+      "year": 2010,
+      "km": 49000,
+      "fuel": "Benzina",
+      "price": 4900,
+      "market": 6500,
+      "status": "trattativa",
+      "city": "Cantù",
+      "days": null,
+      "added": 34,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-rnt2-1.webp",
+          "thumb": "/parco-auto/img/ctc-rnt2-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-rnt2-2.webp",
+          "thumb": "/parco-auto/img/ctc-rnt2-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-rnt2-3.webp",
+          "thumb": "/parco-auto/img/ctc-rnt2-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-rnt2-4.webp",
+          "thumb": "/parco-auto/img/ctc-rnt2-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-S3E5",
+      "ref": "CTC-S3E5",
+      "make": "Toyota",
+      "model": "RAV4",
+      "version": "2.5 Hybrid AWD-i Lounge",
+      "year": 2025,
+      "km": 2000,
+      "fuel": "Ibrida",
+      "price": 41900,
+      "market": 47900,
+      "status": "venduta",
+      "city": "Como",
+      "days": 7,
+      "added": 14,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-s3e5-1.webp",
+          "thumb": "/parco-auto/img/ctc-s3e5-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-s3e5-2.webp",
+          "thumb": "/parco-auto/img/ctc-s3e5-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-s3e5-3.webp",
+          "thumb": "/parco-auto/img/ctc-s3e5-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-s3e5-4.webp",
+          "thumb": "/parco-auto/img/ctc-s3e5-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-TXSZ",
+      "ref": "CTC-TXSZ",
+      "make": "Lexus",
+      "model": "NX",
+      "version": "300h Executive",
+      "year": 2016,
+      "km": 140000,
+      "fuel": "Ibrida",
+      "price": 18900,
+      "market": 22900,
+      "status": "venduta",
+      "city": "Treviglio",
+      "days": 4,
+      "added": 1,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-txsz-1.webp",
+          "thumb": "/parco-auto/img/ctc-txsz-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-txsz-2.webp",
+          "thumb": "/parco-auto/img/ctc-txsz-2.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-V150",
+      "ref": "CTC-V150",
+      "make": "BMW",
+      "model": "Z3 Roadster",
+      "version": "1.9 140 CV",
+      "year": 1997,
+      "km": 120000,
+      "fuel": "Benzina",
+      "price": 9900,
+      "market": 13400,
+      "status": "venduta",
+      "city": "Bergamo",
+      "days": 6,
+      "added": 18,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-v150-1.webp",
+          "thumb": "/parco-auto/img/ctc-v150-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-v150-2.webp",
+          "thumb": "/parco-auto/img/ctc-v150-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-v150-3.webp",
+          "thumb": "/parco-auto/img/ctc-v150-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-v150-4.webp",
+          "thumb": "/parco-auto/img/ctc-v150-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-VHZE",
+      "ref": "CTC-VHZE",
+      "make": "Audi",
+      "model": "A5 Cabrio",
+      "version": "3.0 TDI multitronic Advanced",
+      "year": 2012,
+      "km": 160000,
+      "fuel": "Diesel",
+      "price": 12400,
+      "market": 15600,
+      "status": "disponibile",
+      "city": "Bergamo",
+      "days": null,
+      "added": 20,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-vhze-1.webp",
+          "thumb": "/parco-auto/img/ctc-vhze-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vhze-2.webp",
+          "thumb": "/parco-auto/img/ctc-vhze-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vhze-3.webp",
+          "thumb": "/parco-auto/img/ctc-vhze-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vhze-4.webp",
+          "thumb": "/parco-auto/img/ctc-vhze-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-VPV4",
+      "ref": "CTC-VPV4",
+      "make": "BMW",
+      "model": "218d Coupé",
+      "version": "Msport",
+      "year": 2016,
+      "km": 105000,
+      "fuel": "Diesel",
+      "price": 13400,
+      "market": 16500,
+      "status": "venduta",
+      "city": "Milano",
+      "days": 3,
+      "added": 14,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-vpv4-1.webp",
+          "thumb": "/parco-auto/img/ctc-vpv4-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vpv4-2.webp",
+          "thumb": "/parco-auto/img/ctc-vpv4-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vpv4-3.webp",
+          "thumb": "/parco-auto/img/ctc-vpv4-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vpv4-4.webp",
+          "thumb": "/parco-auto/img/ctc-vpv4-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-VQD4",
+      "ref": "CTC-VQD4",
+      "make": "Škoda",
+      "model": "Superb Wagon",
+      "version": "2.0 TDI DSG Style",
+      "year": 2016,
+      "km": 138000,
+      "fuel": "Diesel",
+      "price": 13900,
+      "market": 17200,
+      "status": "venduta",
+      "city": "Cremona",
+      "days": 14,
+      "added": 37,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-vqd4-1.webp",
+          "thumb": "/parco-auto/img/ctc-vqd4-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vqd4-2.webp",
+          "thumb": "/parco-auto/img/ctc-vqd4-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vqd4-3.webp",
+          "thumb": "/parco-auto/img/ctc-vqd4-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vqd4-4.webp",
+          "thumb": "/parco-auto/img/ctc-vqd4-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-VYBT",
+      "ref": "CTC-VYBT",
+      "make": "Smart",
+      "model": "Fortwo Brabus",
+      "version": "Cabrio Xclusive",
+      "year": 2013,
+      "km": 140000,
+      "fuel": "Benzina",
+      "price": 7400,
+      "market": 9500,
+      "status": "venduta",
+      "city": "Lodi",
+      "days": 6,
+      "added": 12,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-vybt-1.webp",
+          "thumb": "/parco-auto/img/ctc-vybt-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vybt-2.webp",
+          "thumb": "/parco-auto/img/ctc-vybt-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vybt-3.webp",
+          "thumb": "/parco-auto/img/ctc-vybt-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-vybt-4.webp",
+          "thumb": "/parco-auto/img/ctc-vybt-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-WDK3",
+      "ref": "CTC-WDK3",
+      "make": "Mercedes-Benz",
+      "model": "GLK",
+      "version": "220 CDI 4MATIC Premium",
+      "year": 2012,
+      "km": 186000,
+      "fuel": "Diesel",
+      "price": 10900,
+      "market": 13800,
+      "status": "venduta",
+      "city": "Desenzano del Garda",
+      "days": 6,
+      "added": 31,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-wdk3-1.webp",
+          "thumb": "/parco-auto/img/ctc-wdk3-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-wdk3-2.webp",
+          "thumb": "/parco-auto/img/ctc-wdk3-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-wdk3-3.webp",
+          "thumb": "/parco-auto/img/ctc-wdk3-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-wdk3-4.webp",
+          "thumb": "/parco-auto/img/ctc-wdk3-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-X95D",
+      "ref": "CTC-X95D",
+      "make": "Audi",
+      "model": "A4",
+      "version": "2.0 TDI ultra S tronic Business",
+      "year": 2017,
+      "km": 166000,
+      "fuel": "Diesel",
+      "price": 13900,
+      "market": 16900,
+      "status": "venduta",
+      "city": "Bergamo",
+      "days": 13,
+      "added": 30,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-x95d-1.webp",
+          "thumb": "/parco-auto/img/ctc-x95d-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-x95d-2.webp",
+          "thumb": "/parco-auto/img/ctc-x95d-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-x95d-3.webp",
+          "thumb": "/parco-auto/img/ctc-x95d-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-x95d-4.webp",
+          "thumb": "/parco-auto/img/ctc-x95d-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-XVH5",
+      "ref": "CTC-XVH5",
+      "make": "Toyota",
+      "model": "Yaris",
+      "version": "1.5 Hybrid White Edition",
+      "year": 2017,
+      "km": 80500,
+      "fuel": "Ibrida",
+      "price": 10400,
+      "market": 12600,
+      "status": "venduta",
+      "city": "Sondrio",
+      "days": 2,
+      "added": 26,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-xvh5-1.webp",
+          "thumb": "/parco-auto/img/ctc-xvh5-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xvh5-2.webp",
+          "thumb": "/parco-auto/img/ctc-xvh5-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xvh5-3.webp",
+          "thumb": "/parco-auto/img/ctc-xvh5-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xvh5-4.webp",
+          "thumb": "/parco-auto/img/ctc-xvh5-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-XXRH",
+      "ref": "CTC-XXRH",
+      "make": "Dacia",
+      "model": "Jogger",
+      "version": "Eco-G 120 Journey",
+      "year": 2025,
+      "km": 34000,
+      "fuel": "GPL",
+      "price": 17400,
+      "market": 20500,
+      "status": "venduta",
+      "city": "Varese",
+      "days": 12,
+      "added": 3,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-xxrh-1.webp",
+          "thumb": "/parco-auto/img/ctc-xxrh-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xxrh-2.webp",
+          "thumb": "/parco-auto/img/ctc-xxrh-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xxrh-3.webp",
+          "thumb": "/parco-auto/img/ctc-xxrh-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-xxrh-4.webp",
+          "thumb": "/parco-auto/img/ctc-xxrh-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-Y23D",
+      "ref": "CTC-Y23D",
+      "make": "Mercedes-Benz",
+      "model": "SLK",
+      "version": "230 Kompressor",
+      "year": 1999,
+      "km": 155000,
+      "fuel": "Benzina",
+      "price": 7400,
+      "market": 9900,
+      "status": "trattativa",
+      "city": "Milano",
+      "days": null,
+      "added": 2,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-y23d-1.webp",
+          "thumb": "/parco-auto/img/ctc-y23d-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-y23d-2.webp",
+          "thumb": "/parco-auto/img/ctc-y23d-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-y23d-3.webp",
+          "thumb": "/parco-auto/img/ctc-y23d-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-y23d-4.webp",
+          "thumb": "/parco-auto/img/ctc-y23d-4.webp"
+        }
+      ]
+    },
+    {
+      "code": "CTC-YF05",
+      "ref": "CTC-YF05",
+      "make": "Audi",
+      "model": "A5 Cabrio",
+      "version": "2.0 TFSI S line",
+      "year": 2013,
+      "km": 130000,
+      "fuel": "Benzina",
+      "price": 14400,
+      "market": 17900,
+      "status": "disponibile",
+      "city": "Rho",
+      "days": null,
+      "added": 16,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-yf05-1.webp",
+          "thumb": "/parco-auto/img/ctc-yf05-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-yf05-2.webp",
+          "thumb": "/parco-auto/img/ctc-yf05-2.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-yf05-3.webp",
+          "thumb": "/parco-auto/img/ctc-yf05-3.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-yf05-4.webp",
+          "thumb": "/parco-auto/img/ctc-yf05-4.webp"
+        }
+      ]
+    }
+  ]
+}
