@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 import LeadForm from "./LeadForm";
+import Link from "next/link";
 const steps = [
   ["01", "Definiamo il tuo stock ideale", "Zona, marchi, modelli, anzianità, chilometraggio e fascia di acquisto."],
   ["02", "Troviamo e qualifichiamo i privati", "Selezioniamo venditori realmente intenzionati e raccogliamo i dati utili sull'auto."],
@@ -20,7 +21,7 @@ export default function Home() {
   return <main>
     <a className="skiplink" href="#contenuto">Vai al contenuto</a>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schema)}} />
-    <nav><a className="brand" href="#top"><span>CTC</span> CAR TRADE CLUB</a><div className="navlinks"><a href="#come-funziona">Come funziona</a><a href="#case-study">Case study</a><a href="#vantaggi">Vantaggi</a><a className="button small" href="mailto:mattia@cartradeclub.com?subject=Attivazione%20Car%20Trade%20Club">Attiva la tua zona</a></div></nav>
+    <nav><a className="brand" href="#top"><span>CTC</span> CAR TRADE CLUB</a><div className="navlinks"><Link href="/parco-auto">Le auto</Link><a href="#come-funziona">Come funziona</a><a href="#case-study">Case study</a><a href="#vantaggi">Vantaggi</a><a className="button small" href="mailto:mattia@cartradeclub.com?subject=Attivazione%20Car%20Trade%20Club">Attiva la tua zona</a></div></nav>
     <section className="hero" id="contenuto"><div className="hero-copy"><div className="eyebrow">SOURCING AUTO USATE · PER CONCESSIONARI</div><h1>Auto da privati.<br/><em>Già negoziate.</em></h1><p className="lead">Ricevi opportunità di acquisto qualificate nella tua zona. Tu scegli le auto che interessano al tuo concessionario e paghi soltanto quando compri.</p><div className="actions"><a className="button" href="#interesse">Parliamo del tuo stock →</a><a className="textlink" href="#come-funziona">Scopri come funziona</a></div><div className="trust"><span>✓ Opportunità qualificate</span><span>✓ Stock personalizzato</span><span>✓ Nessun obbligo d'acquisto</span></div></div><div className="deal"><div className="dealhead"><span>OPPORTUNITÀ DISPONIBILE</span><b>Torino · 18 km</b></div><h3>Audi A3 Sportback</h3><div className="specs"><span>2020</span><span>68.400 km</span><span>Diesel</span></div><div className="price"><small>PREZZO CONCORDATO</small><strong>€ 18.700</strong></div><div className="line"/><p>Foto, dati auto e contatto del privato pronti per la tua valutazione.</p></div></section>
     <section className="statement"><p>Non semplici lead.</p><h2>Un nuovo canale di approvvigionamento dell'usato.</h2></section>
     <section id="come-funziona"><div className="sectiontag">COME FUNZIONA</div><h2>Il lavoro pesante lo facciamo noi.<br/>La decisione resta tua.</h2><div className="steps">{steps.map(([n,t,d])=><article key={n}><b>{n}</b><h3>{t}</h3><p>{d}</p></article>)}</div></section>
@@ -55,6 +56,7 @@ export default function Home() {
           <div><span>RENDIMENTO SUL COSTO</span><strong>100%</strong></div>
         </div>
         <p className="case-note">Margine lordo calcolato come prezzo di rivendita meno prezzo di acquisto. Non include eventuali costi di trasporto, passaggio, ricondizionamento o fiscalità.</p>
+        <p className="case-note"><Link href="/parco-auto">Guarda tutte le auto trattate dal network →</Link></p>
       </div>
       <figure className="case-visual">
         <img src="/case-study-opel-agila-clean-1200.webp" srcSet="/case-study-opel-agila-clean-640.webp 640w, /case-study-opel-agila-clean-1200.webp 1200w" sizes="(max-width: 900px) 90vw, 45vw" loading="lazy" decoding="async" alt="Opel Agila del 2011 protagonista del case study Car Trade Club" width="1536" height="1024"/>
