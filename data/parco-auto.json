@@ -2636,40 +2636,6 @@
       ]
     },
     {
-      "code": "CTC-VHZE",
-      "ref": "CTC-VHZE",
-      "make": "Audi",
-      "model": "A5 Cabrio",
-      "version": "3.0 TDI multitronic Advanced",
-      "year": 2012,
-      "km": 160000,
-      "fuel": "Diesel",
-      "price": 8000,
-      "market": 15600,
-      "status": "disponibile",
-      "city": "Desio",
-      "days": null,
-      "added": 20,
-      "gallery": [
-        {
-          "src": "/parco-auto/img/ctc-vhze-2.webp",
-          "thumb": "/parco-auto/img/ctc-vhze-2.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-vhze-1.webp",
-          "thumb": "/parco-auto/img/ctc-vhze-t.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-vhze-3.webp",
-          "thumb": "/parco-auto/img/ctc-vhze-3.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-vhze-4.webp",
-          "thumb": "/parco-auto/img/ctc-vhze-4.webp"
-        }
-      ]
-    },
-    {
       "code": "CTC-VPV4",
       "ref": "CTC-VPV4",
       "make": "BMW",
@@ -2923,12 +2889,12 @@
       "model": "SLK",
       "version": "230 Kompressor",
       "year": 1999,
-      "km": 155000,
+      "km": 156000,
       "fuel": "Benzina",
       "price": 7000,
-      "market": 9900,
-      "status": "disponibile",
-      "city": "Varese",
+      "market": null,
+      "status": "trattativa",
+      "city": "Montichiari",
       "days": null,
       "added": 2,
       "gallery": [

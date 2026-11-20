@@ -49,3 +49,10 @@ Modifiche rispetto alla release: README operativo, nome pacchetto, script test c
 Il catalogo pubblico legge `data/parco-auto.json` e le immagini locali in `public/parco-auto/img/`. Non è collegato automaticamente agli stati del gestionale: aggiunte, prezzi e disponibilità richiedono aggiornamento e release Sites. Lo script `scripts/import-cars.mjs` aggiorna solo l’archivio separato `data/cars.json`, non il catalogo pubblico.
 
 Il 20 novembre 2026 è stata aggiunta CTC-QE2P (Kia Ceed 2009, diesel, 230.000 km, Asso), verificata nel gestionale come Published, con 700 € concordati e offerta inviata a cinque concessionari. Nessuna valutazione di mercato è pubblicata per questa scheda. Foto frontale come copertina, targa oscurata nel file esportato; le foto dei danni restano incluse. Dati e contatti del venditore esclusi.
+
+## Riconciliazione automatica del catalogo
+
+
+Il controllo Codex orario legge il gestionale in sola lettura e pubblica soltanto modifiche verificate. Lo stato del CRM viene confrontato con accordo, invio e contesto della conversazione; una trattativa rifiutata non viene aggiunta solo perché il badge CRM è rimasto Negotiating.
+
+Le schede ritirate sono conservate in `data/parco-auto-archive.json`, escluso dal catalogo: scadenza e ritiro non equivalgono a vendita. Non cancellare gli asset storici. Il 20 novembre 2026 CTC-VHZE è stata archiviata perché l’accordo risulta scaduto e il venditore ha sospeso la proposta. CTC-Y23D è in trattativa/preparazione, a 7.000 € concordati: l’invio ai concessionari non risulta ancora avvenuto e il venditore ha rinviato le visite al 23 novembre. Zona e chilometraggio sono stati aggiornati dai dati verificati.
