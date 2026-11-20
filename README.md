@@ -42,3 +42,10 @@ Importazione del 17 novembre 2026 dalla release Sites **12**, commit sorgente `c
 Questo repository è una copia dei sorgenti. Non contiene workflow di deploy e un push GitHub non pubblica il sito. La produzione resta gestita da Sites, progetto `appgprj_6a5f2e9ab19881918916f1ed990683ec`; una futura pubblicazione richiede una release esplicitamente autorizzata e gli strumenti Sites.
 
 Modifiche rispetto alla release: README operativo, nome pacchetto, script test coerente con pnpm, versione pnpm dichiarata, esclusioni Git per dati locali e rimozione della vecchia suite che verificava lo skeleton dello starter. Pagine, stili, immagini e comportamento applicativo sono conservati.
+
+## Aggiornamento del Parco Auto
+
+
+Il catalogo pubblico legge `data/parco-auto.json` e le immagini locali in `public/parco-auto/img/`. Non è collegato automaticamente agli stati del gestionale: aggiunte, prezzi e disponibilità richiedono aggiornamento e release Sites. Lo script `scripts/import-cars.mjs` aggiorna solo l’archivio separato `data/cars.json`, non il catalogo pubblico.
+
+Il 20 novembre 2026 è stata aggiunta CTC-QE2P (Kia Ceed 2009, diesel, 230.000 km, Asso), verificata nel gestionale come Published, con 700 € concordati e offerta inviata a cinque concessionari. Nessuna valutazione di mercato è pubblicata per questa scheda. Foto frontale come copertina, targa oscurata nel file esportato; le foto dei danni restano incluse. Dati e contatti del venditore esclusi.
