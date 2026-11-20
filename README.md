@@ -52,7 +52,6 @@ Il 20 novembre 2026 è stata aggiunta CTC-QE2P (Kia Ceed 2009, diesel, 230.000 k
 
 ## Riconciliazione automatica del catalogo
 
-
 Il controllo Codex orario legge il gestionale in sola lettura e pubblica soltanto modifiche verificate. Lo stato del CRM viene confrontato con accordo, invio e contesto della conversazione; una trattativa rifiutata non viene aggiunta solo perché il badge CRM è rimasto Negotiating.
 
-Le schede ritirate sono conservate in `data/parco-auto-archive.json`, escluso dal catalogo: scadenza e ritiro non equivalgono a vendita. Non cancellare gli asset storici. Il 20 novembre 2026 CTC-VHZE è stata archiviata perché l’accordo risulta scaduto e il venditore ha sospeso la proposta. CTC-Y23D è in trattativa/preparazione, a 7.000 € concordati: l’invio ai concessionari non risulta ancora avvenuto e il venditore ha rinviato le visite al 23 novembre. Zona e chilometraggio sono stati aggiornati dai dati verificati.
+Le schede ritirate sono conservate in `data/parco-auto-archive.json`, escluso dal catalogo: scadenza e ritiro non equivalgono a vendita. Non cancellare gli asset storici. Il 20 novembre 2026 CTC-VHZE è stata archiviata perché l’accordo risulta scaduto e il venditore ha sospeso la proposta. CTC-Y23D mantiene il dato pubblico precedente: il contesto richiede ulteriore verifica e non autorizza un cambio di stato automatico.
