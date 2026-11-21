@@ -2,6 +2,40 @@
   "_note": "Illustrative set from the Parco Auto artifact (claude.ai/artifact/WbZF3wz1DotNbkFRfDhzEy, version 1794927818-41ed). Prices, market values, statuses, cities and days are illustrative, not CRM data. `ref` links each car to data/cars.json.",
   "cars": [
     {
+      "code": "CTC-FP2N",
+      "ref": null,
+      "make": "Citroën",
+      "model": "C4 Grand Picasso",
+      "version": "",
+      "year": 2017,
+      "km": 225000,
+      "fuel": "Diesel",
+      "price": 4000,
+      "market": null,
+      "status": "disponibile",
+      "city": "Milano",
+      "days": null,
+      "added": -102,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-fp2n-front.webp",
+          "thumb": "/parco-auto/img/ctc-fp2n-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-fp2n-side.webp",
+          "thumb": "/parco-auto/img/ctc-fp2n-side-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-fp2n-third-row.webp",
+          "thumb": "/parco-auto/img/ctc-fp2n-third-row-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-fp2n-seats.webp",
+          "thumb": "/parco-auto/img/ctc-fp2n-seats-t.webp"
+        }
+      ]
+    },
+    {
       "code": "CTC-QE2P",
       "ref": null,
       "make": "Kia",
