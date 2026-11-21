@@ -2,6 +2,45 @@
   "_note": "Illustrative set from the Parco Auto artifact (claude.ai/artifact/WbZF3wz1DotNbkFRfDhzEy, version 1794927818-41ed). Prices, market values, statuses, cities and days are illustrative, not CRM data. `ref` links each car to data/cars.json.",
   "cars": [
     {
+      "code": "CTC-KJQC",
+      "ref": null,
+      "make": "Suzuki",
+      "model": "Vitara",
+      "version": "",
+      "year": 2022,
+      "km": 136000,
+      "fuel": "Ibrida",
+      "price": 11300,
+      "priceKind": "asking",
+      "market": null,
+      "status": "trattativa",
+      "city": "Como",
+      "days": null,
+      "added": -103,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-kjqc-front.webp",
+          "thumb": "/parco-auto/img/ctc-kjqc-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-kjqc-side.webp",
+          "thumb": "/parco-auto/img/ctc-kjqc-side-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-kjqc-rear.webp",
+          "thumb": "/parco-auto/img/ctc-kjqc-rear-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-kjqc-steering.webp",
+          "thumb": "/parco-auto/img/ctc-kjqc-steering-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-kjqc-seats.webp",
+          "thumb": "/parco-auto/img/ctc-kjqc-seats-t.webp"
+        }
+      ]
+    },
+    {
       "code": "CTC-FP2N",
       "ref": null,
       "make": "Citroën",
