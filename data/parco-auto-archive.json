@@ -73,6 +73,45 @@
         "price": 3200,
         "priceKind": "asking"
       }
+    },
+    {
+      "archivedAt": "2026-11-23",
+      "reason": "Trattativa chiusa dall’operatore nel gestionale; nessuna vendita confermata.",
+      "car": {
+        "code": "CTC-RNT2",
+        "ref": "CTC-RNT2",
+        "make": "Smart",
+        "model": "Fortwo Coupé",
+        "version": "1.0 mhd Passion",
+        "year": 2010,
+        "km": 49000,
+        "fuel": "Benzina",
+        "price": 5000,
+        "market": 6300,
+        "status": "trattativa",
+        "city": "Pavia",
+        "days": null,
+        "added": 34,
+        "gallery": [
+          {
+            "src": "/parco-auto/img/ctc-rnt2-1.webp",
+            "thumb": "/parco-auto/img/ctc-rnt2-t.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-rnt2-2.webp",
+            "thumb": "/parco-auto/img/ctc-rnt2-2.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-rnt2-3.webp",
+            "thumb": "/parco-auto/img/ctc-rnt2-3.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-rnt2-4.webp",
+            "thumb": "/parco-auto/img/ctc-rnt2-4.webp"
+          }
+        ],
+        "priceKind": "asking"
+      }
     }
   ]
 }
