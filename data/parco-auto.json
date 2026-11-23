@@ -3586,37 +3586,6 @@
       "status": "trattativa",
       "price": 27000,
       "priceKind": "asking"
-    },
-    {
-      "code": "CTC-9EHG",
-      "ref": "CTC-9EHG",
-      "city": "Brescia",
-      "make": "Citroën",
-      "model": "C3",
-      "version": "1.2 VTi 82 Exclusive",
-      "year": 2013,
-      "km": 80000,
-      "fuel": "Benzina",
-      "market": 3298,
-      "days": null,
-      "added": -75,
-      "gallery": [
-        {
-          "src": "/parco-auto/img/ctc-9ehg-front.webp",
-          "thumb": "/parco-auto/img/ctc-9ehg-front-t.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-9ehg-crm-1.webp",
-          "thumb": "/parco-auto/img/ctc-9ehg-crm-1-t.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-9ehg-crm-2.webp",
-          "thumb": "/parco-auto/img/ctc-9ehg-crm-2.webp"
-        }
-      ],
-      "status": "trattativa",
-      "price": 3200,
-      "priceKind": "asking"
     }
   ]
 }
