@@ -2,6 +2,41 @@
   "_note": "Illustrative set from the Parco Auto artifact (claude.ai/artifact/WbZF3wz1DotNbkFRfDhzEy, version 1794927818-41ed). Prices, market values, statuses, cities and days are illustrative, not CRM data. `ref` links each car to data/cars.json.",
   "cars": [
     {
+      "code": "CTC-HVAS",
+      "ref": null,
+      "make": "Audi",
+      "model": "A6",
+      "version": "",
+      "year": 2019,
+      "km": 130000,
+      "fuel": "Diesel",
+      "price": 25000,
+      "priceKind": "asking",
+      "market": null,
+      "status": "trattativa",
+      "city": "Retorbido",
+      "days": null,
+      "added": -104,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-hvas-front.webp",
+          "thumb": "/parco-auto/img/ctc-hvas-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-hvas-rear-damage.webp",
+          "thumb": "/parco-auto/img/ctc-hvas-rear-damage-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-hvas-interior.webp",
+          "thumb": "/parco-auto/img/ctc-hvas-interior-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-hvas-seats.webp",
+          "thumb": "/parco-auto/img/ctc-hvas-seats-t.webp"
+        }
+      ]
+    },
+    {
       "code": "CTC-KJQC",
       "ref": null,
       "make": "Suzuki",
