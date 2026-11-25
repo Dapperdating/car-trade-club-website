@@ -178,6 +178,44 @@
         "price": 27000,
         "priceKind": "asking"
       }
+    },
+    {
+      "archivedAt": "2026-11-25",
+      "reason": "Accordo del 18 novembre scaduto dopo una settimana; gestionale Expired / closed, nessun rinnovo o vendita confermati.",
+      "car": {
+        "code": "CTC-0PRT",
+        "ref": null,
+        "make": "Jeep",
+        "model": "Renegade",
+        "version": "1.4 Turbo",
+        "year": 2018,
+        "km": 119000,
+        "fuel": "Benzina",
+        "price": 8500,
+        "market": 10500,
+        "status": "disponibile",
+        "city": "Rovato",
+        "days": null,
+        "added": 0,
+        "gallery": [
+          {
+            "src": "/parco-auto/img/ctc-0prt-front.webp",
+            "thumb": "/parco-auto/img/ctc-0prt-front-t.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-0prt-1.webp",
+            "thumb": "/parco-auto/img/ctc-0prt-t.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-0prt-2.webp",
+            "thumb": "/parco-auto/img/ctc-0prt-2.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-0prt-3.webp",
+            "thumb": "/parco-auto/img/ctc-0prt-3.webp"
+          }
+        ]
+      }
     }
   ]
 }

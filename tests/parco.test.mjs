@@ -18,10 +18,10 @@ test('/parco-auto keeps the legal line and the illustrative-data disclosures', a
   const {html} = await page('/parco-auto');
   for (const text of ['© 2026 CAR TRADE CLUB LIMITED', 'Selezione illustrativa: prezzi, margini e disponibilità indicativi.', 'Selezione illustrativa di auto trattate dal network.', 'Prezzi, margini e disponibilità sono indicativi.']) assert.ok(html.includes(text), `missing: ${text}`);
 });
-test('/parco-auto?auto=CTC-0PRT renders that car server-side', async () => {
-  const car = cars.find(c => c.code === 'CTC-0PRT');
-  assert.ok(car, 'CTC-0PRT missing from data/parco-auto.json');
-  const {status, html} = await page('/parco-auto?auto=CTC-0PRT');
+test('/parco-auto?auto=CTC-PTG6 renders that car server-side', async () => {
+  const car = cars.find(c => c.code === 'CTC-PTG6');
+  assert.ok(car, 'CTC-PTG6 missing from data/parco-auto.json');
+  const {status, html} = await page('/parco-auto?auto=CTC-PTG6');
   assert.equal(status, 200);
   assert.ok(html.includes(`${car.make} ${car.model}`));
 });
@@ -37,7 +37,7 @@ test('/parco-auto JSON-LD parses, counts every car and carries no offers or pric
   for (const data of blocks) assert.doesNotMatch(data, /"offers"|"price"/);
 });
 test('/parco-auto never leaks CRM data', async () => {
-  for (const path of ['/parco-auto', '/parco-auto?auto=CTC-0PRT']) {
+  for (const path of ['/parco-auto', '/parco-auto?auto=CTC-PTG6']) {
     const {html} = await page(path);
     for (const text of ['openingOffer', '"/cars/', 'data/cars.json']) assert.ok(!html.includes(text), `${path} contains ${text}`);
   }
