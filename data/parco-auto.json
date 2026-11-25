@@ -2936,7 +2936,7 @@
       "price": 7000,
       "market": 9900,
       "status": "disponibile",
-      "city": "Varese",
+      "city": "Montichiari",
       "days": null,
       "added": 2,
       "gallery": [
@@ -3528,33 +3528,6 @@
       ],
       "status": "venduta",
       "price": 540
-    },
-    {
-      "code": "CTC-RWPC",
-      "ref": "CTC-RWPC",
-      "city": "Cremona",
-      "make": "Volkswagen",
-      "model": "ID.3",
-      "version": "Pure Edition Plus",
-      "year": 2025,
-      "km": 12300,
-      "fuel": "Elettrica",
-      "market": 28300,
-      "days": null,
-      "added": -77,
-      "gallery": [
-        {
-          "src": "/parco-auto/img/ctc-rwpc-crm-1.webp",
-          "thumb": "/parco-auto/img/ctc-rwpc-crm-1-t.webp"
-        },
-        {
-          "src": "/parco-auto/img/ctc-rwpc-crm-2.webp",
-          "thumb": "/parco-auto/img/ctc-rwpc-crm-2.webp"
-        }
-      ],
-      "status": "trattativa",
-      "price": 27000,
-      "priceKind": "asking"
     }
   ]
 }
