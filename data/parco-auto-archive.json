@@ -216,6 +216,48 @@
           }
         ]
       }
+    },
+    {
+      "archivedAt": "2026-11-25",
+      "reason": "Accordo di esclusiva del 18 novembre scaduto dopo sette giorni; gestionale Expired / closed, nessun rinnovo o vendita confermati.",
+      "car": {
+        "code": "CTC-QE2P",
+        "ref": null,
+        "make": "Kia",
+        "model": "Ceed",
+        "version": "",
+        "year": 2009,
+        "km": 230000,
+        "fuel": "Diesel",
+        "price": 700,
+        "market": null,
+        "status": "disponibile",
+        "city": "Asso",
+        "days": null,
+        "added": -101,
+        "gallery": [
+          {
+            "src": "/parco-auto/img/ctc-qe2p-front.webp",
+            "thumb": "/parco-auto/img/ctc-qe2p-front-t.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-qe2p-side-left.webp",
+            "thumb": "/parco-auto/img/ctc-qe2p-side-left-t.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-qe2p-side-right.webp",
+            "thumb": "/parco-auto/img/ctc-qe2p-side-right-t.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-qe2p-rear-damage.webp",
+            "thumb": "/parco-auto/img/ctc-qe2p-rear-damage-t.webp"
+          },
+          {
+            "src": "/parco-auto/img/ctc-qe2p-front-damage.webp",
+            "thumb": "/parco-auto/img/ctc-qe2p-front-damage-t.webp"
+          }
+        ]
+      }
     }
   ]
 }
