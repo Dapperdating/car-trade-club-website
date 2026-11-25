@@ -2,6 +2,41 @@
   "_note": "Illustrative set from the Parco Auto artifact (claude.ai/artifact/WbZF3wz1DotNbkFRfDhzEy, version 1794927818-41ed). Prices, market values, statuses, cities and days are illustrative, not CRM data. `ref` links each car to data/cars.json.",
   "cars": [
     {
+      "code": "CTC-PTG6",
+      "ref": null,
+      "make": "Volkswagen",
+      "model": "Touareg",
+      "version": "3.0 V6 TDI Executive 204 CV",
+      "year": 2016,
+      "km": 182000,
+      "fuel": "Diesel",
+      "price": 13500,
+      "priceKind": "asking",
+      "market": null,
+      "status": "trattativa",
+      "city": "Briosco",
+      "days": null,
+      "added": -105,
+      "gallery": [
+        {
+          "src": "/parco-auto/img/ctc-ptg6-front.webp",
+          "thumb": "/parco-auto/img/ctc-ptg6-front-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ptg6-rear.webp",
+          "thumb": "/parco-auto/img/ctc-ptg6-rear-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ptg6-interior.webp",
+          "thumb": "/parco-auto/img/ctc-ptg6-interior-t.webp"
+        },
+        {
+          "src": "/parco-auto/img/ctc-ptg6-boot.webp",
+          "thumb": "/parco-auto/img/ctc-ptg6-boot-t.webp"
+        }
+      ]
+    },
+    {
       "code": "CTC-HVAS",
       "ref": null,
       "make": "Audi",
